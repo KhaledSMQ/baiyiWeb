@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="" />
+		<meta name="keyword"  content="" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="pragma" content="no-cache"/>  
+		<meta http-equiv="cache-control" content="no-cache"/>
+		<meta http-equiv="expires" content="0"/>  
+		<title></title>
+        <link href="__CSS__/layer.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<style type="text/css">
+		*{padding:0;margin:0;}
+		img{width:100%;border:none; vertical-align: middle;}
+		ul,li{list-style:none;}
+		.bold{font-weight: bolder;}
+		body{min-height:320px;}
+		html,body{height:100%;}
+		.container{width:100%;height:100%;}
+        .topbar{position:relative;width:100%;}
+		.navinfo{position:absolute;width:100%;top:0;height:100%;overflow: hidden;}
+        .navimgbg{width:20%;}
+        .returnBack{width:8%;height:100%;float:left;cursor:pointer;}
+        .returnBack img{max-width: 100%;}
+        .navimgbg{width:15%;margin:1.5% 0% 0% 1%;float:left; padding:2% 0%;}
+        .beanPrice{background-image: url('__IMG__/user_show_score.png'); background-repeat: no-repeat; background-size:100% 100% ; }
+        .scorePrice{background-image: url('__IMG__/user_show_lottery.png'); background-repeat: no-repeat; background-size:100% 100% ;}
+        .showUserInfo{position:absolute;width:auto;margin-left:4%;top:36%;}
+		.userOpera{width:13%;height:100%;float:right;cursor:pointer;margin-right:1.2%;}
+
+
+        .indexbody{width:100%;height:100%;position:relative;}
+        .bodycontent{height:100%;}
+        .bodycontent img{height:25%;width:auto;max-width:100%;}
+        .showgoods{width:100%;height:100%;position: absolute;top:0;}
+        .midshowgoods{width:80%;margin:0px auto;position:relative;height:90%;padding-top:3%;}
+        .leftdivcontent{width:40%;float:left;height:70%;}
+        .leftdivcontent p{width:100%;float:left;text-align: center;}
+        .showgoodsnow{width:65%;border:2px solid #1798FA;margin:0px auto;}
+        .showgoodsname{color:yellow;font-weight:bolder;}
+		.showgoodsprice{color:#fff;font-weight:bolder;}
+		.showgoodsprice label{color:yellow;font-weight: bolder;}
+		.showgoodsname{margin-top:5%;}
+        .showgoodsprice{margin-top:5%;}
+
+
+
+        .rightdivcontent{width:60%;float:left;height:70%; }
+        .userwiterinfo{height:16%;width:100%;float:left;margin-bottom:3%;}
+        .userwiterinfo label{width:25%;float:left;margin-top:2%;text-align:right;font-weight: bolder;color:#fff;}
+        .userwiterinfo input{width:70%;float:left;padding:2% 0%;
+        	text-indent: 0.4em; 
+         	-moz-border-radius: 0.4em;
+    		-webkit-border-radius: 0.4em;
+   			border-radius: 0.4em;
+  			border: 2px solid #31A3FF;
+  		}
+        .userwiterinfo textarea{width:70%;float:left;height:190%;padding:2% 0%;
+        	text-indent: 0.4em;
+        	-moz-border-radius: 0.4em;
+    		-webkit-border-radius: 0.4em;
+   			border-radius: 0.4em;
+  			border: 2px solid #31A3FF;
+  		}
+		
+		::-webkit-input-placeholder{ color:#757575; }
+		:-moz-placeholder{ color:#757575;   }
+		::-moz-placeholder{   color:#757575; }
+		:-ms-input-placeholder{  color:#757575;  }
+
+
+  			.tips,.usersubmit{width:100%;float:left;text-align:center;font-size:1.5em;margin-top:1%;color:yellow;}
+  			.usersubmit img{margin-top:1%;width:75%;}
+
+	</style>
+	<body>
+		<div class="container">
+			<div class="topbar">
+				<img src="__IMG__/bg_top_banner.jpg" />
+				<div class="navinfo">
+					 <a href="{:U('getList')}">
+						<span class="returnBack"><img src="__IMG__/back_to_game.png" /></span>
+					</a>
+					<span class="navimgbg beanPrice">
+					 	<label class="showUserInfo">{$score}</label>
+					</span>
+					<span class="navimgbg scorePrice">
+						<label class="showUserInfo">{$lottery}</label>
+					</span>
+					<a href="{:U('getRecord')}">
+						<span class="userOpera"><img src="__IMG__/{$recordImg}" /></span>
+					</a>
+                     <a href="{:U('getList')}">
+						<span class="userOpera"><img src="__IMG__/{$lotteyImg}" /></span>
+					</a>
+
+				</div>
+			</div>
+			<div class="indexbody">
+				<div class="bodycontent">
+					<img src="__IMG__/container_body_01.jpg" />
+					<img src="__IMG__/container_body_02.jpg" />
+					<img src="__IMG__/container_body_03.jpg" />
+					<img src="__IMG__/container_body_04.jpg" />
+				</div>	
+ 				<div class="showgoods">
+ 					<div class="midshowgoods">
+ 						<div class="leftdivcontent">
+ 							<p>
+ 								<div class="showgoodsnow">
+ 									<img src="__IMG__/da/bigimg_{$detailInfo['shopid']}.png"  />
+ 								</div>
+ 							</p>
+							<p class="showgoodsname">{$detailInfo['goodname']}</p>
+							<p class="showgoodsprice">所需奖券：<label>{$detailInfo['goodspend']}</label></p>
+ 						</div>
+						<div class="rightdivcontent">
+							<p class="userwiterinfo">
+								<label>姓名：</label>
+								<input type="text" name="username" id="name" placeholder="请填写有效的真实姓名" />
+							</p>
+							<p class="userwiterinfo">
+								<label>联系方式：</label>
+								<input type="text" name="usertel" id="tel" placeholder="请填写有效的11位手机号码" />
+							</p>
+							<p id="goodstip" style="color:#C1125D;width:95%;text-align:left;float:right;">(兑换成功后,可在"兑换记录"中查询相应的信息后前往携程网进行兑换)</p>
+						</div>
+						<p class="tips">※请务必认真填写信息,否则将无法兑换商品，我们将在48小时内进行发货!</p>
+						<div class="usersubmit"><img src="__IMG__/btn_submit.png" id="btn_submit" /></div>
+ 					</div>
+ 				</div>
+			</div>
+		</div>
+		<script src="__PUBLICJS__/jquery-1.8.3.min.js"></script>
+		<script src="__JS__/layer.m.js"></script>
+		<script type="text/javascript">
+			var normal_width_size = 1136;    //原始比例宽度
+			var normal_height_size = 768;    //原始比例高度
+			var win_width_size = $(window).width();//给出的webview宽度
+			var win_height_size = $(window).height();//给出的webview高度
+			var scale_width = win_width_size / normal_width_size;//计算自适应的宽度百分百
+			var scale_height = win_height_size / normal_height_size;//计算自适应的高度百分百
+              
+			//初始化自适应操作
+			$(document).ready(function () {
+			    resize_size_by_screen();
+			});
+
+			//自适应方法
+			function resize_size_by_screen() {
+				//调整字体大小自适应
+                $(".showUserInfo").css("fontSize", 1.25 * scale_width+"em");
+                $(".showgoodsname").css("font-size", 1.60 * scale_width+"em");
+                $(".showgoodsprice").css("fontSize", 1.65* scale_width+"em");
+                $(".userwiterinfo label").css("font-size",1.5*scale_width+"em");
+                $(".tips").css("font-size",1.455*scale_width+"em");
+                $(".userwiterinfo input").css("font-size",1.52 *scale_width+"em");
+                $(".userwiterinfo textarea").css("font-size",1.52 *scale_width+"em");
+				$("#goodstip").css("font-size",1.60 *scale_width+"em");
+			}
+            var error1 = 0;
+			var error2 = 0;
+        $(document).ready(function () {
+            /*验证姓名*/
+            $("#name").blur(function () {
+                var username = $.trim($("#name").val());
+                var myReg = /^[\u4e00-\u9fa5]+$/;
+                if (username == "") {
+                    error1 = 0;
+                } else if (!myReg.test(username)) {
+                    error1 = 2;
+                } else {
+                    error1 = 1;
+                }
+            });
+            /*验证手机号码*/
+            $("#tel").blur(function () {
+                var usertel = $.trim($("#tel").val());
+                var reg = RegExp(/^1[3|4|5|8][0-9]{9}$/);
+                if (usertel == "") {
+                    error2 = 0;
+                } else if (!reg.test(usertel)) {
+                    error2 = 2;
+                } else {
+                    error2 = 1;
+                }
+            });
+            /*兑换事件**/
+            $("#btn_submit").bind("click", function () {
+                var errormsg = "请认真填写需要的数据！";
+                if (error1 != 1 || error2 != 1) {
+                    if (error1 != 1) {
+                        errormsg = "姓名填写错误,请认真填写！";
+                    } else if (error2 != 1) {
+                        errormsg = "手机号码填写错误,请认真填写！";
+                    }
+                    layer.open({
+                        content: errormsg,
+                        btn: ['好的']
+                    });
+                } else {
+                    layer.open({
+                        shade: true,
+                        shadeClose: false,
+                        type: 2,
+                        content: '提交中....'
+                    });
+                    var name = $.trim($("#name").val());
+                    var tel = $.trim($("#tel").val());
+                    var shopid = $.trim($("#shopid").html());
+                    $.post(
+                            "{:U('purchase')}",
+							{"name":name ,"telphone": tel,"receiveaddr": "", "detailaddr": "", "shopid": shopid},
+                    function (json) {
+                        layer.closeAll();
+                        var isok = json.status;
+                        if (isok == "success") {
+                            layer.open({
+                                type: 1,
+                                content: "<div style='position:relative;'><img src='__IMG__/tipbg.png' style='width:100%;'/><div style='position:absolute;top:25%;left:30%;width:40%;text-align:center;'><img src='__IMG__/tipssuccess.png' style='width:100%;'/></div><div style='position:absolute;top:70%;left:38%;width:26%;text-align:center;'><img src='__IMG__/tipsok.png' style='width:100%;' class='closediy'/></div></div>",
+                                style: 'width:70%; height:auto;border:none;background:none;',
+                                success: function (olayer) {
+                                    var cla = 'getElementsByClassName';
+                                    olayer[cla]('closediy')[0].onclick = function () {
+                                        layer.closeAll();
+                                        window.location.href = "{:U('getList')}";
+                                    }
+                                }
+                            });
+                        } else {
+                            layer.open({
+                                content: json.msg,
+                                btn: ['知道了']
+                            });
+                        }
+                    }, "json");
+                }
+            });
+        });	
+		</script>
+	</body>
+</html>

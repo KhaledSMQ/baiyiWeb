@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="" />
+		<meta name="keyword"  content="" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="pragma" content="no-cache"/>  
+		<meta http-equiv="cache-control" content="no-cache"/>
+		<meta http-equiv="expires" content="0"/>  
+		<title></title>
+		<link href="__CSS__/idangerous.swiper.css" rel="stylesheet" type="text/css" />
+        <link href="__CSS__/layer.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<style type="text/css">
+		*{padding:0;margin:0;}
+		img{width:100%;border:none; vertical-align: middle;}
+		ul,li{list-style:none;}
+		.bold{font-weight: bolder;}
+		html {height: 99.4%;}
+		body{height:100%;}
+		.container{width:100%;height:100%;}
+        .topbar{position:relative;width:100%;}
+		.navinfo{position:absolute;width:100%;top:0;height:100%;overflow: hidden;}
+        .navimgbg{width:20%;}
+        .returnBack{width:8%;height:100%;float:left;cursor:pointer;}
+        .returnBack img{max-width: 100%;}
+        .navimgbg{width:15%;margin:1.5% 0% 0% 1%;float:left; padding:2% 0%;}
+        .beanPrice{background-image: url('__IMG__/user_show_score.png'); background-repeat: no-repeat; background-size:100% 100% ; }
+        .scorePrice{background-image: url('__IMG__/user_show_lottery.png'); background-repeat: no-repeat; background-size:100% 100% ;}
+        .showUserInfo{position:absolute;width:auto;margin-left:4%;top:36%;}
+		.userOpera{width:13%;height:100%;float:right;cursor:pointer;margin-right:1.2%;}
+
+
+        .indexbody{width:100%;height:100%;position:relative;}
+        .bodycontent{height:100%;}
+        .bodycontent img{height:25%;width:auto;max-width:100%;}
+        .showgoods{width:100%;height:100%;position: absolute;top:0;}
+        .midshowgoods{width:90%;margin:0px auto; position:relative;height:80%;margin-top:2%;
+			background: #1279C6;
+   			border: 2px solid #A4DBFE;
+  			opacity: 0.78;
+    		-moz-border-radius: 0.4em;
+   			-webkit-border-radius: 0.4em;
+   			border-radius: 0.4em;
+        }
+        .midshowgoods ul{padding:2% 5% 6% 5%;}
+        .title li{float:left;text-align: center; font-weight: bold;color: white;}
+        .showgoodsinfo{width:94%;float:left;height:18%;margin:0% 3% 3% 3%;background-color:#A4DBFE;}
+        .showgoodsinfo ul{padding:0% 0% 0% 0%;}
+        .showgoodsinfo ul li{float:left;color:#0C5AD0;vertical-align: middle;}
+        .goodid{width:32%;text-align:center;}
+        .goodname{width:25%;text-align:center;}
+        .date{width:32%;text-align:center;}
+        .state{width:11%;text-align:center;}
+        .tip{width:100%;float:left;text-align: center;color:yellow;font-weight: bolder;margin-top:1%;}
+        .textleft{text-align: left;}
+      .swiper-container{width:100%;height:75%;}
+	  .showdetails{cursor:pointer;}
+	</style>
+	<body>
+		<div class="container">
+			<div class="topbar">
+				<img src="__IMG__/bg_top_banner.jpg" />
+				<div class="navinfo">
+					 <a href="{:U('getList')}">
+						<span class="returnBack"><img src="__IMG__/back_to_game.png" /></span>
+					</a>
+					<span class="navimgbg beanPrice">
+					 	<label class="showUserInfo">{$score}</label>
+					</span>
+					<span class="navimgbg scorePrice">
+						<label class="showUserInfo">{$lottery}</label>
+					</span>
+					<a href="{:U('getRecord')}">
+						<span class="userOpera"><img src="__IMG__/{$recordImg}" /></span>
+					</a>
+                     <a href="{:U('getList')}">
+						<span class="userOpera"><img src="__IMG__/{$lotteyImg}" /></span>
+					</a>
+
+				</div>
+			</div>
+			<div class="indexbody">
+				<div class="bodycontent">
+					<img src="__IMG__/container_body_01.jpg" />
+					<img src="__IMG__/container_body_02.jpg" />
+					<img src="__IMG__/container_body_03.jpg" />
+					<img src="__IMG__/container_body_04.jpg" />
+				</div>	
+ 				<div class="showgoods">
+ 					<div class="midshowgoods">
+ 						<ul class="title">
+ 							<li class="goodid">订单号</li>
+ 							<li class="goodname">商品名称</li>
+ 							<li class="date">兑换时间</li>
+ 							<li class="state">状态</li>
+ 						</ul>
+						 <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <?php
+                                for($i=0;$i<$pages;$i++){
+                                ?>
+                                <div class="swiper-slide" id="pages_{$i}"></div>
+                                <?php
+                                }
+                                ?>
+                            </div>
+                        </div>
+						<p class="tip">*实物物品可能因为物流等原因，到货时间无法确定，点击"已发货"可获取物流编号！</p>
+ 					</div>
+ 				</div>
+			</div>
+		</div>
+		<script src="__PUBLICJS__/jquery-1.8.3.min.js"></script>
+		<script src="__JS__/idangerous.swiper-2.1.min.js"></script>
+   		<script src="__JS__/layer.m.js"></script>
+		<script type="text/javascript">
+			var normal_width_size = 1136;    //原始比例宽度
+			var normal_height_size = 768;    //原始比例高度
+			var win_width_size = $(window).width();//给出的webview宽度
+			var win_height_size = $(window).height();//给出的webview高度
+			var scale_width = win_width_size / normal_width_size;//计算自适应的宽度百分百
+			var scale_height = win_height_size / normal_height_size;//计算自适应的高度百分百
+
+			//初始化自适应操作
+			$(document).ready(function () {
+			    resize_size_by_screen();
+			});
+            //自适应方法
+            function resize_size_by_screen() {
+                $(".showUserInfo").css("fontSize", 1.25 * scale_width+"em");
+                $(".title li").css("font-size", 1.65 * scale_width+"em");
+                $(".showlistgoodsinfo li").css("fontSize", 1.18* scale_width+"em");
+                $(".tip").css("font-size",1.25* scale_width+"em");
+				$(".showgoodsinfo ul li").css("padding",""+4* scale_width+"% 0% 0% 0%");
+				if(win_width_size<= 480){
+				$(".showgoodsinfo ul li").css("padding",""+7* scale_width+"% 0% 0% 0%");
+				}
+            }
+      
+			var mySwiper = new Swiper('.swiper-container', {
+            mode: 'vertical',
+            onFirstInit: function (swiper) {
+                buliddata(0);
+
+            },
+            onSlideChangeEnd: function (swiper) {
+                var sliderindex = mySwiper.activeIndex;
+                buliddata(sliderindex);
+            }
+        });
+        function buliddata(page) {
+            var sliderindex = page;
+            var pageindex = (sliderindex + 1);
+            if ($("#pages_" + sliderindex).html() == "") {
+                var str = "";
+                $.post(
+                        "{:U('getRecordPagenation')}",
+                        {"pageindex": pageindex},
+                function (json) {
+                    $.each(json, function (index, element) {
+                        str = str + "<div class=\"showgoodsinfo\"><ul class=\"showlistgoodsinfo\"><li class=\"goodid\">" + element["orderid"] + "</li><li class=\"goodname\">" + element["shopname"] + "</li><li class=\"date\">" + element["inserttime"] + "</li><li class=\"state textleft\">" + (element["status"] == 0 ? "<font color='red'>未发货</font>" : "<img src='__IMG__/send.png' style='margin-top:-5%;width:85%;vertical-align:middle;' class='showdetails' data-rel=" + element["id"] + " /> ") + "</li></ul></div>";
+                    });
+                    $("#pages_" + sliderindex).html(str);
+                    resize_size_by_screen();
+                    layer.closeAll();
+                    $(".showdetails").click(function () {
+                        var orderid = $(this).attr("data-rel");
+                        $.post(
+                                "{:U('getOrderNote')}",
+                                {"id": orderid},
+                        function (json) {
+							
+                            layer.open({
+                                type: 1,
+                               content: "<div style='position:relative;'><img src='__IMG__/tipbg.png' style='width:100%;'/><div style='position:absolute;top:30%;font-size:100%;width:85%;left:20%;text-align:center;'><div style='width:100%;margin:0 auto;color:#246DAC;font-size:120%;' class='dl'><p style='width:100%;text-align:left;margin:0 auto;'>"+json["note1"]+"</p><p style='width:100%;text-align:left;'>"+json["note2"]+"</p></div></div><div style='position:absolute;top:73%;left:36%;width:26%;text-align:center;'><img src='__IMG__/tipsok.png' style='width:100%;' class='closediy'/></div></div>",
+                                style: 'width:70%; height:auto;border:none;background:none;',
+                                success: function (olayer) {
+                                    var cla = 'getElementsByClassName';
+                                    olayer[cla]('closediy')[0].onclick = function () {
+                                        layer.closeAll();
+                                    }
+                                }
+                            });
+                        }, "json"
+                                );
+                    });
+                }, "json"
+                        );
+                layer.open({
+                    shade: false,
+                    shadeClose: true,
+                    type: 2,
+                    content: '为您玩命加载中....'
+                });
+            }
+        }
+		</script>
+	</body>
+</html>
