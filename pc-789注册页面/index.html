@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<title>用户注册_789游戏中心官方网站,国内最权威的棋牌游戏大厅下载首选789棋牌游戏</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templets/default/style/reset.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="templets/default/style/base.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" href="templets/default/style/user.css" />
+<script src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.js" type="text/javascript"></script>
+<script src="templets/default/js/jquery.js"></script>
+<script src="templets/default/js/jquery.validate.js"></script>
+    <style>
+	#signupForm label.error {
+		margin-left: 10px;
+		width: auto;
+		font-size:12px;
+		color:red;
+		display: inline;
+	}
+	</style>
+</head>
+<body>
+	<!-- header  begin-->
+			<div id="header">
+			<div class="logo"></div>
+			<div class="ad"></div>
+			<div class="clear"></div>
+			<div class="nav">
+				<div class="navbar">
+					<ul class="nav_link left">
+						<li style="width: 100px;">
+							<img src="templets/default/images/home.png" alt="" style="margin-right: 5px; margin-top:-8px;" />
+							<a href='/'>首页</a>
+						</li>
+						
+						<li><a href='/youxijieshao/' >游戏介绍</a></li>
+						
+						<li><a href='http://pay.789game.com/' >充值中心</a></li>
+						
+						<li><a href='/' >用户中心</a></li>
+						
+						<li><a href='/xinwengonggao/' >新闻公告</a></li>
+						
+						<li><a href='/changjianwenti/' >常见问题</a></li>
+						
+						<li><a href='/download/' >下载中心</a></li>
+						
+						<li><a href='/xinshoubangzhu/' >新手帮助</a></li>
+						
+					</ul>
+					<ul class="nav_ico right">
+						<li><a href="Login.aspx" id="login">
+							<img src="templets/default/images/login.jpg" alt="登录" /></a></li>
+						<li><a href="#" id="weixin">
+							<img src="templets/default/images/weixin.jpg" alt="微信" /></a></li>
+						<li><a href="#" id="weibo">
+							<img src="templets/default/images/weibo.jpg" alt="新浪微博" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<!-- /header -->
+        <!--导航栏  end-->
+    <div id="content">
+        <div class="sidebar_right" style="overflow: hidden; padding-left: 10px;">
+            <div class="right_content_top">
+                <p>&nbsp;&nbsp;当前位置：<a href='/'>首页</a> > <a href='/register/'>用户注册</a></p>
+                <div class="kf">
+                    <img src="templets/default/images/userinfo.jpg" alt="图片加载不出来" />
+                </div>
+            </div>
+            <div class="clear"></div>
+			 <form class="cmxform" id="signupForm" method="post" action="">
+				<fieldset>
+                <div class="formbox">
+                    <h3>账号注册<span style="float:right;font-size:13px;font-weight:normal;color:#595959;">已有789账号？<a style="color:red;cursor:pointer;text-decoration:underline;">立即登录</a></span></h3>
+                    <div class="item">
+                        <span class="label" for="accounts">用户名：</span>
+                        <div class="fl">
+                            <input  type="text" id="accounts" name="accounts" tabindex="1" class="text"  />
+                         
+
+                        </div>
+                    </div>
+					 <div class="item">
+                        <span class="label" for="nickname">用户昵称：</span>
+                        <div class="fl">
+                            <input  id="nickname" name="nickname" type="text"  tabindex="2" class="text" />
+                            
+                        </div>
+                    </div>
+
+                    <!--item end-->
+                    <div id="o-password">
+                        <div class="item">
+                            <span class="label" for="logonpass">设置密码：</span>
+                            <div class="fl">
+                                <input id="logonpass" name="logonpass" type="password" tabindex="3" class="text" />
+                                
+                            </div>
+                        </div>
+                        <!--item end-->
+
+                        <div class="item">
+                            <span class="label" for="insurepass">确认密码：</span>
+                            <div class="fl">
+                                <input id="insurepass" name="insurepass"  type="password" tabindex="4" class="text" />
+                                
+                            </div>
+                        </div>
+                        <!--item end-->
+                    </div>
+					<!--
+                    <div class="item">
+                        <span class="label">验证码：</span>
+                        <div class="fl">
+                            <input name="txtVerifyCode" type="text" maxlength="6" id="txtVerifyCode" tabindex="7" class="text text-1" autocomplete="off" />
+                            <label class="img">
+                                <img id="JD_Verification1" ver_colorofnoisepoint="#888888" src="/ValidateImage.aspx" onclick="this.src='/ValidateImage.aspx?r='+Math.random();" alt="" style="cursor: pointer; width: 100px; height: 26px;" />
+                            </label>
+                            <label>&nbsp;<label style="color:red;">*</label>看不清?点击图片更换</label>
+                          
+                        </div>
+                    </div>-->
+                    <div class="item">
+                        <span class="label">&nbsp;</span>
+                        <div class="fl">
+						<input type="checkbox" class="checkbox" id="agree" name="agree" />
+						  <label for="agree"><a href="/registrationAgreement" target="_blank">同意网站用户注册协议</a></label> 
+						  
+                        </div>
+                    </div>
+                    <!--item end-->
+
+                    <div class="item">
+                        <span class="label">&nbsp;</span>
+                        <input type="submit" name="btnRegister" value="" id="btnRegister" tabindex="13" class="yellow_button disabled" />
+                    </div>
+                    <!--item end-->
+                    <input type="hidden" name="host" value="" id="host"/>
+					
+                </div>
+				</fieldset>
+			</form>
+        </div>
+            
+					<div class="sidebar_left">
+				<div class="sidebar_left_1">
+					<ul>
+						<li>【本游戏适合十八岁以上的玩家】</li>
+						<li>发布时间：2014年12月</li>
+						<li>软件版本1.2.2.0</li>
+						<li>
+							<a href="/down.aspx">
+								<img src="templets/default/images/download.png" alt="图片加载不出来" />
+							</a>
+						</li>
+						<li>
+							<a href="/register">
+								<img src="templets/default/images/register.png" alt="图片加载不出来" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar_left_2">
+					<p><a href="/fuwuzhongxin">
+						<img src="templets/default/images/kefu.png" /></a></p>
+					<p><a href="/shangwuhezuo">
+						<img src="templets/default/images/tell.png" /></a></p>
+					<p><a href='/jiazhangjianhu'>
+						<img src="templets/default/images/family.png" /></a></p>
+				</div>
+				<div class="sidebar_left_3">
+					<img src="templets/default/images/jiankanggonggao.png" /><br>
+					抵制不良游戏&nbsp;&nbsp;拒绝盗版游戏<br>
+					注意自我保护&nbsp;&nbsp;谨防受骗上当<br>
+					适当游戏益脑&nbsp;&nbsp;沉迷游戏伤身<br>
+					合理安排时间&nbsp;&nbsp;健康享受生活
+				</div>
+			</div>
+			<div class="clear"></div>
+            
+        </div>
+       <!-- footer  begin-->
+		<div id="footer">
+		   <p class="footer_link">
+				<a href='/'>首页</a>
+				
+					<a href='/youxijieshao/' >游戏介绍</a></li>
+				
+					<a href='http://pay.789game.com/' >充值中心</a></li>
+				
+					<a href='/' >用户中心</a></li>
+				
+					<a href='/xinwengonggao/' >新闻公告</a></li>
+				
+					<a href='/changjianwenti/' >常见问题</a></li>
+				
+					<a href='/download/' >下载中心</a></li>
+				
+					<a href='/xinshoubangzhu/' >新手帮助</a></li>
+				
+				
+				<a href="/aboutUs">关于我们</a> 
+			</p>
+			<p class="footer_copy">
+				<script language="JavaScript" src="templets/default/js/footer.js" type="text/JavaScript"></script>
+				网络文化经营许可证 豫网文[2012]0133-0005号 文网游备字[2014]C-CBG035号
+			</p>
+			<p class="footer_img">
+				<img border="0" src="templets/default/images/360.png">
+				<a><img src="templets/default/images/wen.jpg"></a> 
+				<img src="templets/default/images/scanv.png">
+				<img src="templets/default/images/cert-cyberpolice.gif">
+			</p>
+		</div>
+        <!--footer  end-->
+		<script type="text/javascript">
+	$.validator.addMethod("af",function(value,element,params){  
+	  params=/^[A-Za-z0-9]+$/;
+		if(params.test(value)){
+			return true;
+		}else{
+			return false;
+		}
+	},"用户名只能是英文和或数字的组合！");
+	
+	
+	$.validator.addMethod("nickNames",function(value,element,params){  
+	 params=/^[a-zA-Z0-9_\u4e00-\u9fa5]+$/;
+		if(params.test(value)){
+			return true;
+		}else{
+			return false;
+		}
+	},"由字母、数字、下划线和汉字的组合！");	
+	
+	$.validator.addMethod("userPwd",function(value,element,params){  
+	 params=/^[A-Za-z0-9]+$/;
+		if(params.test(value)){
+			return true;
+		}else{
+			return false;
+		}
+	},"密码只能是英文和或数字的组合!");	
+	
+	var Login =function(){
+	    return{
+	        init:function(){
+				$("#signupForm").validate({
+					success: function(label) {
+							  label.html("<img src=\'templets/default/images/right.png\' />");
+							},
+					errorPlacement: function(error, element) {
+							if ( element.is(":checkbox") )
+								error.appendTo ( element.next() );
+							else
+								error.appendTo(element.parent()); 
+						},
+					rules: {
+						accounts: {
+							required: true,
+							rangelength:[6 ,16],
+							af:["params"],
+							remote : {
+								url : "",
+								type : "post",
+							    cache:false,
+								dataType : "json",
+								data : {
+									name: function() {
+								       return $("#accounts").val();
+							        }
+								}
+							}
+						},
+						nickname:{
+							required: true,
+							rangelength:[6 ,16],
+							nickNames:["params"],
+							remote : {
+								url : "",
+								type : "post",
+							    cache:false,
+								dataType : "json",
+								data : {
+									nickname: function() {
+								       return $("#nickname").val();
+							        }
+								}
+							}
+						},
+						logonpass: {
+							required: true,
+							rangelength:[6 ,32],
+							userPwd:["params"]
+						},
+						insurepass: {
+							required: true,
+							rangelength:[6 ,32],
+							equalTo: "#logonpass"
+						},
+						agree: "required"
+					},
+					messages: {
+						accounts: {
+							required: "请输入用户名",
+							rangelength:jQuery.validator.format("用户名的长度{0}到{1}字符！"),
+							remote: "很遗憾，该用户名已经被注册，请您另选一个"
+						},
+						nickname:{
+							required: "请输入昵称",
+							rangelength:jQuery.validator.format("昵称的长度{0}到{1}字符！"),
+							remote: "很遗憾，该昵称已经被注册，请您另选一个"
+						},
+						logonpass: {
+							required: "请输入您的登录密码",
+							rangelength:jQuery.validator.format("登录密码的长度{0}到{1}字符！")
+						},
+						insurepass: {
+							required: "请输入登录确认密码",
+							rangelength:jQuery.validator.format("登录确认密码的长度{0}到{1}字符！"),
+							equalTo: "两次输入的密码不一样，请重新输入！"
+						},
+						agree: "请选中已阅读并同意服务条款"
+					},
+					submitHandler: function (form) {
+						doLogin();
+					}	
+				});
+				
+				$("#btnRegister").click(function(){
+			         if ($('#signupForm').valid()) {
+							doLogin();
+		                }
+		                return false;
+		        });
+		    }
+	   };
+	}();
+   function doLogin(){
+	  if($("#signupForm").valid()){
+		$.post(
+			"http://172.16.10.111:8090/register.php",
+			 {accounts:$.trim($("#accounts").val()),nickname:$.trim($("#nickname").val()),logonpass:$.trim($("#logonpass").val()),insurepass:$.trim($("#insurepass").val())},
+			 function(data){
+					if(data==0){
+					 alert("注册成功！");
+					 window.location.href=""; 
+					}else{
+					alert(data);
+					}
+			 },'json');
+	     }
+	}
+	</script>
+	
+	<script type="text/javascript">		
+		$(function(){
+			Login.init();
+		});
+	</script>
+</body>
+</html>
+

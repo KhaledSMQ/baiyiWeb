@@ -1,0 +1,45 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,span,form,input,textarea,button,code,cite{padding:0; margin:0; font-size:12px;}
+img{border:none;}
+body{ margin:0px; padding:0px;}
+a:link,a:visited{ color:#666; text-decoration:none;}
+a:hover,a:active{ color:#fc3000;}
+.very{overflow:hidden; border:1px solid #e4e4e5;}
+.muchtit{ height:19px; background:url(../images/toptitbg.png) repeat-x bottom;}
+.muchlist ul{ margin:0px; padding:0px; overflow:hidden;}
+.muchlist li{ display:inline-block; float:left; text-align:center; padding:6px 0 0px 0;}
+.muchlist li a:link,.muchlist li a:visited{ display:block; text-align:center; padding-bottom:5px; color:#666;}
+.muchlist li a:hover,.muchlist li a:active{ color:#fc3000;}
+.titcon{ display:inline-block; float:left; font-weight:bold; padding-left:12px; color:#535353; line-height:18px;}
+.verynext{ display:inline-block; float:right; padding-top:8px;}
+.scroll_pager{float:right; width:105px; height:15px; padding-top:0px;}
+
+.wd1000{ width:998px}
+.wd1000 .ibox{ position:relative;overflow:hidden; height:158px;}
+.wd1000 .ibox .showbox{position:absolute;left:0;width:2970px; background:#fff; padding:0px 3px;}
+.very{overflow:hidden; clear:both; border:1px solid #dedede; margin-bottom:10px; background:#fff;}
+.muchtit{ height:29px; background:#f0f0f0; border-top:1px solid #fff; border-bottom:1px solid #dedede;}
+.muchlist ul{ margin:0px; padding:0px;}
+.muchlist li{ display:inline-block; float:left; width:98px; text-align:center; padding:18px 0 10px 0;}
+.muchlist li a:link,.muchlist li a:visited{ display:block; text-align:center; padding-bottom:6px; color:#333;}
+.muchlist li a:hover,.muchlist li a:active{ color:#fc3000;}
+.titcon{ display:inline-block; float:left; font-weight:bold; padding-left:12px; color:#535353; line-height:29px;}
+.verynext{ display:inline-block; float:right; padding-top:8px;}
+.verynext a{ display:inline-block; float:left; margin-left:4px; height:11px; width:11px; background:url(../images/break_mark.png) no-repeat;}
+.verynext a.on{ background:url(../images/red_dot.png) no-repeat;}
+
+.num{ display:inline-block; float:right;}
+.num{float:right; padding-right:10px; padding-top:2px; width:65px; height:15px;}
+.num li{display:block; float:left; width:15px; height:15px;  text-indent:-9999px;background:url(../images/news_ad_bg.gif) no-repeat; background-position:0 -623px; margin:0 3px; cursor:pointer; overflow:hidden;}
+.num li.numcur{background-position:-15px -623px; width:14px;}
+
+.wd980 { width:978px;}
+.wd980 .iboxibox{ width:978px; height:160px; overflow:hidden;}
+.wd980 .ibox{ position:relative; overflow:hidden; height:160px;}
+.wd980 .ibox .showbox{position:absolute; left:0; background:#fff;}
+.wd980 .muchlist{ margin-left:3px;}
+.wd980 .muchlist li{ display:inline-block; float:left; width:97px; text-align:center; padding:18px 0 10px 0;}
+
+.wd1000 { width:998px;margin:10px auto;}
+.wd1000 .iboxibox{ width:998px; height:160px; overflow:hidden;}
+.wd1000 .ibox .showbox{position:absolute;left:0; background:#fff;}
+.wd1000 .muchlist li{ display:inline-block; float:left; width:99px; text-align:center; padding:18px 0 10px 0;}

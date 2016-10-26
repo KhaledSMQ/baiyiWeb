@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/reset.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/base.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/news.css" />
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.js"></script>
+   
+    <script type="text/javascript">
+			//获取url参数
+        function GetRequest(str2) {
+            var url = window.location.href; //获取url
+            var s=url.indexOf(str2);
+			return(s);
+        }
+
+		$(document).ready(function() {
+		var s=GetRequest("xinwengonggao");
+	    if(!isNaN(s) && s > -1){
+		   $("#tit1").addClass("showtitleBg");
+		   $("#tit1").css("color","#fff");
+		}else{
+		   $("#tit2").addClass("showtitleBg");
+		   $("#tit2").css("color","#fff");
+		   $("#showListInfo").removeClass("list_gonggao").addClass("list_xinwen");
+		}
+		
+		$(".nav_link li").last().css("background","none");
+        });
+		
+    </script>
+</head>
+<body>
+	<!-- header  begin-->
+		{dede:include filename="head.htm"/}
+	<!-- /header -->
+        <!--导航栏  end-->
+    <div id="content">
+        <div class="sidebar_right">
+            <div class="right_content_top">
+                <p>&nbsp;&nbsp;当前位置：{dede:field name='position'/}</p>
+                <div class="kf">
+                    <img src="{dede:global.cfg_templets_skin/}/images/newscenter.jpg" alt="图片加载不出来" />
+                </div>
+            </div>
+            <div id="showallinfo">
+                <p id="tit1" style="cursor:pointer;" onclick="javascript:window.location.href='/xinwengonggao'">新闻公告</p> 
+				<p id="tit2"  style="margin-left:15px; cursor:pointer;" onclick="javascript:window.location.href='/youxizixun'">游戏资讯</p>
+            </div>
+            <div class="list_content" style="width:100%;">
+				<div id="list1">
+					<div id="showListInfo" class="list_gonggao">
+						<ul>
+							{dede:list pagesize="10"}
+								<li>
+									<a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a>
+									<span class="time">[field:pubdate function="GetDateMK(@me)"/] </span>
+								</li>
+							{/dede:list}
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="list_pages" style ="width:680px">
+						<ul>
+							 {dede:pagelist listitem="index,end,pre,next,pageno" listsize="3"/}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+            
+		{dede:include filename="left.htm"/}
+            
+        </div>
+       <!-- footer  begin-->
+		{dede:include filename="footer.htm"/}
+        <!--footer  end-->
+</body>
+</html>
+

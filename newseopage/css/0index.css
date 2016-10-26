@@ -1,0 +1,376 @@
+.navbar {height: 45px;clear: both;background: #3a3a3a;width:100%;}
+.navbar .navcon { width: 1000px;margin: 0 auto;}
+.navbar .navcon  .navleft{float:left;}
+.navbar .navcon  .navleft a{width: 110px;float:left;display:inline;height:45px;line-height:45px;font-size:16px;color:#fff;}
+.mu2_header{background: url(../images/1.jpg) no-repeat top center;height:347px;}
+
+
+.content {width: 1000px;margin:5px auto;}
+.content .leftcontent{float:left;width: 370px;height: 320px;display:inline; }
+.content .midcontent{float:left;width:370px;height:312px;border:1px solid #cbdce9;display:inline; margin-left:8px;}
+.content .midcontent .hotnewstit{
+	height: 38px;
+    clear: both;
+    padding-left: 10px;
+    border-bottom: 1px solid #39ade6;
+    background: #f4f9fd;
+  }
+
+	.content .midcontent .hotnewstit .btname {
+  display: block;
+  float: left;
+  padding-left: 25px;
+  background: url(../images/mu2_lanico.png) no-repeat left center;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #333;
+}
+ .content .midcontent .hotnewstit .btmore{height:30px;line-height:38px;padding-right:10px;color:#999;float:right;}
+ 
+  .content .midcontent .news{height:144px;padding-top:6px;}
+  .content .midcontent .news li{
+  line-height: 28px;
+  clear: both;
+  overflow: hidden;
+  height: 28px;
+  margin: 0 10px;
+  }
+  
+  
+  .content .midcontent .news li a {
+  display: block;
+  float: left;
+  width: 300px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  color:#666;
+}
+.content .midcontent .news li a:hover{color:#1974a1;}
+.content .midcontent .news  li span {
+  display: block;
+  float: right;
+  color: #888;
+}
+
+.content .rightcontent{width:242px;float:left;display:inline;margin-left:8px;}
+.content .rightcontent .hotnewstit{
+	height: 38px;
+    clear: both;
+    padding-left: 10px;
+    border: 1px solid #cbdce9;
+    border-bottom: 1px solid #39ade6;
+    background: #f4f9fd;
+  }
+
+	.content .rightcontent .hotnewstit .btname {
+  display: block;
+  float: left;
+  padding-left: 25px;
+  background: url(../images/mu2_lanico.png) no-repeat left center;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #333;
+}
+ .content .rightcontent .hotnewstit .btmore{height:30px;line-height:38px;padding-right:10px;color:#999;float:right;}
+ .content .rightcontent .hotneslist{
+ border: 1px solid #cbdce9;
+  border-top: none;
+  clear: both;
+  height: 265px;
+  border-top: none;
+  padding-top: 8px;
+  }
+ .content .rightcontent .hotneslist   p{margin:12px 0px 10px 4px;cursor:pointer;}
+ 
+
+.content .jittutit{
+	border: 1px solid #cbdce9;
+  border-bottom: 1px solid #39ade6;
+  background: #f4f9fd;
+  height:38px;
+}
+.content .jittutit span{display: block;
+  float: left;
+  padding-left: 25px;
+  background: url(../images/mu2_lanico.png) no-repeat left center;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #333;
+  margin-left:20px;
+  }
+.content .jirtucontent{
+	border: 1px solid #cbdce9;
+  border-top: none;
+  padding-top:18px;
+  height:289px;
+}
+.content .jirtucontent ul li{float:left;width:199px;text-align:center;}
+.content .jirtucontent ul li img{width:181px;height:271px;border:0px;}
+.content .links{
+	width: 1000px;
+  margin: 0 auto;
+  line-height: 24px;
+  overflow: hidden;
+  clear: both;
+  border: none;
+  color: #ccc;
+}
+.links a:link{
+  color: #999;
+  padding: 0 6px;
+}
+.links a:hover, .links a:active {
+  color: #fc3000;
+}
+
+#footer {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding-top: 18px;
+  height: 120px;
+  clear: both;
+
+}
+#footer .bt {
+  padding-top: 12px;
+  border-top: 1px solid #d5e7fb;
+}
+#footer div {
+  line-height: 24px;
+  color: #ccc;
+  white-space: nowrap;
+}
+#footer span{
+	  color:#000;
+}
+
+
+/*列表页*/
+.pagelocation{
+height: 36px;
+  line-height: 36px;
+  color: #3d3d3d;
+  background: #fff;
+  width: 1000px;
+  margin: 0 auto;
+  }
+ .pagelocation span{float:left;display:inline;}
+ .content .pagearticlelist{
+	border: 1px solid #cbdce9;
+	width: 688px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	float:left;
+	display:inline;
+ }
+ 
+ .content .pagearticlelist ul li {
+  line-height: 46px;
+  clear: both;
+  border-bottom: 1px dashed #ebebeb;
+  color: #3d3d3d;
+  height: 45.8px;
+width:100%;
+  float:left;
+  font-size:14px;
+}
+
+.content .pagearticlelist ul li  a{color:#333;float:left;display:inline;  padding:0px 10px 0px 15px;}
+.content .pagearticlelist ul li  a:hover{color:#fc3000;}
+.content .pagearticlelist ul li  span{float:right;display:inline;padding-right:10px;color:#999;}
+.content .pagearticlelist .fenye{width:100%;float:left;margin-top:10px;text-align:center;}
+.content .pagearticlelist .fenye span.disabled {
+  BORDER-RIGHT: #ddd 1px solid;
+  PADDING-RIGHT: 6px;
+  BORDER-TOP: #ddd 1px solid;
+  PADDING-LEFT: 6px;
+  PADDING-BOTTOM: 5px;
+  MARGIN: 3px;
+  BORDER-LEFT: #ddd 1px solid;
+  COLOR: #ddd;
+  PADDING-TOP: 5px;
+  BORDER-BOTTOM: #ddd 1px solid;
+}
+
+.content .pagearticlelist .fenye span.thisclass {
+  FONT-WEIGHT: bold;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #f60;
+  padding: 0 6px;
+}
+.content .pagearticlelist .fenye a{
+  BORDER: #C5DDF5 1px solid;
+  PADDING-RIGHT: 7px;
+  PADDING-LEFT: 7px;
+  PADDING-BOTTOM: 5px;
+  MARGIN: 1px;
+  PADDING-TOP: 5px;
+  TEXT-DECORATION: none;
+  background: #F8FCFF;
+}
+.content .pagearticlelist .fenye a:hover{color:#fff;background-color:#1ba0e1;}
+.content .rightbar{float:left;display:inline;width:300px;margin-left:10px;}
+.content .rightbar .download{width: 298px;height: 340px;border: 1px solid #cbdce9;}
+.content .rightbar .download .gameintro{height: 80px;
+  width: 282px;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-left: 15px;}
+ .content .rightbar .download .gameintro .showimg{float: left;width: 80px;height: 80px;}
+ .content .rightbar .download .gameintro .showinfo{width:190px;float:right;height:80px;}
+ .content .rightbar .download .gameintro .showinfo h1{width: 172px;
+  color: #fe0000;
+  font-weight: normal;
+  padding-bottom: 9px;
+  white-space: nowrap;
+  font-size:18px;
+  }
+ .content .rightbar .download .gameintro .showinfo p {
+  display: block;
+  height: 23px;
+  line-height: 23px;
+  color: #888888;
+}
+.content .rightbar .download .downurl{padding:13px;padding-left:15px;}
+
+.content .rightbar .download .downurl .godown {
+  width: 280px;
+  height: 46px;
+  margin-bottom: 10px;
+}
+.content .rightbar .download .downurl .anzhuo{background: url(../images/prefectureyb_azhuo.png) no-repeat;}
+.content .rightbar .download .downurl .pingguo {
+  background: url(../images/prefectureyb_pingguo.png) no-repeat;
+  width: 140px;
+  float: left;
+}
+.content .rightbar .download .downurl .pingban {
+  background: url(../images/prefectureyb_ipad.png) no-repeat;
+  width: 140px;
+  float: right;margin-right:-10px;
+}
+.content .rightbar .articleclick{width: 298px;
+  border: 1px solid #cbdce9;
+  overflow: hidden;
+  margin-top:5px;
+  float: left;
+  border-top:0px;
+  }
+.content .rightbar .articleclick .thistitle {
+	height: 35px;
+  position: relative;
+  background: url(../images/bigline_mu2.png) repeat-x;
+  padding-left: 12px;
+  }
+  .content .rightbar .articleclick .thistitle  span{height:32px;line-height:32px;font-size:16px;color:#333;padding-left:4px;float:left;}
+  .content .rightbar .articleclick .articleclickcenter{color:#3d3d3d;padding:8px 0;}
+  .content .rightbar .articleclick .articleclickcenter ul li{line-height:24px;height:24px;}
+  .content .rightbar .articleclick .articleclickcenter ul li .gl_lc{float:left;width:232px;height: 24px;
+  line-height: 24px;
+  display: inline;
+  padding-left: 10px;  overflow: hidden;
+  }
+.content .rightbar .articleclick .articleclickcenter ul li .gl_lc .hot{width:22px;height:17px;background-color:#fb8109;color:#fff;padding:2px 4px;border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;}
+.content .rightbar .articleclick .articleclickcenter ul li .gl_lc .nohot{width:22px;height:17px;background-color:#cacaca;color:#fff;padding:2px 4px;border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;}
+.content .rightbar .articleclick .articleclickcenter ul li .gl_lc a:hover{color:#fc3000;}
+   .content .rightbar .articleclick .articleclickcenter ul li .gl_sj {
+  float: right;
+  padding-right: 10px;
+  color: #808080;
+}
+.content .rightbar .articlepublic{width:100%;float:left;border: 1px solid #cbdce9;
+  overflow: hidden;
+  margin-top: 10px;
+  float: left;
+  border-top: none;
+  }
+  .content .rightbar .articlepublic .tit1{
+  height: 35px;
+  background: url(../images/bigline_mu2.png) repeat-x;
+  padding-left: 12px;
+  }
+  .content .rightbar .articlepublic .tit1 span{height:32px;line-height:32px;font-size:16px;}
+  .content .rightbar .articlepublic .newest{padding-top: 6px;padding-bottom: 8px;}
+  .content .rightbar .articlepublic .newest li{
+  line-height: 28px;
+  height: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 10px;
+  width: 278px;
+  }
+  .content .rightbar .articlepublic .newest li a{color:#3d3d3d;}
+  .content .rightbar .articlepublic .newest li a:hover{color:#fc3000;}
+  
+  
+  /*文章页*/
+  .content .pagearticleshow{width: 690px; float:left;display:inline; }
+  .content .pagearticleshow .wenzhan{border: 1px solid #cbdce9;padding-top: 10px;padding-bottom: 5px;}
+  .content .pagearticleshow .wenzhan h1{
+  text-align: center;
+  font-weight: normal;
+  font-size: 26px;
+  color: #222;
+  padding-top: 14px;
+  padding-bottom: 5px;
+  }
+  .content .pagearticleshow .wenzhan  .newssource{
+  text-align: center;
+  color: #999999;
+  padding-top: 10px;
+  margin: 0px;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cbdce9;
+  }
+  .content .pagearticleshow .wenzhan  .newssource span{padding-right: 12px;color: #999999;}
+  .content .pagearticleshow .wenzhan  .newscontent {
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #333;
+  }
+  .content .pagearticleshow .wenzhan  .newscontent p {
+  text-indent: 28px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  margin: 0px;
+  }
+  .content .pagearticleshow .likeinfoarticle{float:left;margin-top:10px;width:100%;}
+  .content .pagearticleshow .likeinfoarticle .likeinfoarticletit{border: 1px solid #cbdce9;
+  border-bottom: 1px solid #39ade6;
+  background: #f4f9fd;height:38px;padding-left:10px;clear:both;
+  }
+  .content .pagearticleshow .likeinfoarticle .likeinfoarticletit span{float:left;height:36px;line-height:36px;font-size:16px;color:#333;}
+  .content .pagearticleshow .likeinfoarticle .likeinfoarticlecontent{
+	border: 1px solid #cbdce9;
+	border-top:none;
+	padding-top:10px;
+	padding-bottom:6px;
+  }
+  .content .pagearticleshow .likeinfoarticle .likeinfoarticlecontent ul{padding-left:12px;}
+  .content .pagearticleshow .likeinfoarticle .likeinfoarticlecontent ul li{line-height: 28px;color: #3d3d3d;}
+  .content .pagearticleshow .likeinfoarticle .likeinfoarticlecontent ul li a{color:#3d3d3d;font-size:14px;}
+  .content .pagearticleshow .likeinfoarticle .likeinfoarticlecontent ul li  span {
+  padding-left: 10px;
+  color: #808080;
+  font-size:12px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/reset.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/base.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/download.css" />
+   <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.js"></script> 
+</head>
+<body>
+	<!-- header  begin-->
+		{dede:include filename="head.htm"/}
+		<script type="text/javascript">
+		$(".nav_link li").last().css("background","none");
+		</script>
+	<!-- /header -->
+        <!--导航栏  end-->
+    <div id="content">
+        <div class="sidebar_right">
+            <div class="right_content_top">
+                <p>&nbsp;&nbsp;当前位置：{dede:field name='position'/}</p>
+                <div class="kf">
+                    <img src="{dede:global.cfg_templets_skin/}/images/youxixiazai.jpg" alt="图片加载不出来" />
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="right_content_xiazai">
+				<div class="info">
+					<div class="xz">
+						<img src="{dede:global.cfg_templets_skin/}/images/789youxixiazai.png" alt="图片加载不出来" />
+					</div>
+					<div class="right_content_xiazaijieshao">
+					    <img src="{dede:global.cfg_templets_skin/}/images/789game.png" alt="图片加载不出来" />
+					</div>
+					<div class="right_content_xiazaijie">
+						<p>
+							<a href="/down.aspx"><img src="{dede:global.cfg_templets_skin/}/images/jingjianxiazai.png" alt="图片加载不出来" /></a>
+						</p>
+						<p>系统支持：WINXP/Vista/7以上&nbsp;版本号：1.2.2.1</p>
+						<p>
+							<a href="/down.aspx"><img src="{dede:global.cfg_templets_skin/}/images/wanzhnegxiazai.png"  alt="图片加载不出来" /></a>
+						</p>
+						<p>系统支持：WINXP/Vista/7以上&nbsp;版本号：1.2.2.1</p>
+					</div>
+				</div>
+				<div class="right_content_jieshao">
+					<img src="{dede:global.cfg_templets_skin/}/images/789down.jpg" />
+				</div>
+            </div>
+        </div>
+			{dede:include filename="left.htm"/}
+			<div class="clear"></div>
+        </div>
+       <!-- footer  begin-->
+		{dede:include filename="footer.htm"/}
+        <!--footer  end-->
+</body>
+</html>
+

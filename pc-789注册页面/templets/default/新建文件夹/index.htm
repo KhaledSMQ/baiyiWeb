@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/reset.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/base.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/index.css" rel="stylesheet" media="screen" type="text/css" />
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.js"></script>
+</head>
+<body>
+<!-- header  begin-->
+{dede:include filename="head.htm"/}
+<!-- /header -->
+		<!-- content begin-->
+		<div id="content">
+            <div class="sidebar_right">
+                <div class="big-pic" id="focus">
+                    <ul>
+						<li>
+							<a href="Wishing" target="_blank">
+								<img src="{dede:global.cfg_templets_skin/}/images/xys.jpg" />
+							</a>
+						</li>
+							
+						<li>
+							<a href="shopIntro/index.html" target="_blank">
+								<img src="{dede:global.cfg_templets_skin/}/images/jqdj.jpg" />
+							</a>
+						</li>
+						<li>
+							<a href="GameRulesShow.aspx?XID=2040" target="_blank">
+								<img src="{dede:global.cfg_templets_skin/}/images/lkjcWeb.jpg" />
+							</a>
+						</li>
+						<li>
+							<a href="GameRulesShow.aspx?XID=203" target="_blank">
+								<img src="{dede:global.cfg_templets_skin/}/images/shzWeb.jpg" />
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="{dede:global.cfg_templets_skin/}/images/sstxWeb.jpg" />
+							</a>
+						</li>
+                    </ul>
+                </div>
+                <div class="content_allInfo">
+                    <div class="info_news">
+                        <div class="shownewgtitle" id="shownoticeandnew">
+                           <p>新闻公告</p>
+                           <p>游戏资讯</p>
+                           <a href="{dede:field name='typeurl'/}">更多>></a>
+                        </div> 
+                        <div>
+							<ul id="list1">
+								{dede:arclist row="5" typeid="9" titlelen="50" infolen="12" orderby="pubdate" orderway="desc"}
+								<li class="showgonggao">
+									<a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a>
+									<span>[field:pubdate function="GetDateMK(@me)"/] </span>
+								</li>
+								{/dede:arclist}
+							</ul>
+							<ul style="display:none;" id="list2">
+								{dede:arclist row="5" typeid="10" titlelen="50" infolen="12" orderby="pubdate" orderway="desc"}
+								<li class="shownews">
+									<a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a>
+									<span>[field:pubdate function="GetDateMK(@me)"/] </span>
+								</li>
+								{/dede:arclist}
+							</ul>
+                        </div>
+                    </div>
+                    <div class="info_question">
+                        <h3><a href="QuestionList.aspx">更多>></a></h3>
+                        <ul>
+							{dede:arclist row="5" typeid="11" titlelen="50" infolen="12" orderby="pubdate" orderway="desc"}
+								<li>
+									<a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a>
+								</li>
+							{/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_allGame">
+                    <h3><a href="{dede:field name='typeurl'/}">更多>></a></h3>
+                    <div class="colborder">
+                        <div id="tab_2_1">
+                            <div class="leftLoop leftLoop1">
+                                <div class="hd">
+                                    <a class="next"></a>
+                                    <a class="prev"></a>
+                                </div>
+                                <div class="bd bd1">
+                                    <ul class="picList">
+                                    {dede:arclist typeid="3" orderby="pubdate" orderway="desc" type="image" row="17"}
+										<li>
+											<div class="pic">
+                                                <a href="[field:arcurl /]" title="[field:title /]" target="_blank">
+                                                    <img src='[field:litpic/]'  alt="" />
+												</a>
+                                            </div>
+                                           <div class="title"><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a></div>
+										</li>
+									{/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+			<div class="sidebar_left">
+				<div class="sidebar_left_1">
+					<ul>
+						<li>【本游戏适合十八岁以上的玩家】</li>
+						<li>发布时间：2014年10月</li>
+						<li>软件版本1.2.2.0</li>
+						<li>
+							<a href="down.aspx">
+								<img src="{dede:global.cfg_templets_skin/}/images/download.png" alt="图片加载不出来" />
+							</a>
+						</li>
+						<li>
+							<a href="register.html">
+								<img src="{dede:global.cfg_templets_skin/}/images/register.png" alt="图片加载不出来" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar_left_2">
+					<p><a href="fuwuzhongxin.html">
+						<img src="{dede:global.cfg_templets_skin/}/images/kefu.png" /></a></p>
+					<p><a href="shangwuhezuo.html">
+						<img src="{dede:global.cfg_templets_skin/}/images/tell.png" /></a></p>
+					<p><a href='1.html' target="_blank">
+						<img src="{dede:global.cfg_templets_skin/}/images/family.png" /></a></p>
+				</div>
+				<div class="sidebar_left_3">
+					<img src="{dede:global.cfg_templets_skin/}/images/jiankanggonggao.png" /><br>
+					抵制不良游戏&nbsp;&nbsp;拒绝盗版游戏<br>
+					注意自我保护&nbsp;&nbsp;谨防受骗上当<br>
+					适当游戏益脑&nbsp;&nbsp;沉迷游戏伤身<br>
+					合理安排时间&nbsp;&nbsp;健康享受生活
+				</div>
+			</div>
+			<div class="clear"></div>
+            <div id="content_footContent">
+                <span style="font: 16px bold;">友情链接:</span>
+                
+                            <span><a href='http://open.rj.baidu.com/?789game' target="_blank">
+                                百度软件开放平台</a></span>
+                    
+                            <span><a href='http://zixun.49you.com' target="_blank">
+                                网页游戏资讯</a></span>
+                    
+                            <span><a href='http://www.31144.com' target="_blank">
+                                游戏名字大全</a></span>
+                    
+                            <span><a href='http://www.jushangbao.com' target="_blank">
+                                游戏机网</a></span>
+                    
+                            <span><a href='http://www.qisuu.com/' target="_blank">
+                                奇书网</a></span>
+                    
+                            <span><a href='http://book.sooyuu.com/' target="_blank">
+                                电子书下载</a></span>
+                    
+                            <span><a href='qipai' target="_blank">
+                                789棋牌游戏</a></span>
+                    
+                            <span><a href='' target="_blank">
+                                789游戏中心</a></span>
+                    
+            </div>
+        </div>
+       <!-- footer  begin-->
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.js"></script>
+	<script type="text/javascript">
+             $(document).ready(function() {
+                 showlist();
+             });
+    </script>
+    <script type="text/javascript">
+        function showlist() {
+            $("#shownoticeandnew p").hover(function() {
+                $(this).css("color", "#FFFFFF");
+                $(this).css("background-color", "#15A6FF");
+            }, function() {
+                $(this).css("color", "#046091");
+                $(this).css("background-color", "#FFFFFF");
+            });
+            $("#shownoticeandnew").find("p").each(
+             function(index, data) {
+                 $(data).bind("mouseover", function() {
+                     $("#list" + (index + 1)).css("display", "block");
+                     $("#list" + (index + 1)).siblings().css("display", "none");
+                 });
+             });
+        }
+    </script>
+	
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/js/jquery.SuperSlide.js" ></script>
+    <script type="text/javascript">
+        $(function () {
+            var sWidth = $("#focus").width();
+            var len = $("#focus ul li").length;
+            var index = 0;
+            var picTimer;
+
+            var btn = "<div class='btnBg'></div><div class='btn'>";
+            for (var i = 0; i < len; i++) {
+                btn += "<span></span>";
+            }
+            btn += "</div>";
+            $("#focus").append(btn);
+            $("#focus .btnBg").css("opacity", 0);
+
+            $("#focus .btn span").css("opacity", 0.4).mouseover(function () {
+                index = $("#focus .btn span").index(this);
+                showPics(index);
+            }).eq(0).trigger("mouseover");
+
+            $("#focus ul").css("width", sWidth * (len));
+
+            $("#focus").hover(function () {
+                clearInterval(picTimer);
+            }, function () {
+                picTimer = setInterval(function () {
+                    showPics(index);
+                    index++;
+                    if (index == len) { index = 0; }
+                }, 4000)
+            }).trigger("mouseleave");
+
+            function showPics(index) {
+                var nowLeft = -index * sWidth;
+                $("#focus ul").stop(true, false).animate({ "left": nowLeft }, 300);
+                $("#focus .btn span").stop(true, false).animate({ "opacity": "0.4" }, 300).eq(index).stop(true, false).animate({ "opacity": "1" }, 300);
+            }
+        });
+        jQuery(".leftLoop1").slide({ mainCell: ".bd1 ul", effect: "leftLoop", vis: 6, scroll: 1, autoPlay: true });
+    </script>
+</body>
+</html>

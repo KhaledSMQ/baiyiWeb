@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/reset.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/base.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/newsshow.css" />
+ <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.js"></script>
+</head>
+<body>
+	<!-- header  begin-->
+		{dede:include filename="head.htm"/}
+		<script type="text/javascript">
+		$(".nav_link li").last().css("background","none");
+		</script>
+	<!-- /header -->
+        <!--导航栏  end-->
+    <div id="content">
+        <div class="sidebar_right">
+            <div class="right_content_top">
+                <p>&nbsp;&nbsp;当前位置：{dede:field name='position'/}</p>
+                <div class="kf">
+                    <img src="{dede:global.cfg_templets_skin/}/images/kefu1.png" alt="图片加载不出来" />
+                </div>
+            </div>
+            <div class="arclist_content">
+                <div class="arclist_arclist">
+                    <div class="title">{dede:field.title/}</div>
+                    <div class="detail"><span>作者:{dede:field.writer/}</span><span> 发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span></div>
+                    <div class="content">
+						{dede:field.body/}
+                    </div>
+                </div>
+            </div>
+               
+            <div class="shownextortop">
+                <ul>
+                    <li>{dede:prenext get='pre'/}</li>
+                    <li>{dede:prenext get='next'/}</li>
+                </ul>
+            </div>
+        </div>
+            
+		{dede:include filename="left.htm"/}
+    </div>
+       <!-- footer  begin-->
+		{dede:include filename="footer.htm"/}
+        <!--footer  end-->
+</body>
+</html>
+

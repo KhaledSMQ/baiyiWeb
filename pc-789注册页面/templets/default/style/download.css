@@ -1,0 +1,9 @@
+
+.xz{float:left; height:20px; padding-left:210px;margin-bottom:35px;}
+.right_content_xiazai{ width:100%;padding-left:12px;}
+.info{float:left; margin-top:35px; height:300px;}
+.right_content_xiazaijieshao{margin-left:30px;}
+.right_content_top , .logo1 ,.xian , .kf ,.info, .right_content_xiazaijieshao , .right_content_jieshao{float:left;}
+.right_content_xiazaijie{float:left; margin-left:45px; overflow:hidden;}
+.right_content_xiazaijie p{ padding-top:10px; font-size:11px; color:#929292;font-family:黑体;}
+.right_content_jieshao h3{text-align:left;font-size:13px; color:#72a2c6;font-family:黑体; padding:0 52px 0 45px; letter-spacing:1.8px;line-height:25px;}

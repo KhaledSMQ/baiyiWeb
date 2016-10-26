@@ -1,0 +1,44 @@
+﻿a:hover{color:red;}
+.sidetop1{
+margin-top:10px;
+}
+.sidebartop2{
+text-align: center;
+font-size: 14px;
+color: #336799;
+line-height: 31px;
+border: 1px solid #75a4c7;
+margin-top: 10px;
+}
+.sidebartop2 p{
+margin-top:10px;
+}
+
+.showfujian{background:url(../images/c_11-14.jpg) no-repeat 0% 50%; float:left; display:inline;text-indent:35px;}
+
+.sidebar_left_4{border:1px solid #75a4c7; width:223px;margin-top:10px; height:275px;}
+.sidebar_left_4 p {margin-top:15px; text-indent:10px;margin-left:15px;margin-right:15px;}
+.imgShow{margin-top:15px;text-align:center;}
+
+
+  .allcontentshow p{margin-top:10px;}
+  .allinfos{float:left;width:725px;}
+  ..allinfos p{color:#6e6e6e;}
+   .allinfos img{float:left;}
+.allinfosImg{float:none; text-align:center; margin:0 auto;}
+
+  .allxiantiao{float:left;margin-top:10px; width:725px;color: #6e6e6e;font-size:10px;}
+  
+  .allinfosgame{text-indent:20px; width:725px; height:110px; margin-top:20px;line-height:25px; float:left; color: #6e6e6e;
+font-size:10px;margin-left:7px;}
+  .allinfoguize{float:left;margin-top:10px;line-height:25px; color: #6e6e6e;font-size:10px;margin-left:15px;}
+  
+  
+  /*1.html*/
+  .showif{text-indent:20px; width:580px; height:180px; float:left;margin-top:20px;line-height:25px;margin-left:15px;color: #6e6e6e;font-size:10px;}
+ .showsif{text-indent:20px;float:left;line-height:25px;margin-top:10px;width:705px; color: #6e6e6e;font-size:10px;margin-left:15px;}
+ .showbuzhou{float:left;line-height:25px;color: #6e6e6e;font-size:10px;margin-left:15px;width:715px;}
+ 
+ /*3.html*/
+ .shows3s{float:left;line-height:25px;margin-top:10px; width:725px;color: #6e6e6e;font-size:10px;margin-left:15px;}
+ .

@@ -1,0 +1,34 @@
+
+.arclist_content{
+background-image:url(../images/new.png);
+background-repeat:no-repeat;
+background-position:0% 40px;
+float:right;
+padding:10px;
+}
+.arclist_arclist{
+margin:60px auto 0px auto;
+}
+.arclist_arclist .title{
+font-size:20px; 
+font-weight:bold;
+text-align:center;
+}
+.arclist_arclist .detail,.detail span{
+margin-top:10px;
+text-align:center;
+margin-bottom:13px;
+}
+.detail span{
+margin-right:10px;
+}
+.arclist_arclist  .content{
+width:700px;
+font-size:13px;
+line-height:23px;
+text-indent:20px;
+color:#336799;
+}
+.wfjs{border:0px;}
+ .shownextortop{ float:left;}
+ .shownextortop ul li{float:left; margin-right:20px;}

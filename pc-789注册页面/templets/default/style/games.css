@@ -1,0 +1,69 @@
+﻿
+.big {
+    width: 80px;
+    height: 101px;
+}
+
+.small {
+    width: auto;
+    height:18px;
+    margin-left: 15px;
+}
+
+.youxi dt {
+    float: left;
+    padding-left: 5px;
+}
+
+    .youxi dt dd {
+        float: left;
+        padding-left: 30px;
+    }
+ .youxi  dd  span{
+        font-size:17px; padding-left:30px; font-weight:bold;
+    }
+
+.jieshao_youxi {
+    float: left;
+    padding-left: 10px;
+    width: 225px;
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #8b8b8b;
+    text-indent: 20px;
+}
+
+.more_youxi {
+    float: right;
+    padding-top: 10px;
+	padding-right:18px;
+}
+
+.youxi {
+    width: 339px;
+	height:129px;
+    float: left;
+	margin-right:13px;
+    padding-left:10px;
+    margin-top: 15px;
+	margin-bottom:25px;
+}
+
+
+.list_pages{text-align: center;
+margin-top: 40px;
+font-size: 12px;
+}
+.list_pages a{
+
+PADDING-BOTTOM: 4px;
+PADDING-LEFT: 7px;
+PADDING-RIGHT: 7px;
+COLOR: #0f9fe8;
+TEXT-DECORATION: none;
+PADDING-TOP: 4px;
+}
+b {
+font-weight: bold;
+}

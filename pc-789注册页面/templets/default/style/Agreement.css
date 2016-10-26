@@ -1,0 +1,10 @@
+
+.sidebar_right{ float:right;maigin-top:10px; width:725px; font-family: Tahoma, "宋体";}
+	.info_news li a{text-align:left;;display:block;width:260px;float:left}
+    .sidebar_right h1{font-size: 22px;color: #084e8a; text-align:center;}
+    .tk{font-size:14px;color:black; line-height:30px; float:left; padding:0 10px;}
+    .tk b {height: 40px;line-height: 40px;font-weight: bold;}
+    .tk p{text-indent:35px; line-height:30px;}
+ 
+
+

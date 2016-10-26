@@ -1,0 +1,68 @@
+*{margin:0; padding:0; list-style:none; }
+		body{ background:#fff; font:normal 12px/22px ËÎÌå;  }
+		img{ border:0;  }
+		a{ text-decoration:none; color:#333;  }
+		a:hover{ color:#1974A1;  }
+		.js{width:90%; margin:10px auto 0 auto; }
+		.js p{ padding:5px 0; font-weight:bold; overflow:hidden;  }
+		.js p span{ float:right; }
+		.js p span a{ color:#f00; text-decoration:underline;   }
+		.js textarea{ height:100px;  width:98%; padding:5px; border:1px solid #ccc; border-top:2px solid #aaa;  border-left:2px solid #aaa;  }
+        
+		.picScroll-left{ overflow:hidden; position:relative;  border:1px solid #ccc;   }
+		.picScroll-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+		.picScroll-left .hd .prev,.picScroll-left .hd .next{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+			 cursor:pointer; /*background:url("../images/arrow.png") 0 0 no-repeat;*/}
+		.picScroll-left .hd .next{ background-position:0 -50px;  }
+		.picScroll-left .hd .prevStop{ background-position:-60px 0; }
+		.picScroll-left .hd .nextStop{ background-position:-60px -50px; }
+		.picScroll-left .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+		.picScroll-left .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer;background:url("../images/icoCircle.gif") 0 -9px no-repeat; }
+		.picScroll-left .hd ul li.on{ background-position:0 0; }
+		.picScroll-left .bd{ padding:10px; padding-left:88px;  }
+		.picScroll-left .bd ul{ overflow:hidden; zoom:1; }
+		.picScroll-left .bd ul li{ margin:0 20px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+		.picScroll-left .bd ul li .pic{ text-align:center; width:130px; height:120px;}
+		.picScroll-left .bd ul li .pic img{ width:81px; height:102px; display:block;  padding:2px; }
+		.picScroll-left .bd ul li .pic a:hover img{ border-color:#999;  }
+		.picScroll-left .bd ul li .title{ line-height:24px;width:81px;text-align:center;   }
+		.picScroll-left .hd .pageState1{ line-height:30px; font-weight: bold; color: #535353; padding-top:5px; }
+		
+		/* ±¾Àý×Ócss */
+		.picFocus{ margin:0 auto; width:355px; border:1px solid #ccc; padding:5px;  position:relative;  overflow:hidden;  zoom:1;   }
+		.picFocus .hd{ width:100%; overflow:hidden; }
+		.picFocus .hd ul{ margin-right:-5px;  overflow:hidden; zoom:1; }
+		.picFocus .hd ul li{display: block;
+			  height: 35px;
+			  background: url(../images/mu_hdbg.png) no-repeat;
+			  margin-top: 4px;
+			  font-size: 12px;
+			  color: #333;
+			  line-height: 35px;
+			  white-space: normal;
+			  overflow: hidden;
+			  }
+			  
+			.picFocus .hd ul li  b {
+			  display: block;
+			  float: left;
+			  width: 30px;
+			  height: 35px;
+			  line-height: 35px;
+			  text-align: center;
+			  color: #fff;
+			  font-family: Verdana, Geneva, sans-serif;
+			  font-weight: normal;
+			  margin-right: 5px;
+			}
+			.picFocus .hd ul li  b.b1 {
+			  background: url(../images/I.png) no-repeat;
+			}
+			.picFocus .hd ul li b.b2 {
+			  background: url(../images/II.png) no-repeat;
+			}
+			.picFocus .hd ul li b.b3{background: url(../images/III.png) no-repeat;
+			}
+		.picFocus .hd ul li.on{ background: url(../images/mu2_hdcurbg.png) no-repeat;} 
+		.picFocus .bd li{ vertical-align:middle; }
+		.picFocus .bd img{ width:370px; height:185px; display:block;  }

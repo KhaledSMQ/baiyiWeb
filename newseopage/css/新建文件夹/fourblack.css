@@ -1,0 +1,10 @@
+.color_nav{ background:#3a3a3a;}
+.color_from{ border-bottom:1px solid #cbdce9;}
+.color_border{border:1px solid #cbdce9;}
+.color_border_notop{border:1px solid #cbdce9; border-top:none;}
+.color_tit{ border:1px solid #cbdce9; border-bottom:1px solid #39ade6;  background:#f4f9fd;}
+.color_day a:link,.color_day a:visited{border-top:1px solid #cbdce9; border-bottom:1px solid #39ade6;}
+.color_day a.current:link,.color_day a.current:visited{ background:#fff; border-bottom:1px solid #fff; border-left:1px solid #39ade6; color:#fc3000; border-right:1px solid #39ade6;}
+.gametop5361{background:url(../images/online_topbg.jpg) repeat-x;}
+.editioning a.current:link,.editioning a.current:visited{ color:#fff; background:#7e7e7e; cursor:default; text-decoration:none; font-weight:bold; width:70px; height:30px; line-height:30px; text-align:center; margin-left:4px;}
+.tit1ing{height:38px;overflow:hidden; background:#3a3a3a; clear:both;}
