@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>创速网络传媒 － 做中国最专业的游戏营销平台</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/userCenter.css" rel="stylesheet" type="text/css" />
+<link href="css/accountInfo.css" rel="stylesheet" type="text/css" />
+<link href="css/idealog.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery1.8.3.js"></script>
+<script type="text/javascript" src="js/centerLeftBar.js"></script>
+<script type="text/javascript" src="js/city.js"></script>
+<script type="text/javascript" src="js/BindBank.js"></script>
+<script type="text/javascript" src="js/jquery.iDialog.js"></script>
+</head>
+<body onload="Init('','','')">
+<div class="top">
+    <div class="top_logo">
+     <a href="#" >
+        <img  alt="" src="img/cs_logo.gif" />
+     </a>
+    </div>
+    <div class="top_navigation">
+        <ul class="top_navigation_ul">
+          <li><a class="top_navigation_link" title="首页" href="index.html">首页</a></li>
+          <li><a class="top_navigation_link top_navigation_link_select" title="联盟公告" href="Notice.html">联盟公告</a></li>
+          <li><a class="top_navigation_link" title="广告模式" href="Cooperation.html">广告模式</a></li>
+          <li><a class="top_navigation_link" title="常见问题" href="Problem.html">常见问题</a></li>
+        </ul>
+        <div class="top_login">
+             <ul>
+                 <li id="top_login_center" style="display:none;"><a class="top_login_link_user" href="user.html">个人中心</a></li>
+                 <li id="top_login_out" style="display:none;"><a class="top_login_link_logout" href="javascript:;" onclick="logout();">退出</a></li>
+                 <li id="top_login_reg" style=""><a class="top_login_link_reg" href="Register.html">注册</a></li>
+                 <li id="top_login_in" style=""><a class="top_login_link_user" href="login.html">登陆</a></li>
+             </ul>
+        </div>
+     </div>
+</div>
+<div class="main">
+	  <!-- content-->
+	<div class="contentBody">
+		<div class="contentLeft">
+			<div class="list">
+				<span>功能列表</span>
+			</div>
+			<ul class="leftList">
+				<li style="margin-top:5px;" class="current" id="returnIndex"><img src="img/userCenter/c1.png" /></li>
+				<li><img src="img/userCenter/z2.png" /></li>
+				<li><img src="img/userCenter/z3.png" /></li>
+				<li><img src="img/userCenter/z4.png" /></li>
+				<li><img src="img/userCenter/z5.png" /></li>
+				<li style="margin-bottom:641px;_margin-bottom:617px;" id="closePage"><img src="img/userCenter/z6.png" /></li>
+			</ul>
+		</div>
+		
+		<div id="info2" class="contentRight" style="height:auto;">
+			<div class="lists">
+				<p><span><img src="img/userCenter/030.png" /></span><a style="cursor:pointer;color:#000004;">用户中心</a>><a style="color:#ff5b00;">账户信息</a></p>
+			</div>
+			<div class="userAllInfo">
+				<div class="tgTitle"><span>修改密码</span></div>
+				<div class="userInfo">
+					<ul>
+						<li>&nbsp;&nbsp;原密码：
+							<input type="password" name="relName"  class="userInfoinput" id="oldPwd" />
+							<span class="showErrorInfo" id="oldpwdError"><em>*</em>请输入您的原密码！</span>
+						</li>
+						<li>&nbsp;&nbsp;新密码：
+							<input type="password" name="phoneNo"  class="userInfoinput" id="newPwd" />
+							<span class="showErrorInfo" id="newpwdError"><em>*</em>请输入您的新密码！</span>
+						</li>
+						<li>确认密码：
+							<input type="password" name="email"  class="userInfoinput"  id="repPwd"/>
+							<span class="showErrorInfo" id="repNewPwd"><em>*</em>请输入您的确认密码！</span>
+						</li>
+					</ul>
+					<div class="showButton">
+						<div class="btnLocation">
+							<input type="button" id="Edit" value="确认修改" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="userAllInfo">
+				<div class="tgTitle"><span>财务密码</span></div>
+				<div class="userInfo">
+					<ul style="margin-left:70px;">
+						<li>&nbsp;&nbsp;开户行信息：
+							<select style="width:80px;height:18px;" id="selectBankName">
+								<option>工商银行</option>
+                                <option>农业银行</option>
+                                <option>建设银行</option>
+                                <option>交通银行</option>
+                                <option>邮政储蓄</option>
+                                <option>支付宝</option>
+
+							</select>
+							<select style="width:80px;height:18px;" id="Select1" name="selectCity"  onChange="selectCity();">
+								<option></option>
+							</select>
+							<select style="width:80px;height:18px;" id="Select2" name="selectCountry" onChange="selectcounty()">
+								<option></option>
+							</select>
+							<span class="showErrorInfo" style="color:#848484;"><em>*</em>（开户行包括分行名称和支行名称）</span>
+						</li>
+						<li>&nbsp;&nbsp;开户行网点：
+							<input type="text" name=""  class="userInfoinput" id="bankAddress" />
+							<span class="showErrorInfo" id="bankAddressError"></span>
+						</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系人：
+							<input type="text" name=""  class="userInfoinput"  id="contentPerson"/>
+							<span class="showErrorInfo" id="contentPersonError"><em>*</em>（请输入您的姓名）</span>
+						</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系QQ：
+							<input type="text" name=""  class="userInfoinput"  id="personQQ"/>
+							<span class="showErrorInfo" id="personQQError"><em>*</em>（请输入有效的QQ号）</span>
+						</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;手机号码：
+							<input type="text" name=""  class="userInfoinput"  id="TelNo"/>
+							<span class="showErrorInfo" id="TelNoError"><em>*</em>（请输入您的手机号码）</span>
+						</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账户名：
+							<input type="text" name=""  class="userInfoinput"  id="bankName"/>
+							<span class="showErrorInfo" id="bankNameError"><em>*</em>（请输入您的账户名）</span>
+						</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;银行卡号：
+							<input type="text" name=""  class="userInfoinput"  id="bankNo"/>
+							<span class="showErrorInfo" id="bankNoError"><em>*</em>（请输入您的银行卡号）</span>
+						</li>
+						<li>确认银行卡号：
+							<input type="text" name=""  class="userInfoinput"  id="repBankNo"/>
+							<span class="showErrorInfo" id="repBankNoError"><em>*</em>（请再次输入您的银行卡号）</span>
+						</li>
+					</ul>
+					<div class="showButton" style="margin-top:20px;">
+						<div class="btnLocation">
+							<input type="button"  value="确认修改"  id="MarkSureEdit" />
+						</div>
+					</div>
+				</div>
+				<div class="zhushi">
+					<div class="tgIntro">
+						<p>1、带<em>*</em>号为必填内容。</p>
+						<p>2、修改财务信息请于每月10号前联系客服。</p>
+						<p>3、网点查询方法请点击。<span style="color:#0098fe;cursor:pointer;" id="showWebInfo">【网点查询方法】</span></p>
+						<p>4、杜绝作弊，专业数据统计，专职数据分析团队，最终解释权归789游戏中心所有。</p>
+					</div>
+				</div>
+				<div class="showBankHelp" id="BankWebShow" style="display:none;">
+					<div class="BankHelpInfo">
+						<a id="closeBankHelp">关闭</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 <!---->
+</div>
+<div class="float_clean"></div> 
+<div id="footer">
+   <p class="footer_link">
+        <a href="http://www.789game.com/index.aspx">网站首页</a> |
+        <a href="http://www.789game.com/NewsList.aspx">新闻公告</a> |
+        <a href="http://www.789game.com/GameIntroduction.aspx">游戏介绍</a> |
+        <a href="http://pay.789game.com:8199">充值中心</a> |
+        <a href="http://www.789game.com/download.html">下载中心</a> |
+        <a href="http://www.789game.com/QuestionList.aspx">常见问题</a> |
+        <a href="http://www.789game.com/fuwuzhongxin.html">客服中心</a> |
+        <a href="http://www.789game.com/lianxiwomen.html">联系我们</a> |
+		<a href="http://www.789game.com/service.html">关于我们</a> 
+    </p>
+    <p class="footer_copy">
+       <script language="JavaScript" src="js/footer.js" type="text/JavaScript"></script>
+        789游戏中心 豫ICP备12014032号-1
+        网络文化经营许可证 豫网文[2012]0133-0005号 文网游备字[2014]C-CBG035号</p>
+        <p class="footer_img">
+            <img border="0" src="img/360.png" alt="">
+             <a><img src="img/wen.jpg" alt=""></a> 
+             <img src="img/scanv.png" alt="" />
+             <img src="img/cert-cyberpolice.gif" alt="">
+     </p>
+</div>
+</body>
+</html>
+

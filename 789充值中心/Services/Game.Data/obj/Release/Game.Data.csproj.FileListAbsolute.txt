@@ -1,0 +1,127 @@
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Data.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Data.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Entity.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.IData.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.xml
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.xml
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.IData.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Entity.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\obj\Release\ResolveAssemblyReference.cache
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\obj\Release\Game.Data.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\obj\Release\Game.Data.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.pdb
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Data.dll
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Data.pdb
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Entity.dll
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.IData.dll
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.dll
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.dll
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.dll
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.pdb
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.xml
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.pdb
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.xml
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.IData.pdb
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Entity.pdb
+I:\uc网站\网站系统\QPFront\Services\Game.Data\obj\Release\ResolveAssemblyReference.cache
+I:\uc网站\网站系统\QPFront\Services\Game.Data\obj\Release\Game.Data.dll
+I:\uc网站\网站系统\QPFront\Services\Game.Data\obj\Release\Game.Data.pdb
+I:\uc网站\网站系统\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.xml
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Data.dll
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Data.pdb
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Entity.dll
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.IData.dll
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.dll
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.dll
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.dll
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.pdb
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.xml
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.xml
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.pdb
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.xml
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.IData.pdb
+I:\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Entity.pdb
+I:\55网站\网站系统\QPFront\Services\Game.Data\obj\Release\ResolveAssemblyReference.cache
+I:\55网站\网站系统\QPFront\Services\Game.Data\obj\Release\Game.Data.dll
+I:\55网站\网站系统\QPFront\Services\Game.Data\obj\Release\Game.Data.pdb
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Data.dll
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Data.pdb
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Entity.dll
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.IData.dll
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.dll
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.dll
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.dll
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.pdb
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Utils.xml
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.xml
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.pdb
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Kernel.xml
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.IData.pdb
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\bin\Release\Game.Entity.pdb
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\obj\Release\ResolveAssemblyReference.cache
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\obj\Release\Game.Data.dll
+E:\55\55网站\网站系统\QPFront\Services\Game.Data\obj\Release\Game.Data.pdb
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.Data.dll
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.Data.pdb
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.Entity.dll
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.IData.dll
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.dll
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.Utils.pdb
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.Utils.xml
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.xml
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.Kernel.pdb
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.Kernel.xml
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.IData.pdb
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\bin\Release\Game.Entity.pdb
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\obj\Release\ResolveAssemblyReference.cache
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\obj\Release\Game.Data.dll
+G:\新建文件夹 (8)\55\QPFront\Services\Game.Data\obj\Release\Game.Data.pdb
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.Data.dll
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.Data.pdb
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.Entity.dll
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.IData.dll
+E:\55\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.dll
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.Utils.pdb
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.Utils.xml
+E:\55\QPFront\Services\Game.Data\bin\Release\Newtonsoft.Json.xml
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.Kernel.pdb
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.Kernel.xml
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.IData.pdb
+E:\55\QPFront\Services\Game.Data\bin\Release\Game.Entity.pdb
+E:\55\QPFront\Services\Game.Data\obj\Release\ResolveAssemblyReference.cache
+E:\55\QPFront\Services\Game.Data\obj\Release\Game.Data.dll
+E:\55\QPFront\Services\Game.Data\obj\Release\Game.Data.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.Data.dll
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.Data.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.Entity.dll
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.IData.dll
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.Utils.dll
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Newtonsoft.Json.dll
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.Entity.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.IData.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.Kernel.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.Kernel.xml
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Game.Utils.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\bin\Release\Newtonsoft.Json.xml
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\obj\Release\Game.Data.csprojResolveAssemblyReference.cache
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\obj\Release\Game.Data.dll
+F:\6513系列\6513充值\789充值中心\Services\Game.Data\obj\Release\Game.Data.pdb
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.Data.dll
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.Data.pdb
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.Entity.dll
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.IData.dll
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.Utils.dll
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Newtonsoft.Json.dll
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.Entity.pdb
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.IData.pdb
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.Kernel.pdb
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.Kernel.xml
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Game.Utils.pdb
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\bin\Release\Newtonsoft.Json.xml
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\obj\Release\Game.Data.csprojResolveAssemblyReference.cache
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\obj\Release\Game.Data.dll
+F:\6513系列\通用充值\789充值中心\Services\Game.Data\obj\Release\Game.Data.pdb

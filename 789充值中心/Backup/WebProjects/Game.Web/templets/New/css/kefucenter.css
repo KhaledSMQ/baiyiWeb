@@ -1,0 +1,9 @@
+/* CSS Document */
+.kefu_map{border:1px dashed #ccc; width:600px; height:400px;  margin:10px auto;}
+.map1{border-right:1px dashed #ccc; width:299px; height:199px; float:left;background:url(/templets/New/images/kefu1.jpg) no-repeat 20% 50%;}
+.map3{width:299px; height:198px; border-top:1px dashed #ccc;float:left;border-right:1px dashed #ccc;background:url(/templets/New/images/kefu2.jpg) no-repeat 20% 30%;}
+.map2{
+width:300px; height:199px;float:left;border-bottom:1px dashed #ccc;background:url(/templets/New/images/kefu3.jpg) no-repeat 20% 50%;
+}
+.map4{width:300px; height:199px;float:left;background:url(/templets/New/images/kefu4.jpg) no-repeat 20% 28%;}
+.qq{margin-top:52px; margin-left:160px;}

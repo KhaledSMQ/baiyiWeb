@@ -1,0 +1,36 @@
+﻿
+body {
+  background: #fff;
+  background:url(/templets/New/images/bg.png) repeat-x;
+}
+a{text-decoration:none;  color:#046091;font-size:12px;}
+.footer_copy a{color:#929292;}
+/**头部**/
+#header{ width:100%; height:161px; margin:0 auto; padding:o;}
+	.logo{ background:url(/templets/New/images/banner_bg.jpg) no-repeat;center 0; margin:0 auto; width:960px; height:93px; }
+	.nav{height:48px; padding:0; background-color:#15a6ff;}
+	.navbar{ margin:0 auto; width:1050px; height:48px; }
+	.nav_link li { list-style:none;float:left;width:100px;text-align:center;margin-top:15px;margin-left:5px;background:url(/templets/New/images/jg.png) right no-repeat;}
+	.nav_link li a{font-family:"黑体";font-size:16px; color:#FFF;text-decoration:none;padding-bottom:10px;}
+	.nav_link li a:hover{background:url(/templets/New/images/nav_link_hbg.png) repeat-x bottom }
+	.nav_ico li{float:right; list-style:none; margin-top:14px; width:40px; margin-right:10px;}
+	img {border:0px;}
+/**内容**/
+
+
+
+/**底部**/
+#footer{width:100%; height:350x; border-top:1px solid #acacac;text-align:center;margin-top:40px;background-color:#f6f6f6;padding:20px 0 10px 0;}
+.footer_link{line-height:20px; color:#929292;}
+.footer_link a{text-align:center;color:#929292;}
+.footer_copy{ margin-top:10px;line-height:25px;color:#929292;}
+.footer_img{margin-top:10px;}
+.footer_img img{margin-right:10px;}
+
+/**右上固定图片**/
+.right_content_top ,.right_content_xiazai ,.right_content_jiashao ,.1 ,.kf , .xz ,.right_content_jiashao{width:725px;}
+.right_content_top p{ padding-left:13px;font-size:13px; color:#04608f; height:16px; padding-bottom:4px;padding-top:3px;background-image:url(../images/qizi.png); background-repeat:no-repeat;background-position:left top;border-bottom:1px dotted #15a6ff;}   
+.kf{ height:139px; padding-left:2px; padding-top:2px; margin-top:10px; }   
+
+
+

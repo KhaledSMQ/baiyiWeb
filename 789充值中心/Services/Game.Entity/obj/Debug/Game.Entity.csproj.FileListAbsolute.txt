@@ -1,0 +1,153 @@
+I:\FLB6603\网站系统\FLBFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+I:\FLB6603\网站系统\FLBFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+I:\FLB6603\网站系统\FLBFront\Services\Game.Entity\bin\Debug\Game.Kernel.dll
+I:\FLB6603\网站系统\FLBFront\Services\Game.Entity\bin\Debug\Game.Utils.dll
+I:\FLB6603\网站系统\FLBFront\Services\Game.Entity\bin\Debug\Newtonsoft.Json.dll
+I:\FLB6603\网站系统\FLBFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+I:\FLB6603\网站系统\FLBFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+I:\FLB6603\网站系统\FLBFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Kernel.dll
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Utils.dll
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\bin\Debug\Newtonsoft.Json.dll
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Utils.xml
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Kernel.xml
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+I:\NET网站\网站系统\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Kernel.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Utils.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Newtonsoft.Json.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Utils.xml
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Kernel.xml
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Utils.pdb
+I:\NET网站系统\网站系统\QPFront\Services\Game.Entity\bin\Debug\Game.Kernel.pdb
+E:\55\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+E:\55\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+E:\55\QPFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+E:\55\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+E:\55\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+G:\新建文件夹 (12)\55\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+G:\新建文件夹 (12)\55\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+G:\新建文件夹 (12)\55\QPFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+G:\新建文件夹 (12)\55\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+G:\新建文件夹 (12)\55\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\work\55网站\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\work\55网站\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\work\55网站\QPFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\work\55网站\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\work\55网站\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Users\lenovo\Desktop\QPFront加了支付的\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Users\lenovo\Desktop\QPFront加了支付的\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Users\lenovo\Desktop\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Users\lenovo\Desktop\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+D:\QPFront加了支付的\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+D:\QPFront加了支付的\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+D:\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+D:\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+D:\工作空间\QPFront加了支付的\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.dll
+D:\工作空间\QPFront加了支付的\QPFront\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+D:\工作空间\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\工作空间\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.dll
+D:\工作空间\QPFront加了支付的\QPFront\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+D:\工作空间\QPFront加了支付的\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+D:\工作空间\QPFront加了支付的\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+D:\工作空间\QPFront加了支付的\QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\工作空间\QPFront加了支付的\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+D:\工作空间\QPFront加了支付的\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Users\lenovo\Desktop\zhenghe\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Users\lenovo\Desktop\zhenghe\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Users\lenovo\Desktop\zhenghe\QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\zhenghe\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Users\lenovo\Desktop\zhenghe\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\zhenghe\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\zhenghe\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\zhenghe\QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\zhenghe\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\zhenghe\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\整合\整合\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\整合\整合\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\55uc_all\整合\整合\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\55uc_all\整合\整合\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\55uc_all\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\55uc_all\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\55uc_all\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+D:\55uc_all\整合\整合\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+D:\55uc_all\整合\整合\QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+D:\55uc_all\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\55uc_all\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+D:\55uc_all\整合\整合\QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+D:\55uc_all\整合\整合\复件 QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+D:\55uc_all\整合\整合\复件 QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+D:\55uc_all\整合\整合\复件 QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\55uc_all\整合\整合\复件 QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+D:\55uc_all\整合\整合\复件 QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+D:\55uc_all\整合\整合\3复件 QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+D:\55uc_all\整合\整合\3复件 QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+D:\55uc_all\整合\整合\3复件 QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\55uc_all\整合\整合\3复件 QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+D:\55uc_all\整合\整合\3复件 QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+D:\55uc_all\整合\整合\3QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.dll
+D:\55uc_all\整合\整合\3QPFront2\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+D:\55uc_all\整合\整合\3QPFront2\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\55uc_all\整合\整合\3QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.dll
+D:\55uc_all\整合\整合\3QPFront2\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\网站\9乐\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\网站\9乐\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\网站\9乐\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\网站\9乐\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\网站\9乐\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\网站\9乐网站\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\网站\9乐网站\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\网站\9乐网站\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\网站\9乐网站\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\网站\9乐网站\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\网站\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\网站\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+C:\Documents and Settings\Administrator\桌面\网站\789充值中心\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\网站\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.dll
+C:\Documents and Settings\Administrator\桌面\网站\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+F:\华仔的工作空间\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.dll
+F:\华仔的工作空间\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+F:\华仔的工作空间\789充值中心\Services\Game.Entity\obj\Debug\ResolveAssemblyReference.cache
+F:\华仔的工作空间\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.dll
+F:\华仔的工作空间\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+F:\789充值中心\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.dll
+F:\789充值中心\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+F:\789充值中心\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.csprojResolveAssemblyReference.cache
+F:\789充值中心\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.dll
+F:\789充值中心\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+F:\6513充值\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.dll
+F:\6513充值\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+F:\6513充值\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.dll
+F:\6513充值\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.dll
+F:\6513系列\6513充值\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.dll
+F:\6513系列\6513充值\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+F:\6513系列\6513充值\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.csprojResolveAssemblyReference.cache
+F:\6513系列\通用充值\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.dll
+F:\6513系列\通用充值\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+F:\6513系列\通用充值\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.dll
+F:\6513系列\通用充值\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.pdb
+F:\6513系列\通用充值\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.csprojResolveAssemblyReference.cache
+F:\6513系列\通用充值 - 副本\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.dll
+F:\6513系列\通用充值 - 副本\789充值中心\Services\Game.Entity\bin\Debug\Game.Entity.pdb
+F:\6513系列\通用充值 - 副本\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.dll
+F:\6513系列\通用充值 - 副本\789充值中心\Services\Game.Entity\obj\Debug\Game.Entity.pdb

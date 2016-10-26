@@ -1,0 +1,100 @@
+/*右侧部分*/
+.rightTop1{
+width:99.3%;
+float:left;
+background-color:white;
+border:1px solid #E0E0E0;
+min-height:675px;
+height:auto;
+}
+.showtitle{
+width: 100%;
+margin-top: 7px;
+}
+img {
+color: transparent;
+border:0px;
+vertical-align: middle;
+}
+/*单个游戏的标题*/
+.showtitle p
+ {
+ float:left;
+ margin-left:20px;
+ margin-top:10px;
+ font-size:1em;
+ color:#000000;
+ width:80px;
+ height:18px;
+ }
+ .showtitle span
+ {
+ float:right;
+ margin-top:8px;
+ margin-right:10px;
+ }
+  .showtitle a{
+ height:20px;
+ font-size:0.8125em;
+ color:#1a92de;
+ margin-top:5px;
+ }
+ .showtitle a:hover{
+ text-decoration:none;
+ }
+ /*游戏介绍开始*/
+.gameListShow{
+float: left;
+position: relative;
+width: 97%;
+margin: 25px 0px 0px 0px;
+margin-left:20px;
+display: inline;
+}
+.gameDescriptionTitle{
+width:100%;
+}
+/*游戏的小图片*/
+.gameDescriptionTitle div{
+float:left;
+display:inline;
+margin-right:1em;
+}
+/*游戏的名称*/
+.gameDescriptionTitle div span
+{
+width:100%;
+float:left;
+}
+
+.gameDescriptionContent{
+width:100%;
+float:left;
+}
+/*游戏的大图片*/
+.showimg{
+width:646px;
+min-height:366px;
+height:auto;
+border:2px solid #bebebe;
+margin-top:1.5em;
+
+}
+/*游戏的具体描述*/
+.showgameInfo{
+width:646px;
+margin-bottom:1em;
+margin-left:5px;
+}
+/*游戏的具体描述的内容*/
+.description{
+font-weight:bold;
+height:30px;
+line-height:30px;
+}
+/*游戏的具体描述的标题*/
+.showgameInfo p{
+margin-top:0.5em;
+font-size:12px;
+color:#666666;
+}

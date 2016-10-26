@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title></title>
+
+    <link rel="stylesheet" href="/templets/New/css/base.css" />
+	  <link href="css/base.css" rel="stylesheet" />
+   <script src="/js/jquery-1.8.3.min.js"></script>
+       <script src="/js/jquery.iDialog.js" dialog-theme="default"></script>
+</head>
+<body>
+<div id="header">
+    <div class="logo">
+    </div>
+    <div class="ad"></div>
+    <div class="clear"></div>
+    <div class="nav">
+        <div class="navbar">
+           
+           <ul class="nav_link left">
+                <li style="width: 100px;">
+                    <img src="/templets/New/images/home.png" alt="" style="margin-right: 5px; margin-top:-8px;" /><a href="http://www.789game.com/Index.aspx">首页</a>
+                <li><a href="http://www.789game.com/NewsList.aspx">新闻公告</a>
+                <li><a href="http://www.789game.com/GameIntroduction.aspx">游戏介绍</a>
+                <li><a href="/">充值中心</a>
+                <li><a href="http://www.789game.com/download.html">下载中心</a>
+                <li><a href="http://www.789game.com/User/UserInfoCenter.aspx">用户中心</a>
+                <li style="background: none"><a href="http://www.789game.com/xinshoubangzhu.html">新手帮助</a>
+            </ul>
+			
+            <ul class="nav_ico right" style="margin-left:140px;float:left;">
+                <li><a href="/Login.aspx" id="login">
+                    <img src="/templets/New/images/login.jpg" alt="登录" /></a></li>
+                <li><a href="#" id="weixin">
+                    <img src="/templets/New/images/weixin.jpg" alt="微信" /></a></li>
+                <li><a href="#" id="weibo">
+                    <img src="/templets/New/images/weibo.jpg" alt="新浪微博" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="mainShow">
+<div class="header"><img src="/images/paystep.jpg"/></div>
+<div class="contentDiv">
+    <style>
+        .mainShow {
+        min-height:42em;
+        }
+        .contentDiv {
+        height:42em;
+        }
+        table
+        {
+            width: 80%;
+            border-collapse: collapse;
+            margin:0 auto;
+            border-spacing: 0;
+            margin-top:1em;
+            font-size:2em;
+        }
+       
+          td
+        {
+            width: 17%;
+            text-align: center;
+            line-height:3em;
+            font-size: 0.75em;
+            border: 1px solid #ccc;
+        }
+        .paytype_tip {
+            width:20%;
+        }
+        .paytype_value {
+            text-align:center;
+            width:78%;
+        }
+    </style>
+    <div style="font-size:3em; text-align:center;margin-top:0.4em;">订单信息</div>
+    <table>
+            <tbody>
+            <tr><td class="paytype_tip">订单状态：</td><td class="paytype_value" style="color:red;">*****</td></tr>
+            <tr><td class="paytype_tip">充值订单号：</td><td class="paytype_value">****</td></tr>
+            <tr><td class="paytype_tip">充值金额：</td><td class="paytype_value">￥0.00</td></tr>
+            <tr><td class="paytype_tip">备注信息：</td><td class="paytype_value" style="font-size:15px;">本次充值您获得了<span style="text-decoration:underline; color:green;"> 0 </span>个金币</td></tr>
+           <tr><td class="paytype_tip">兑换方式：</td><td class="paytype_value">进入游戏大厅后,选择左上角的按钮,进行兑换<img src="images/duihuan.jpg" /></td></tr>
+        </tbody></table>
+
+    </div>
+    </div>
+
+
+	<div id="footer">
+   <p class="footer_link">
+        <a href="http://www.789game.com/index.aspx" >网站首页</a> |
+        <a href="http://www.789game.com/NewsList.aspx">新闻公告</a> |
+        <a href="http://www.789game.com/GameIntroduction.aspx">游戏介绍</a> |
+        <a href="/">充值中心</a> |
+        <a href="http://www.789game.com/download.html">下载中心</a> |
+        <a href="http://www.789game.com/QuestionList.aspx">常见问题</a> |
+        <a href="http://www.789game.com/fuwuzhongxin.html">客服中心</a> |
+         <a href="http://www.789game.com/lianxiwomen.html">联系我们</a> |
+		 <a href="http://www.789game.com/service.html">关于我们</a> 
+    </p>
+
+    <p class="footer_copy">网络文化经营许可证 豫网文[2012]0133-0005号 文网游备字[2014]C-CBG035号</p>
+
+    <p class="footer_img"><img border="0" src="/templets/New/images/360.png"/><a ><img src="/templets/New/images/wen.jpg"/></a> <img src="/templets/New/images/scanv.png"/><img src="/templets/New/images/cert-cyberpolice.gif"/></p>
+</div>
+
+</body>
+</html>
+    <script type="text/javascript">
+        (function ($) {
+            $.getUrlParam = function (name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]); return null;
+            }
+        })(jQuery);
+
+        $(document).ready(function () {
+            var error = uid = $.getUrlParam('errorMsg');
+            var result = Array();
+            var orderstataus = $("table").find("tr").eq(0).find("td").eq(1);
+            var orderid = $("table").find("tr").eq(1).find("td").eq(1);
+            var ordermoney = $("table").find("tr").eq(2).find("td").eq(1);
+            var ordergold = $("table").find("tr").eq(3).find("td").eq(1).find("span");
+            var ordererror = $("table").find("tr").eq(3).find("td").eq(1);
+            $.dialog({
+                id: 'auto-hide',
+                time: 10000,
+                esc: false,
+                title: false,
+                lock: true,
+                content: '<img src="images/jiazai.gif" width="156" height="95">',
+                show: function () {
+                    var index = 10,
+                    that = this;
+                    var interval = setInterval(function () {
+                        if (--index < 1) {
+                            clearInterval(interval);
+                            that.hide();
+                            getorderStatus();
+                        }
+                    }, 1000);
+                }
+            });
+
+            function getorderStatus() {
+                $.post(
+                    "/ashx/getOrderStatus.ashx",
+                    { errorMsg: error },
+                    function (data) {
+                        if (data != -1 && data != -2) {
+                            result = data.split('*');
+                            var payuser = result[0];
+                            var paymoney = result[1];
+                            var paygold = result[2];
+                            var orderStatus = result[3];
+                            var error = result[4];
+                            var payorder = result[5];
+                            //alert(payuser + '\r\n' + paymoney + '\r\n' + paygold + '\r\n' + orderStatus + '\r\n' + error + '\r\n' + payorder);
+                            if (orderStatus == 0) {
+                                orderstataus.html("订单未完成支付");
+                                orderid.html(payorder);
+                                ordermoney.html("￥" + paymoney);
+                                ordergold.html("0");
+                                if (error != '0') {
+                                    ordererror.css("color", "red");
+                                    ordererror.html(error);
+                                }
+                            } if (orderStatus == 2) {
+                                orderstataus.css("color", "#40901C");
+                                orderstataus.html("订单完成支付");
+                                orderid.html(payorder);
+                                ordermoney.html("￥" + paymoney);
+                                ordergold.html(paygold);
+                            }
+
+                        }
+                    }
+                    );
+            }
+        });
+    </script>

@@ -1,0 +1,16 @@
+
+/* CSS Document */
+.allinfo{width:100%;margin-top:10px; background-image:url(/templets/New/images/42.gif); background-repeat:no-repeat;
+padding-top:60px;
+background-position:5% 8%;
+}
+ .allinfo_show{width:542px; height:363px; margin:0 auto;padding:10px; margin-left:100px;}
+ .telgame1,.telgame2{width:100%; float:left;}
+ .gtu ,.allinfo_show_left , .allinfo_show_left ,.youxindeinfo, .youxindeinfo ul , .youxixiazaierweima , .youxixiazaifangshi , .youxixiazaifangshi p{float:left;}
+ .gtu{width:23%;}
+ .allinfo_show_left{width:76%;}
+ .youxindeinfo {width:40%;}
+ .youxindeinfo ul li{padding-top:10px;}
+ .youxixiazaierweima {width:40%; padding-top:5px;}
+ .youxixiazaifangshi{padding-top:10px;}
+ .telgame2{margin-top:20px;}

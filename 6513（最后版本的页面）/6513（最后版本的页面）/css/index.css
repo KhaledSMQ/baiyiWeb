@@ -1,0 +1,187 @@
+/*左侧每个信息块的背景颜色*/
+ .rightTop1,.rightTop3,.newsInfo,.questionInfo
+ {
+ background-color:white;
+ border:1px solid #E0E0E0;
+ }
+ /*赛事活动*/
+ .rightTop1
+ {
+ width:99.3%;
+ float:left;
+ }
+ /*新闻公告和常见问题的部分*/
+ .rightTop2
+ {
+ width:100%;
+ margin-top:9px;
+ float:left;
+ _margin-bottom:10px;
+ }
+ /*热门游戏*/
+ .rightTop3
+ {
+ float:left;
+ width:99.3%;
+ margin-top:9px;
+ _ margin-top:0px;
+ padding-bottom:6px;
+ _padding-bottom:2px;
+ }
+ .rightTop3 ul
+{
+list-style:none;
+}
+.rightTop3 li
+{
+float:left;
+}
+ /*左侧显示标题的css样式*/
+ .showtitle,.shownewstitle,.showquestiontitle,.showgametitle
+ {
+ height: 30px;
+ width:100%;
+ }
+ .showtitle p,.shownewstitle p,.showquestiontitle p,.showgametitle p
+ {
+ float:left;
+ margin-left:20px;
+ margin-top:10px;
+ font-size:1em;
+ color:#000000;
+ width:80px;
+ height:18px;
+ }
+ .showtitle a,.shownewstitle a,.showquestiontitle a ,.showgametitle a
+ {
+ float:right;
+ height:20px;
+ margin-right:30px;
+ padding:5px 0 5px 10px;
+ font-size:0.8125em;
+ color:#1a92de;
+ margin-top:5px;
+ }
+ /*赛事活动标题和图片显示部分*/
+ .showtitle{
+  margin-top:7px;
+  }
+.gamepic
+{
+height:237px;
+margin-top:16px;
+margin-bottom:12px;
+width:704px;
+}
+.leftPic{
+width:323px;
+height:234px;
+float:left;
+display:inline;
+margin-left:5px;
+}
+.rightpicNo1{
+width:363px;
+height:111px;
+float:left;
+display:inline;
+ margin-left:5px;
+ margin-bottom:4px;
+}
+.rightpicNo2{
+width:363px;
+height:118px;
+float:left;
+ display:inline;
+ margin-left:5px;
+}
+/*新闻公告部分*/
+.newsInfo{
+width:58.5%;
+float:left;
+margin-right:1%;
+display:inline;
+ }
+ .newsInfo li ,.questionInfo li
+ {
+ padding: 3px 0 3px 5px;
+font-size:0.75em;
+color: #046091;
+ }
+ .shownews a ,.questions a{
+ float: left;
+display:inline;
+margin-left:15px;
+color:#595959;
+}
+.newsInfo li
+{
+_padding-top:1px;
+color:#999999;
+line-height:26px;
+height:25px;
+}
+.shownews a
+{
+width:65%;
+margin-right:57px;
+}
+.shownews  span{
+width:10%;
+float:left;
+}
+.questionInfo
+{
+width:39.5%;
+float:left;
+display:inline;
+ }
+.questionInfo li
+{
+line-height:30px;
+_line-height:23px;
+height: 24px;
+}
+.questions a
+{
+width:260px;
+}
+/*热门游戏内容的样式*/
+.showgamepic{
+overflow:hidden;
+width:90%;
+margin:0px auto;
+margin-top:16px;
+_margin-top:11px;
+}
+.showgametitle li
+{
+float:left;
+width:110px; 
+text-align:center;
+vertical-align:middle;
+}
+.pic,.gametitle
+{
+width:130px;
+_width:128px;
+text-align:center;
+vertical-align:middle;
+}
+/*游戏的名称*/
+.gametitle
+{
+color:#085571;
+height:27px;
+margin-top:8px;
+_margin-top:5px;
+line-height:27px;
+_line-height:15px;
+}
+.gametitle a
+{
+color:#046091;
+font-size:0.8em;
+font-family: "宋体";
+}
+

@@ -1,0 +1,100 @@
+/*右侧部分*/
+.rightTop1{
+width:99.3%;
+float:left;
+background-color:white;
+border:1px solid #E0E0E0;
+min-height:668px;
+height:auto;
+}
+/*游戏介绍*/
+.showtitle{
+width:100%;
+margin-top:7px;
+}
+img {
+border:0px;
+vertical-align: middle;
+}
+/*游戏介绍的标题部分*/
+.showtitle p
+ {
+ float:left;
+ margin-left:20px;
+ margin-top:10px;
+ font-size:1em;
+ color:#000000;
+ width:80px;
+ height:18px;
+ }
+ .showtitle span
+ {
+ float:right;
+ margin-top:8px;
+ margin-right:10px;
+ }
+  .showtitle a{
+ height:20px;
+ font-size:0.8125em;
+ color:#1a92de;
+ margin-top:5px;
+ }
+ .showtitle a:hover{
+ text-decoration:none;
+ }
+ /*游戏的显示*/
+.gameListShow{
+float: left;
+position: relative;
+width: 97%;
+margin: 25px 0px 0px 0px;
+margin-left:15px;
+_margin-left:10px;
+}
+/*单个游戏的显示*/
+.game {
+width:328px;
+height:159px;
+float:left;
+margin-right:13px;
+padding-left:10px;
+margin-top:15px;
+margin-bottom:15px;
+}
+.game dt {
+float:left;
+padding-left:5px;
+height:150px;
+width: 158px;
+}
+/*游戏名称*/
+.game dt span{
+width:100%;
+float:left;
+font-size:0.85em;
+}
+/*游戏图片*/
+.big {
+width: 158px;
+height: 101px;
+}
+/*游戏介绍信息*/
+.youxiIntro {
+float:left;
+padding-left:10px;
+width:150px;
+line-height:20px;
+font-size:13px;
+color:#8b8b8b;
+text-indent:10px;
+}
+
+.moreIntro {
+float:right;
+padding-top:10px;
+padding-right:18px;
+}
+.moreIntro  a{
+color:#379AEF;
+font-size:0.75em;
+}

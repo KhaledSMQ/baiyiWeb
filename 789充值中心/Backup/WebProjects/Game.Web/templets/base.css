@@ -1,0 +1,226 @@
+﻿/**左边部分**/
+.Navigation
+{
+width:222px;
+float:left;
+margin-right:7px;
+}
+.Navigation ul
+{
+list-style:none;
+margin:0px;
+padding:0px;
+}
+.Navigation ul li
+{
+float:left;
+margin-top:-1px;
+margin-left:-1px;
+cursor:pointer;
+}
+/**左边部分结束**/
+/**右边部分**/
+.Nav_Content
+{
+width:710px;
+height:auto;
+font-size:14px;
+font-family:'黑体';
+color:#686868;
+padding:5px;
+overflow:hidden;
+}
+/**右边部分结束**/
+/**上半部**/
+.top_content
+{
+height:225px;
+width:710px;
+border-bottom:1px dashed #E5E7E6;
+}
+.top_content .top_title
+{
+width:710px;
+}
+.top_title span
+{
+float:left;
+margin-bottom:10px;
+}
+.Recharge_note
+{
+color:#E66C19;
+font-size:17px;
+font-weight:150;
+}
+.top_content .info_applay
+{
+width:710px;
+height:auto;
+float:left;
+margin-top:15px;
+}
+.info_applay table tr
+{
+line-height:35px;
+}
+/**上半部结束**/
+
+/**中间半部**/
+.body_content
+{
+width:710px;
+height:130px;/**170px;**/
+border-bottom:1px dashed #E5E7E6;
+overflow:hidden;
+}
+.body_content .left
+{
+ width:120px;
+ height:100%;
+ float:left;
+ margin-top:47px;
+}
+.body_content .right
+{
+ width:420px;
+ height:100%;
+ float:left;
+}
+.right ul
+{
+margin:0px;
+padding:0px;
+}
+.right ul li
+{
+width:90px;
+height:45px;
+float:left;
+list-style:none;
+
+}
+/**中间半部结束**/
+
+
+/**下半部**/
+
+.foot_content
+{
+width:710px;
+height:100%;
+border-bottom:1px dashed #E5E7E6;
+padding-bottom:15px;
+}
+.foot_content .bank_left
+{
+ width:118px;
+ height:auto;/**100%;**/
+ float:left;
+ margin-top:103px;
+}
+.bank
+{
+width:545px;
+height:auto;
+float:left;
+border:1px solid #ccc;
+margin-bottom:17px;
+}
+.bank ul
+{
+margin-left:3px;
+padding:0px;
+list-style:none;
+}
+.bank ul li
+{
+float:left;
+height:42px;
+margin-right:5px;
+}
+/**下半部结束**/
+
+/**提示**/
+.last_content
+{
+width:710px;
+height:100%;
+padding-top:5px;
+padding-bottom:15px;
+}
+.last_content ul
+{
+list-style:none;
+}
+.first{
+color:#E66C19;
+font-size:15px;
+font-weight:150;
+
+}
+/**提示结束**/
+
+
+/**普通使用**/
+.infoTip
+{
+color:#C31C20;
+font-size:12px;
+font-weight:200;
+margin-left:8px;
+}
+.Recharge_Msg
+{
+color:#B91B1D;
+font-size:14px;
+padding-left:5px;
+}
+img
+{
+padding:0px;
+margin:0px;
+vertical-align:middle;
+text-align:center;
+}
+.bank input[type='radio']
+{
+vertical-align:middle;
+}
+input[type='submit']
+{
+background-image:url(/templets/chongzhi.jpg);
+width:137px;
+height:47px;
+border:0px;
+background-repeat: no-repeat;
+display:block;
+margin-left:35px;
+cursor:pointer;
+}
+.clears{
+margin:0px;
+}
+.AllBody
+{
+width:955px;
+border:1px solid #8EA0AC;
+margin:0 auto;
+height:910px;
+margin-top:15px;
+}
+.TopNav
+{
+width:955px;
+height:20px;
+margin:0 auto;
+background-image: url(/templets/qizi.png);
+background-repeat: no-repeat;
+background-position: left top;
+border-bottom: 1px dotted #96AAB9;
+margin-top:18px;
+padding-bottom: 4px;
+padding-top: 3px;
+font-size:12px;
+}
+/**普通使用结束**/

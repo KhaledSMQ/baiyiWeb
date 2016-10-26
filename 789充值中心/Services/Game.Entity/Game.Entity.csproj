@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54A1440A-6022-4BA9-91D1-3E897ED353E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game.Entity</RootNamespace>
+    <AssemblyName>Game.Entity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Game.Kernel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=760aa549d46f06c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\Game.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Game.Utils, Version=4.0.0.0, Culture=neutral, PublicKeyToken=560a98a6a8553471, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\Game.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\AccountsFace.cs" />
+    <Compile Include="Accounts\AccountsInfo.cs" />
+    <Compile Include="Accounts\AccountsMember.cs" />
+    <Compile Include="Accounts\AccountsProtect.cs" />
+    <Compile Include="Accounts\ConfineAddress.cs" />
+    <Compile Include="Accounts\ConfineContent.cs" />
+    <Compile Include="Accounts\ConfineMachine.cs" />
+    <Compile Include="Accounts\GameIdentifier.cs" />
+    <Compile Include="Accounts\IndividualDatum.cs" />
+    <Compile Include="Accounts\ReserveIdentifier.cs" />
+    <Compile Include="Accounts\SystemStatusInfo.cs" />
+    <Compile Include="Accounts\SystemStreamInfo.cs" />
+    <Compile Include="Accounts\User.cs" />
+    <Compile Include="Accounts\UserInfo.cs" />
+    <Compile Include="Accounts\UserTicketInfo.cs" />
+    <Compile Include="Config\UCConfigInfo.cs" />
+    <Compile Include="Config\UCConfigs.cs" />
+    <Compile Include="Enum\Enum.AgeHelper.cs" />
+    <Compile Include="Enum\Enum.InsureTradeType.cs" />
+    <Compile Include="Enum\Enum.LivcardStatus.cs" />
+    <Compile Include="Enum\Enum.NewsStatus.cs" />
+    <Compile Include="Enum\Enum.PassportStatus.cs" />
+    <Compile Include="Filter\BaseSearchFilter.cs" />
+    <Compile Include="Filter\InoutSearchFilter.cs" />
+    <Compile Include="Filter\InsureSearchFilter.cs" />
+    <Compile Include="GameWeb\GameFeedbackInfo.cs" />
+    <Compile Include="GameWeb\GameIssueInfo.cs" />
+    <Compile Include="GameWeb\GameRulesInfo.cs" />
+    <Compile Include="GameWeb\News.cs" />
+    <Compile Include="GameWeb\Notice.cs" />
+    <Compile Include="Platform\GameKindItem.cs" />
+    <Compile Include="Platform\GameRoomInfo.cs" />
+    <Compile Include="Platform\GameStationInfo.cs" />
+    <Compile Include="Platform\GameTypeItem.cs" />
+    <Compile Include="Platform\LotterySetInfo.cs" />
+    <Compile Include="Platform\PublicConfig.cs" />
+    <Compile Include="Platform\RecordShopConvert.cs" />
+    <Compile Include="Platform\ShopListInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record\RecordConvertPresent.cs" />
+    <Compile Include="Record\RecordConvertUserMedal.cs" />
+    <Compile Include="Record\RecordPasswdExpend.cs" />
+    <Compile Include="Treasure\GameLotteryRecord.cs" />
+    <Compile Include="Treasure\GameScoreInfo.cs" />
+    <Compile Include="Treasure\GlobalLivcard.cs" />
+    <Compile Include="Treasure\GlobalShareInfo.cs" />
+    <Compile Include="Treasure\InsureStationInfo.cs" />
+    <Compile Include="Treasure\LivcardAssociator.cs" />
+    <Compile Include="Treasure\OnLineOrder.cs" />
+    <Compile Include="Treasure\RecordDrawInfo.cs" />
+    <Compile Include="Treasure\RecordDrawScore.cs" />
+    <Compile Include="Treasure\RecordInsure.cs" />
+    <Compile Include="Treasure\RecordSpreadInfo.cs" />
+    <Compile Include="Treasure\RecordUserExchange.cs" />
+    <Compile Include="Treasure\RecordUserFinance.cs" />
+    <Compile Include="Treasure\RecordUserInout.cs" />
+    <Compile Include="Treasure\RecordUserRevenue.cs" />
+    <Compile Include="Treasure\ReturnKQDetailInfo.cs" />
+    <Compile Include="Treasure\ReturnYPDetailInfo.cs" />
+    <Compile Include="Treasure\ShareDetailInfo.cs" />
+    <Compile Include="Treasure\ShareDetialInfo.cs" />
+    <Compile Include="Treasure\StreamScoreInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

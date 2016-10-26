@@ -1,0 +1,163 @@
+/*rightBar */
+
+.baseInfo{
+height:38px;
+width:99.4%;
+_width:100%;
+background-color:#d6f0ff;
+float:left;
+margin-top:22px;
+font-family:"宋体";
+}
+.baseInfo p{
+float:left;
+display:inline; 
+vertical-align:middle;
+margin-top:8px;
+}
+.baseTitle{
+width:84%;
+font-size:14px; 
+color:#2897f3;
+margin-left:20px;
+font-weight:bolder;
+}
+
+.userInfo{
+font-family:"宋体";
+width:99.3%;
+margin-top:20px;
+float:left;
+display:inline;
+font-size:14px;
+}
+/*发送给邮箱的验证码*/
+.userInfo{
+margin-left:20px;
+}
+.userInfo p{
+margin-top:20px;
+margin-bottom:20px;
+}
+.userTreal{
+width:692px;
+font-size:13px;
+margin-top:20px;
+margin-left:15px;
+color:black;
+float:left;
+height:auto;
+font-family:"宋体";
+}
+.trealDate{
+height:40px;
+width:100%;
+}
+.datespan{
+float:left;
+width:80px; 
+}
+.datespan span{
+float:left;
+margin-top:8px;
+margin-left:3px;
+}
+.search{
+float:left;
+}
+.inputDate{
+width:300px;
+float:left;
+}
+
+.trealDate  input {
+width:128px;
+height:32px;
+margin-left:5px;
+margin-right:5px;
+vertical-align:middle;
+}
+.trealType,.trealDetail{
+width:100%;
+margin-top:10px;
+float:left;
+}
+.fenlei{
+width:440px;
+float:left;
+margin-left:6px;
+}
+.fenlei ul{list-style:none;}
+.fenlei ul li{
+width:86px;
+ height:40px;
+ float:left;
+ }
+ .fenlei ul li div{
+ width:56px;
+ height:31px;
+ background-color:white;
+ }
+  .fenlei ul li div span{
+  float:left;
+  margin-top:9px;
+  margin-left:12px;
+  color:black;
+  font-weight:bolder;
+  font-size:14px;
+  }
+ .trealTitle {
+width:680px;
+height:35px;
+margin-left:-5px;
+border-bottom:1px solid #c1c1c1;
+  }
+  .trealTitle ul,.showSearchInfo ul{
+  list-style:none;
+  }
+  .trealTitle ul li{
+  float:left;
+  height:37px;
+  background:url(../images/userCenter/tiao.jpg)  right 0px no-repeat;
+  text-align:center;
+  }
+  .showSearchInfo,.footerPage{
+  width:680px;
+  margin-left:-5px;
+  float:left;
+  }
+  .showSearchInfo ul li{
+  float:left;
+  height:41px;
+  text-align:center;
+  border-bottom:1px solid #c1c1c1;
+  }
+.trealTitle ul li span ,.showSearchInfo ul li span {
+ width:100%;
+  float: left;
+ margin-top: 13px;
+ text-align: center;
+  }
+  .footerPage{  width:680px;
+  margin-left:-5px;
+  float:left;margin-top:30px;}
+  .pagebegin{
+  width:490px;
+  height:24px;
+  margin:0px auto;
+  }
+  .pagebegin ul{list-style:none;}
+  .pagebegin ul li{
+  float:left;
+  width:24px;
+  height:24px;
+  background-color:#eeeeee;
+  margin-right:5px;
+  color:#6d6d6d;
+  }
+  .pagebegin ul li span{
+   width:100%;
+   text-align:center;
+   margin-top: 5px;
+   float:left;
+}

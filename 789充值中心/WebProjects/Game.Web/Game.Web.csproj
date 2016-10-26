@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D43FC7D5-FE05-42EE-B17E-C0FA7AECDEBF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game.Web</RootNamespace>
+    <AssemblyName>Game.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;s</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.2.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.bank, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\新建文件夹\d\net\QPFront7890\WebProjects\Game.Web\bin\com.yeepay.bank.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.icc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Desktop\YeePay_HTMLcommon_V3.1\YeePay_HTMLcommon_V3.1\C#\C#(VS08)\com.yeepay.icc\com.yeepay.icc\bin\Debug\com.yeepay.icc.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.Model.SZXCallbackResult, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.Model.SZXCallbackResult.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.model.SZXResult, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.model.SZXResult.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Desktop\YeePay_HTMLcommon_V3.1\YeePay_HTMLcommon_V3.1\C#\C#(VS08)\com.yeepay.icc\com.yeepay.icc\bin\Debug\com.yeepay.utils.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.DES, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.DES.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.Digest, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.Digest.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.FormatQueryString, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.FormatQueryString.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.HmacMD5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.HmacMD5.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.HttpUtils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.HttpUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.log.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.SZX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.SZX.dll</HintPath>
+    </Reference>
+    <Reference Include="Game.Kernel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=760aa549d46f06c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\Game.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="YeePay_Distribute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\网银接入\C#\c#(08)\bin\YeePay_Distribute.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\com.yeepay.utils.dll" />
+    <Content Include="bin\com.yeepay.utils.pdb" />
+    <Content Include="callbackBankAndCard.aspx" />
+    <Content Include="callbackForAlipy.aspx" />
+    <Content Include="callbackForFastpay.aspx" />
+    <Content Include="callbackForTenpay.aspx" />
+    <Content Include="config\protection.xml" />
+    <Content Include="css\base.css" />
+    <Content Include="images\789.jpg" />
+    <Content Include="images\beijin.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bohai.jpg" />
+    <Content Include="images\cft.jpg" />
+    <Content Include="images\d1.png" />
+    <Content Include="images\d2.png" />
+    <Content Include="images\d3.png" />
+    <Content Include="images\d4.png" />
+    <Content Include="images\d5.png" />
+    <Content Include="images\d6.png" />
+    <Content Include="images\d7.png" />
+    <Content Include="images\d8.png" />
+    <Content Include="images\d9.png" />
+    <Content Include="images\duihuan.jpg" />
+    <Content Include="images\dx.jpg" />
+    <Content Include="images\gongshang.jpg" />
+    <Content Include="images\guangda.jpg" />
+    <Content Include="images\guangfa.jpg" />
+    <Content Include="images\guangzhou.jpg" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\hfcz.jpg" />
+    <Content Include="images\huaxia.jpg" />
+    <Content Include="images\jianhang.jpg" />
+    <Content Include="images\jiaotong.jpg" />
+    <Content Include="images\jiazai.gif" />
+    <Content Include="images\jr.jpg" />
+    <Content Include="images\jw.jpg" />
+    <Content Include="images\jy.jpg" />
+    <Content Include="images\kf.jpg" />
+    <Content Include="images\kjzf.jpg" />
+    <Content Include="images\loadding.gif" />
+    <Content Include="images\lt.jpg" />
+    <Content Include="images\mingsheng.jpg" />
+    <Content Include="images\nanjin.jpg" />
+    <Content Include="images\nongye.jpg" />
+    <Content Include="images\ok.jpg" />
+    <Content Include="images\pay.jpg" />
+    <Content Include="images\paystep.jpg" />
+    <Content Include="images\pufa.jpg" />
+    <Content Include="images\qq.jpg" />
+    <Content Include="images\sd.jpg" />
+    <Content Include="images\se.jpg" />
+    <Content Include="images\sh.jpg" />
+    <Content Include="images\shengzhen.jpg" />
+    <Content Include="images\szx.jpg" />
+    <Content Include="images\th.jpg" />
+    <Content Include="images\tj.png" />
+    <Content Include="images\txt.jpg" />
+    <Content Include="images\warning.jpg" />
+    <Content Include="images\wm.jpg" />
+    <Content Include="images\wx.jpg" />
+    <Content Include="images\wy.jpg" />
+    <Content Include="images\x1.jpg" />
+    <Content Include="images\x2.jpg" />
+    <Content Include="images\x3.jpg" />
+    <Content Include="images\x4.jpg" />
+    <Content Include="images\x5.jpg" />
+    <Content Include="images\x6.jpg" />
+    <Content Include="images\x7.jpg" />
+    <Content Include="images\x8.jpg" />
+    <Content Include="images\x9.jpg" />
+    <Content Include="images\xinye.jpg" />
+    <Content Include="images\yb.jpg" />
+    <Content Include="images\yxdk.jpg" />
+    <Content Include="images\z1.jpg" />
+    <Content Include="images\z2.jpg" />
+    <Content Include="images\z3.jpg" />
+    <Content Include="images\z4.jpg" />
+    <Content Include="images\z5.jpg" />
+    <Content Include="images\z6.jpg" />
+    <Content Include="images\z7.jpg" />
+    <Content Include="images\z8.jpg" />
+    <Content Include="images\z9.jpg" />
+    <Content Include="images\zfb.jpg" />
+    <Content Include="images\zhaoshang.jpg" />
+    <Content Include="images\zhongguo.jpg" />
+    <Content Include="images\zhongxin.jpg" />
+    <Content Include="images\zy.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery.iDialog.js" />
+    <Content Include="js\jquery.iDialog.min.js" />
+    <Content Include="js\lab.js" />
+    <Content Include="js\theme\default\style.css" />
+    <Content Include="notifyForAlipy.aspx" />
+    <Content Include="notifyForFastpay.aspx" />
+    <Content Include="notifyForTenpay.aspx" />
+    <Content Include="notifyForWebChart.aspx" />
+    <Content Include="orderForAlipay.aspx" />
+    <Content Include="orderForBank.aspx" />
+    <Content Include="orderForCard.aspx" />
+    <Content Include="orderForFastpay.aspx" />
+    <Content Include="orderForTenpay.aspx" />
+    <Content Include="orderForWebchart.aspx" />
+    <Content Include="showPayInfo.html" />
+    <Content Include="templets\New\css\base.css" />
+    <Content Include="templets\New\images\360.png" />
+    <Content Include="templets\New\images\banner_bg.jpg" />
+    <Content Include="templets\New\images\bg.png" />
+    <Content Include="templets\New\images\cert-cyberpolice.gif" />
+    <Content Include="templets\New\images\home.png" />
+    <Content Include="templets\New\images\jg.png" />
+    <Content Include="templets\New\images\login-sprite.png" />
+    <Content Include="templets\New\images\login.jpg" />
+    <Content Include="templets\New\images\menu.png" />
+    <Content Include="templets\New\images\scanv.png" />
+    <Content Include="templets\New\images\wangouxiluoy.png" />
+    <Content Include="templets\New\images\weibo.jpg" />
+    <Content Include="templets\New\images\weixin.jpg" />
+    <Content Include="templets\New\images\weixin.png" />
+    <Content Include="templets\New\images\wen.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AES\AES.cs" />
+    <Compile Include="AES\TestAES.cs" />
+    <Compile Include="app_code\AlipayConfig.cs" />
+    <Compile Include="app_code\AlipayCore.cs" />
+    <Compile Include="app_code\AlipayNotify.cs" />
+    <Compile Include="app_code\AlipaySubmit.cs" />
+    <Compile Include="app_code\MD5.cs" />
+    <Compile Include="app_code\tenpayLib\ClientResponseHandler.cs" />
+    <Compile Include="app_code\tenpayLib\MD5Util.cs" />
+    <Compile Include="app_code\tenpayLib\RequestHandler.cs" />
+    <Compile Include="app_code\tenpayLib\ResponseHandler.cs" />
+    <Compile Include="app_code\tenpayLib\TenpayHttpClient.cs" />
+    <Compile Include="app_code\tenpayLib\TenpayUtil.cs" />
+    <Compile Include="ashx\checkRechargeName.ashx.cs">
+      <DependentUpon>checkRechargeName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\cheeckSkState.ashx.cs">
+      <DependentUpon>cheeckSkState.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\GetCardState.ashx.cs">
+      <DependentUpon>GetCardState.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\getOrderStatus.ashx.cs">
+      <DependentUpon>getOrderStatus.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="callbackBankAndCard.aspx.cs">
+      <DependentUpon>callbackBankAndCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callbackBankAndCard.aspx.designer.cs">
+      <DependentUpon>callbackBankAndCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callbackForAlipy.aspx.cs">
+      <DependentUpon>callbackForAlipy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callbackForAlipy.aspx.designer.cs">
+      <DependentUpon>callbackForAlipy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callbackForFastpay.aspx.cs">
+      <DependentUpon>callbackForFastpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callbackForFastpay.aspx.designer.cs">
+      <DependentUpon>callbackForFastpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callbackForTenpay.aspx.cs">
+      <DependentUpon>callbackForTenpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callbackForTenpay.aspx.designer.cs">
+      <DependentUpon>callbackForTenpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="config\APIURLConfig.cs" />
+    <Compile Include="config\Config.cs" />
+    <Compile Include="Entity\RespondJson.cs" />
+    <Compile Include="notifyForAlipy.aspx.cs">
+      <DependentUpon>notifyForAlipy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notifyForAlipy.aspx.designer.cs">
+      <DependentUpon>notifyForAlipy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notifyForFastpay.aspx.cs">
+      <DependentUpon>notifyForFastpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notifyForFastpay.aspx.designer.cs">
+      <DependentUpon>notifyForFastpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notifyForTenpay.aspx.cs">
+      <DependentUpon>notifyForTenpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notifyForTenpay.aspx.designer.cs">
+      <DependentUpon>notifyForTenpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notifyForWebChart.aspx.cs">
+      <DependentUpon>notifyForWebChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notifyForWebChart.aspx.designer.cs">
+      <DependentUpon>notifyForWebChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderForAlipay.aspx.cs">
+      <DependentUpon>orderForAlipay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderForAlipay.aspx.designer.cs">
+      <DependentUpon>orderForAlipay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderForBank.aspx.cs">
+      <DependentUpon>orderForBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderForBank.aspx.designer.cs">
+      <DependentUpon>orderForBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderForCard.aspx.cs">
+      <DependentUpon>orderForCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderForCard.aspx.designer.cs">
+      <DependentUpon>orderForCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderForFastpay.aspx.cs">
+      <DependentUpon>orderForFastpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderForFastpay.aspx.designer.cs">
+      <DependentUpon>orderForFastpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderForTenpay.aspx.cs">
+      <DependentUpon>orderForTenpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderForTenpay.aspx.designer.cs">
+      <DependentUpon>orderForTenpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderForWebchart.aspx.cs">
+      <DependentUpon>orderForWebchart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderForWebchart.aspx.designer.cs">
+      <DependentUpon>orderForWebchart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RSA\RSA.cs" />
+    <Compile Include="RSA\TestRSA.cs" />
+    <Compile Include="Util\EncryptUtil.cs" />
+    <Compile Include="Util\HttpUtil.cs" />
+    <Compile Include="Util\YJPay.cs" />
+    <Compile Include="Util\YJPayUtil.cs" />
+    <Compile Include="ybbuy\Business.cs" />
+    <Compile Include="ybbuy\Buy.cs" />
+    <Compile Include="ybbuy\BuyCallbackResult.cs" />
+    <Compile Include="ybbuy\Digest.cs" />
+    <Compile Include="ybbuy\FormatQueryString.cs" />
+    <Compile Include="ybbuy\HmacMD5.cs" />
+    <Compile Include="yeepay\yeepaycard.aspx.cs">
+      <DependentUpon>yeepaycard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yeepay\yeepaycard.aspx.designer.cs">
+      <DependentUpon>yeepaycard.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\.svn\all-wcprops" />
+    <None Include="App_Data\.svn\entries" />
+    <Content Include="ashx\GetCardState.ashx" />
+    <Content Include="ashx\cheeckSkState.ashx" />
+    <Content Include="ashx\checkRechargeName.ashx" />
+    <Content Include="ashx\getOrderStatus.ashx" />
+    <None Include="Properties\PublishProfiles\webConfigForPay.pubxml" />
+    <Content Include="config\pm.config" />
+    <Content Include="templets\New\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Game.Utils\Game.Utils.csproj">
+      <Project>{3F57A7F2-3A90-43A3-8AE2-81BE3F171CB4}</Project>
+      <Name>Game.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Game.Data\Game.Data.csproj">
+      <Project>{D4B97735-CEC5-44AA-8A7E-EC7523129849}</Project>
+      <Name>Game.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Game.Entity\Game.Entity.csproj">
+      <Project>{54A1440A-6022-4BA9-91D1-3E897ED353E3}</Project>
+      <Name>Game.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Game.Facade\Game.Facade.csproj">
+      <Project>{E7E7EC24-2A56-4223-95E9-885C860EF04F}</Project>
+      <Name>Game.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Game.IData\Game.IData.csproj">
+      <Project>{8112655D-B531-4ACA-B068-79CEB119359C}</Project>
+      <Name>Game.IData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\ActionlessForm.dll" />
+    <Content Include="bin\ActionlessForm.pdb" />
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\com.yeepay.bank.dll" />
+    <Content Include="bin\com.yeepay.cmbn.dll" />
+    <Content Include="bin\com.yeepay.icc.dll" />
+    <Content Include="bin\com.yeepay.log.dll" />
+    <Content Include="bin\com.yeepay.Model.SZXCallbackResult.dll" />
+    <Content Include="bin\com.yeepay.model.SZXResult.dll" />
+    <Content Include="bin\com.yeepay.utils.DES.dll" />
+    <Content Include="bin\com.yeepay.utils.Digest.dll" />
+    <Content Include="bin\com.yeepay.utils.FormatQueryString.dll" />
+    <Content Include="bin\com.yeepay.utils.HmacMD5.dll" />
+    <Content Include="bin\com.yeepay.utils.HttpUtils.dll" />
+    <Content Include="bin\com.yeepay.utils.log.dll" />
+    <Content Include="bin\com.yeepay.utils.SZX.dll" />
+    <Content Include="bin\Debug\com.yeepay.cmbn.dll" />
+    <Content Include="bin\Game.Data.dll" />
+    <Content Include="bin\Game.Data.pdb" />
+    <Content Include="bin\Game.Entity.dll" />
+    <Content Include="bin\Game.Entity.pdb" />
+    <Content Include="bin\Game.Facade.dll" />
+    <Content Include="bin\Game.Facade.pdb" />
+    <Content Include="bin\Game.IData.dll" />
+    <Content Include="bin\Game.IData.pdb" />
+    <Content Include="bin\Game.Kernel.dll" />
+    <Content Include="bin\Game.Utils.dll" />
+    <Content Include="bin\Game.Utils.pdb" />
+    <Content Include="bin\Game.Web.dll" />
+    <Content Include="bin\Game.Web.pdb" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\YeePay_CARDpro_V3.0.dll" />
+    <Content Include="bin\YeePay_CARDpro_V3.0.pdb" />
+    <Content Include="bin\YeePay_CARDpro_V4.2.dll" />
+    <Content Include="bin\YeePay_CARDpro_V4.2.pdb" />
+    <Content Include="bin\YeePay_Distribute.dll" />
+    <Content Include="yeepay\yeepaycard.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\.svn\prop-base\" />
+    <Folder Include="App_Data\.svn\props\" />
+    <Folder Include="App_Data\.svn\text-base\" />
+    <Folder Include="App_Data\.svn\tmp\prop-base\" />
+    <Folder Include="App_Data\.svn\tmp\props\" />
+    <Folder Include="App_Data\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3689</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

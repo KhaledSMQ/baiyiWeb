@@ -1,0 +1,16 @@
+.user_advert_main_form_content h2{
+font-size: 22px;
+color: #084e8a;
+text-align: center;
+margin-top:10px;
+}
+.user_advert_main_form_content p{
+text-indent:25px;
+font-family: "宋体";
+line-height:30px;
+}
+.user_advert_main_form_content p b {
+height:40px;
+line-height:40px;
+font-weight:bold;
+}

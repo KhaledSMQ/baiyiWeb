@@ -1,0 +1,11 @@
+#Tishi{
+width: 71%;
+margin: 0px auto;
+}
+.success{
+width:60%;
+margin:0px auto;
+height:100px; 
+text-align:center;
+}
+.success p{text-align:center;}

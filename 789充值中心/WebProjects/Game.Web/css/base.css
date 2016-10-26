@@ -1,0 +1,189 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+    }
+body
+{
+font-size:0.85em;
+font-family:'微软雅黑';
+}
+table tr td {
+    text-align:right;
+}
+img
+{
+max-width:100%;
+padding:0px;
+}
+.mainShow
+{
+margin-top:1em;
+width:960px;
+/**width:63.6em;*/
+border:1px solid #8EA0AC;
+margin:0 auto;
+min-height:67em;
+}
+.header
+{
+text-align:center;
+width:100%;
+margin-top:1em;
+}
+.contentDiv
+{
+  width:90.312%;
+  margin:0 auto;
+  border:1px solid #ccc;
+  margin-top:1em;
+  padding-top:0.2em;
+  height:67em;
+  border-bottom:0em;
+}
+.userpayinfo input[type='text'] {
+display: block;
+width: 100%;
+height: 20px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.userpaymoney input[type='text'] {
+height: 20px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.leftDiv
+{
+   width:20%;
+ /**width:24%;**/
+ float:left;
+}
+    .leftDiv ul {
+        width:100%;
+        padding:0em;
+        margin:0em;
+        list-style:none;
+    }
+    .leftDiv ul li
+    {
+        text-decoration:none;
+        float:left;
+        height:6.56em;
+        cursor:pointer;
+    }
+.common1 {
+    margin-left:1.5em;
+    _margin-left:0.5em;
+     width:24%;
+}
+ .userpaybank input[type='radio'] {
+    height:1.625em;
+    line-height:1.625em;
+    margin-right:7px;
+}
+  .userpaymoney input[type='radio'] {
+    margin-right:4px;
+    height:1.25em;
+    line-height:1.25em;
+}
+.rightDiv
+{
+width:76%;
+float:left;
+}
+    .rightDiv .header {
+        width:97%;
+        margin-top:0.17em;
+        margin-left:0.5em;
+        font-size:1.7em;
+        color:#A16423;
+        font-weight:bold;
+        text-align:left;
+    }
+    .rightDiv .applyDiv {
+        width:94%;
+        display:block;
+        float:right;
+    }
+        .rightDiv .applyDiv .top {
+            margin-top:2.5em;
+        }
+         .rightDiv .applyDiv .userpayinfo {
+            margin-top:1.7em;
+        }
+.userpayinfo table {
+    /**width:60%;**/
+}
+.errorMsg {
+    color:red;
+  
+}
+.errorTd {
+    text-indent: 2em;
+      text-align:left;
+}
+.userpayinfo tr {
+    height:3em;
+    line-height:100%;
+
+}
+.rightDiv .applyDiv .userpaybank{
+    margin-top:1.7em;
+    width:100%;
+}
+
+ .userpaybank ul {
+     list-style:none;
+     margin:0em;
+     padding:0em;
+     border:1px solid #ccc;
+     height:11em;
+     padding-top:0.65em;
+     width:99%;
+}
+    .userpaybank ul li {
+        float:left;
+        text-decoration:none;
+        margin-bottom:0.5em;
+        width:23.9%;
+}
+.rightDiv .applyDiv .userpaymoney{
+   margin-top:1.7em;
+    width:100%;
+}
+    .rightDiv .applyDiv .userpaymoney ul {
+     list-style:none;
+     margin:0em;
+     padding:0em;
+    } 
+    .rightDiv .applyDiv .userpaymoney ul li {
+       float:left;
+       text-align:left;
+       width:23%;
+       line-height:1.5em;
+       margin-bottom:2em;
+       height:1.5em;
+    }

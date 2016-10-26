@@ -1,0 +1,174 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>创速网络传媒 － 做中国最专业的游戏营销平台</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery1.8.3.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="top_logo">
+        <a href="#" >
+            <img  alt="" src="img/cs_logo.gif" />
+        </a>
+    </div>
+    <div class="top_navigation">
+        <ul class="top_navigation_ul">
+            <li><a class="top_navigation_link" title="首页" href="index.html">首页</a></li>
+            <li><a class="top_navigation_link" title="联盟公告" href="Notice.html">联盟公告</a></li>
+            <li><a class="top_navigation_link" title="广告模式" href="Cooperation.html">广告模式</a></li>
+            <li><a class="top_navigation_link" title="常见问题" href="Problem.html">常见问题</a></li>
+        </ul>
+        <div class="top_login">
+            <ul>
+                <li id="top_login_center" style="display:none;"><a class="top_login_link_user" href="user.html">个人中心</a></li>
+                <li id="top_login_out" style="display:none;"><a class="top_login_link_logout" href="javascript:;" onclick="logout();">退出</a></li>
+                <li id="top_login_reg" style=""><a class="top_login_link_reg" href="Register.html">注册</a></li>
+                <li id="top_login_in" style=""><a class="top_login_link_user" href="login.html">登陆</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function forget_passowrd() {
+        alert("请联系客服人员找回密码");
+    }
+    $(document).ready(function () {
+        var error1 = 0;
+        var error2 = 0;
+        var error3 = 0;
+        //验证用户名
+        $("#user_name").blur(function () {
+            var user_name=$("#user_name").val();
+            if (user_name == "") {
+                alert("用户名不能为空");
+            }
+            error1 = 1;
+        });
+        //验证密码
+        $("#user_pwd").blur(function () {
+            var user_pwd = $("#user_pwd").val();
+            if (user_pwd == "") {
+                alert("密码不能为空");
+            }
+            error2 = 1;
+        });
+        //验证码的校验
+        $("#user_vcode").blur(function () {
+            var user_vcode = $("#user_vcode").val();
+            if (user_vcode == "") {
+                alert("验证码不能为空");
+            }
+            error3 = 1;
+        });
+        //登录事件
+        $("#btn_login").click(function () {
+            if (error1 != 1 || error2 != 1 || error3 != 1) {
+                if (error1 == 0 || error2 == 0 || error3 == 0) {
+                    alert("登录信息不能为空");
+                }
+            }else{
+                $.post();
+            }
+        });
+    });
+</script>
+
+<div class="main">
+    <div class="user_login_main_form_page">
+        <div class="user_login_main_form_title">
+            <a href="index.html"><img alt="首页" src="img/cs_nagv_icon_home.jpg"></a>
+            当前位置：<a href="./index.html">首页</a> &gt; 用户登陆
+        </div>
+
+        <div class="user_login_main_form_title_hr">
+            <div class="user_login_main_form_title_hr_1">用户登陆</div>
+            <div class="user_login_main_form_title_hr_2"><p>User Login</p></div>
+            <div class="user_login_main_form_title_hr_float_clean"></div>
+            <div class="user_login_main_form_title_hr_3"></div>
+            <div class="user_login_main_form_title_hr_4"></div>
+            <div class="user_login_main_form_title_hr_float_clean"></div>
+        </div>
+
+        <div class="user_login_main_form_content_contain">
+            <div class="user_login_main_form_content">
+                <table class="user_login_main_form_table">
+                   <tbody>
+                     <tr>
+                          <td align="right">用户账号：</td>
+                          <td><input id="user_name" class="user_login_main_form_input_text" type="text"></td>
+                     </tr>
+                
+                     <tr>
+                          <td align="right">用户密码：</td>
+                          <td><input id="user_pwd" class="user_login_main_form_input_text" type="password"></td>
+                          <td></td>
+                     </tr>
+                     
+                     <tr>
+                         <td align="right">验证码：</td>
+                         <td>
+                         <input id="user_vcode" class="user_login_main_form_input_code" type="text">
+                         <img id="user_vcode_img" class="user_login_main_form_input_code_img" alt="验证码" src="" />
+                         </td>
+                         <td></td>
+                     </tr>
+                     
+                     <tr>
+                          <td align="right"></td>
+                          <td>
+                          <a class="user_login_forget_alink" href="javascript:;" onclick="forget_passowrd();">忘记密码</a>
+                          &nbsp;&nbsp;
+                          <a class="user_login_register_alink" href="register.html">没有账号？</a>
+                          </td>
+                          <td></td>
+                     </tr>
+                     
+                     <tr>
+                          <td align="right"></td>
+                          <td>
+                          <input class="user_login_input_btn" id="btn_login" type="button">
+                          </td>
+                          <td></td>
+                     </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <div class="user_login_main_form_logo">
+                <img src="img/cs_user_login_main_page_logo.jpg" alt="" />
+            </div>
+         </div>
+    </div>
+</div>
+<div class="float_clean"></div> 
+<div id="footer">
+   <p class="footer_link">
+        <a href="http://www.789game.com/index.aspx">网站首页</a> |
+        <a href="http://www.789game.com/NewsList.aspx">新闻公告</a> |
+        <a href="http://www.789game.com/GameIntroduction.aspx">游戏介绍</a> |
+        <a href="http://pay.789game.com:8199">充值中心</a> |
+        <a href="http://www.789game.com/download.html">下载中心</a> |
+        <a href="http://www.789game.com/QuestionList.aspx">常见问题</a> |
+        <a href="http://www.789game.com/fuwuzhongxin.html">客服中心</a> |
+        <a href="http://www.789game.com/lianxiwomen.html">联系我们</a> |
+		<a href="http://www.789game.com/service.html">关于我们</a> 
+    </p>
+
+    <p class="footer_copy">
+       <script language="JavaScript" src="/js/footer.js" type="text/JavaScript"></script>
+        789游戏中心 豫ICP备12014032号-1 
+        <script type="text/javascript" src="/js/SetCookie.js"></script>
+        网络文化经营许可证 豫网文[2012]0133-0005号 文网游备字[2014]C-CBG035号</p>
+        <p class="footer_img">
+            <img border="0" src="img/360.png" alt="">
+             <a><img src="img/wen.jpg" alt=""></a> 
+             <img src="img/scanv.png" alt="" />
+             <img src="img/cert-cyberpolice.gif" alt="">
+        </p>
+</div>
+</body>
+</html>

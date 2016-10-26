@@ -1,0 +1,184 @@
+   html *{
+text-decoration : none !important;
+}
+   .userAllInfo{
+	width:662px;
+	margin-left:85px;
+	float:left;
+	margin-top:20px;
+	font-size:14px;
+	display:inline;
+	}
+	.userAllInfo ul{
+	list-style:none;
+	float:left;
+	}
+	.userAllInfo li{
+	height:30px;
+	width:360px;
+	}
+	.userAllInfo li label{
+	margin-left:15px;
+	text-align:left;
+	display:inline;
+	font-family:"宋体";
+	color:#696969;
+	font-size:13px;
+	display:inline;
+	}
+.searchDate{
+width:734px;
+height:45px;
+background-color:#f0f3f8;
+float:left;
+display:inline;
+margin-left:3px;
+margin-top:5px;
+border:1px solid #eaeaea;
+}
+.searchDate span{
+float:left;
+margin-top:10px;
+margin-left:25px;
+width:64px;
+color:#ff7d01;
+font-size:16px;
+font-weight:bolder;
+display:inline;
+}
+.showdate{
+width:320px;
+float:left;
+display:inline;
+margin-top:9px;
+margin-left:5px;
+}
+.date{
+width:123px;
+height:23px;
+margin-right:5px;
+margin-left:5px;
+}
+.buttonShow{
+width:86px;
+height:26px;
+margin-right:10px;
+float:left;
+margin-top:10px;
+display:inline;
+}
+.searchBtn{
+width:86px;
+height:26px;
+margin-right:10px;
+border:0px;
+background-color:#ff7d01;
+color:white;
+font-size:15px;
+}
+.showSearchInfos{
+width:733px;
+height:72px;
+margin-left:5px;
+float:left;
+margin-top:5px;
+display:inline;
+}
+.searchTitle,.searchResult {
+width:100%;
+}
+.searchTitle ul,.searchResult ul{
+list-style:none;
+}
+.searchTitle ul li{
+width:121px;
+height:32px;
+border-top:1px solid #eaeaea;
+border-right:1px solid #eaeaea;
+background-color:#ff7d01;
+float:left;
+}
+.searchTitle ul li span{
+float:left;
+width:100%;
+text-align:center;
+color:white;
+font-size:15px;
+margin-top:5px;
+}
+
+
+
+.searchResult li{
+width:121px;
+height:44px;
+border-top:1px solid #eaeaea;
+border-right:1px solid #eaeaea;
+float:left;
+}
+.searchResult li span{
+float:left;
+width:100%;
+text-align:center;
+font-size:15px;
+margin-top:10px;
+}
+.searchPage{
+width:734px;
+height:45px;
+background-color:#f0f3f8;
+float:left;
+display:inline;
+margin-left:-2px;
+margin-top:5px;
+border:1px solid #eaeaea;
+}
+.data{
+width:86px;
+height:26px;
+float:left;
+margin-left:20px;
+display:inline;
+background-color:#fe7c02;
+margin-top:10px;
+}
+.data span{
+color:white;
+font-size:15px;
+float:left;
+width:100%;
+text-align:center;
+margin-top:3px;
+}
+.totalPage{
+float:left;
+display:inline;
+font-size:13px;
+font-family:"宋体";
+margin-top:16px;
+margin-left:100px;
+margin-right:7px;
+}
+.totalPage label{
+color:#2170ab;
+}
+.showdiv{
+width:22px;
+height:18px;
+background-color:#fe7c02;
+float:left;
+margin-right:5px;
+display:inline;
+margin-top:13px;
+}
+.showdiv span{
+width:100%;
+float:left;
+text-align:center;
+color:white;
+}
+.searchPage p{float:left;}
+.searchPage p label{
+ float:left;
+ margin-top:13px;
+ }

@@ -1,0 +1,270 @@
+*
+{
+padding:0px;
+margin:0px;
+}
+img{border:0px;}
+body
+{
+background-color:#f7f7f7;
+font-family:'微软雅黑';
+color: #595959;
+}
+a
+{
+text-decoration:none;
+}
+a:hover{color:#085571;text-decoration:underline;cursor: pointer;}
+.mid
+ {width:100%;
+ }
+ /*Header begin*/
+ .banner
+ {
+ width:100%;
+ background-color:white;
+ height:100px;
+ }
+ .bannerTop
+ {
+ width:980px;
+ margin:0px auto;
+ }
+ /*logo */
+ .logo
+ {
+ float:left;
+ width:300px;
+ margin-top:30px;
+ margin-left:40px;
+ }
+ /*头部的右上部分*/
+ .navBar
+ {
+ float:right;
+ margin-right:75px;
+ display:inline;
+ font-size:0.75em; 
+ margin-top:5px;}
+ .labels
+ {
+ margin:0 15px
+ }
+ .navBar a
+ {
+ color:red;
+ }
+ /*头部的导航信息*/
+ .navBar1
+ {
+ float:left;
+ position:relative;
+ width:599px; 
+ margin-top:35px;
+ }
+ .navBar1 ul
+ {
+ margin: 0px 0px 0px -1px;
+ list-style: none outside none;
+ }
+ .navBar1 li
+ {
+ float: left;
+ width:auto;
+ height: 40px;
+ font-size:1em;
+ text-align: center;
+ }
+ .navBar1 a
+ {
+ position: relative;
+ float: left;
+ display: block;
+ height: 57px;
+ overflow: hidden;
+ line-height: 57px;
+ padding: 0px 15px;
+ color:#3E7DC2;
+ margin: -20px 0px;
+ }
+ .navBar1 a:hover{text-decoration:none;}
+ /*除首页外的头部图片*/
+ .topImg1
+ {
+ width:100%;
+ height:112px;
+ background:url(../images/top1.jpg) center top no-repeat;
+ }
+ /*首页头部的图片*/
+ .banner1{
+height: 360px;
+background:url('../images/bg-1.jpg') no-repeat scroll center top transparent;
+margin-bottom: 10px;
+ }
+ .banner-bd {
+    width: 980px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+}
+.banner-down {
+    position:absolute;
+    right:20px;
+    top:40px;
+    width:375px;
+    height:230px;
+   
+}
+.banner-bd .btn-down {
+    position:absolute;
+    width:270px;
+    height:85px;
+    line-height:20em;
+    overflow:hidden;
+    left:28px;
+    top:115px;
+	background:url('../images/bt-1.png') no-repeat scroll 0px 0px transparent;
+}
+/*Header  end*/
+
+/*content  begin*/
+/*中间部分*/
+ .content
+ {
+ width:980px;
+ margin:0px auto;
+ margin-top:16px;
+ }
+ /*右侧部分*/
+ .rightBar {
+ width:24%;
+ float:right;
+ display:inline; }
+ /*左侧部分*/
+ .leftBar
+ {
+ width:75.49%;
+ float:left;
+ display:inline;
+ _width:75.2%; 
+ }
+ 
+/*右侧部分 begin */
+/*自助帮助*/
+.showhelp
+{
+background-color:white;
+border:1px solid #E0E0E0;
+}
+.rightBar p
+ {
+ margin-left:12px;
+ margin-top:12px;
+ }
+ /*排行部分*/
+ .showUserInfo{
+ width:235px;
+ background: none repeat scroll 0% 0% #FFF;
+ margin-bottom: 10px;
+ margin-top:8px;
+ }
+ /*排行的分类*/
+ .title
+ {
+width:235px;
+height: 42px;
+overflow: hidden;
+background-color:white;
+border:1px solid #E0E0E0;
+ }
+ .title ul
+ {
+list-style:none;
+width:235px;
+height: 42px;
+ }
+ .title ul li
+ {
+float: left;
+width: 77px;
+height: 40px;
+margin-right:-1px;
+line-height:40px;
+cursor: pointer;
+color: #999;
+font-size: 14px;
+text-align: center;
+border: 1px solid #E0E0E0;
+background: none repeat scroll 0% 0% #F3F3F5;
+ }
+.title .active {
+height:38px;
+line-height:34px;
+border-top:4px solid #ED6003;
+border-bottom:0px none;
+background: none repeat scroll 0% 0% #FFF;
+color: #333;
+ }
+ /*排行信息的显示*/
+ .showAllInfo
+ {
+float:left;
+padding-top:10px;
+font-size:0.75em;
+font-family:SimSun;
+color:#595959;
+background-color:white;
+width:100%;
+background-color:white;
+border:1px solid #E0E0E0;
+border-top:none;
+ }
+ .showAllInfo table
+ {
+ float:left;
+ }
+ .showAllInfo td
+ {
+ height:24px;
+ _height:27px;
+ }
+ .leftFloat,.leftFloat3,.leftfloat2
+ {
+ text-align:center;
+ }
+ .leftFloat
+ {
+ width:40px;
+ }
+ .leftFloat3
+ {
+ width:70px;
+ vertical-align:middle;
+ }
+.leftfloat2
+{
+width:90px;
+}
+ /*右侧部分 end*/
+ /*footer  begin*/
+.footer
+{
+width:100%;
+float:left;
+background-color:#E2E2E2;
+margin-top:30px;}
+.footerCon
+{
+width:980px;
+margin:0px auto;
+margin-top:10px;
+}
+/*底部的logo*/
+.footerleft{width:140px;display:inline;float:left;margin:15px 25px 55px 25px;}
+.footerRig{width:790px; float:left;font-size:0.75em;}
+.companyInfo{width:76%;margin:0px auto;}
+	.footerRig p{width:100px;float:left;display:inline;}
+	.footerRig p a{text-align:center;margin-left:25px;}
+	.footerCopy{width:100%;margin-top:5px;float:left;}
+	.footerCopy p{width:100%; line-height:28px;text-align:center;}
+	

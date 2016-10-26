@@ -1,0 +1,44 @@
+I:\NET网站系统\网站系统\QPFront\Game.Kernel\bin\Release\Game.Kernel.dll
+I:\NET网站系统\网站系统\QPFront\Game.Kernel\bin\Release\Game.Kernel.pdb
+I:\NET网站系统\网站系统\QPFront\Game.Kernel\bin\Release\Game.Utils.dll
+I:\NET网站系统\网站系统\QPFront\Game.Kernel\bin\Release\Game.Utils.pdb
+I:\NET网站系统\网站系统\QPFront\Game.Kernel\obj\Release\ResolveAssemblyReference.cache
+I:\NET网站系统\网站系统\QPFront\Game.Kernel\obj\Release\Game.Kernel.dll
+I:\NET网站系统\网站系统\QPFront\Game.Kernel\obj\Release\Game.Kernel.pdb
+I:\NET网站系统\网站系统\Library\Game.Kernel.dll
+I:\NET网站系统\网站系统\Library\Game.Kernel.pdb
+I:\uc网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Kernel.dll
+I:\uc网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Kernel.pdb
+I:\uc网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Utils.dll
+I:\uc网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Utils.pdb
+I:\uc网站\网站系统\QPFront\Game.Kernel\obj\Release\ResolveAssemblyReference.cache
+I:\uc网站\网站系统\QPFront\Game.Kernel\obj\Release\Game.Kernel.dll
+I:\uc网站\网站系统\QPFront\Game.Kernel\obj\Release\Game.Kernel.pdb
+I:\55网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Kernel.dll
+I:\55网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Kernel.pdb
+I:\55网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Utils.dll
+I:\55网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Utils.pdb
+I:\55网站\网站系统\QPFront\Game.Kernel\obj\Release\ResolveAssemblyReference.cache
+I:\55网站\网站系统\QPFront\Game.Kernel\obj\Release\Game.Kernel.dll
+I:\55网站\网站系统\QPFront\Game.Kernel\obj\Release\Game.Kernel.pdb
+E:\55\55网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Kernel.dll
+E:\55\55网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Kernel.pdb
+E:\55\55网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Utils.dll
+E:\55\55网站\网站系统\QPFront\Game.Kernel\bin\Release\Game.Utils.pdb
+E:\55\55网站\网站系统\QPFront\Game.Kernel\obj\Release\ResolveAssemblyReference.cache
+E:\55\55网站\网站系统\QPFront\Game.Kernel\obj\Release\Game.Kernel.dll
+E:\55\55网站\网站系统\QPFront\Game.Kernel\obj\Release\Game.Kernel.pdb
+G:\新建文件夹 (8)\55\QPFront\Game.Kernel\bin\Release\Game.Kernel.dll
+G:\新建文件夹 (8)\55\QPFront\Game.Kernel\bin\Release\Game.Kernel.pdb
+G:\新建文件夹 (8)\55\QPFront\Game.Kernel\bin\Release\Game.Utils.dll
+G:\新建文件夹 (8)\55\QPFront\Game.Kernel\bin\Release\Game.Utils.pdb
+G:\新建文件夹 (8)\55\QPFront\Game.Kernel\obj\Release\ResolveAssemblyReference.cache
+G:\新建文件夹 (8)\55\QPFront\Game.Kernel\obj\Release\Game.Kernel.dll
+G:\新建文件夹 (8)\55\QPFront\Game.Kernel\obj\Release\Game.Kernel.pdb
+E:\55\QPFront\Game.Kernel\bin\Release\Game.Kernel.dll
+E:\55\QPFront\Game.Kernel\bin\Release\Game.Kernel.pdb
+E:\55\QPFront\Game.Kernel\bin\Release\Game.Utils.dll
+E:\55\QPFront\Game.Kernel\bin\Release\Game.Utils.pdb
+E:\55\QPFront\Game.Kernel\obj\Release\ResolveAssemblyReference.cache
+E:\55\QPFront\Game.Kernel\obj\Release\Game.Kernel.dll
+E:\55\QPFront\Game.Kernel\obj\Release\Game.Kernel.pdb

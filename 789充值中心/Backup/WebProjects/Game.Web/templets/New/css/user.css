@@ -1,0 +1,590 @@
+﻿/*左侧内容begin*/
+.UserSidebar_left {
+    float: left;
+    width: 223px;
+}
+
+.UserSidebar_left_1 {
+    background: #FFF;
+	height:174px;
+}
+
+.UserSidebar_left_1 li {
+    padding-left: 2px;
+    padding-top: 10px;
+    color: #056191;
+}
+/*加的边框颜色*/
+.UserSidebar_left_1 {
+    border: 1px solid #75a4c7;
+}
+/*左侧内容end*/
+.lanmu-list{margin-top:10px;}
+.lanmu-list li a{
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    vertical-align:middle;
+    height: 40px;
+    background: #dff3fa;
+    border-bottom: 1px solid #eee;
+    border-top: 2px solid #fff;
+    border-right: 1px solid #eee;
+    color: #7b8184;
+    line-height: 40px;
+	background-image:url(/templets/New/images/Arrow_black.png);
+    background-position:29% 50%;
+    background-repeat:no-repeat;
+	font-size:14px;
+}
+
+.lanmu-content {
+    width: 240px;
+    height: auto;
+    overflow: hidden;
+    margin-left: -25px;
+}
+
+   .picList  .pic{
+  width:110px;
+  }
+  .picList .pic img{
+  width:90px;
+  height:90px;
+  
+  }
+  .picList li{
+float: left;
+margin-top: 2px;
+width: 110px;
+text-align: center;
+height:110px;
+}
+.lanmu-list li {
+    padding-top: 2px;
+	margin:4px 0;
+    width: 223px;
+    text-align: center;
+     height:40px;
+     margin-bottom:7px;
+}
+
+.lanmu-list li a:hover ,.lanmu-list li a.lanmu-list_hover{
+    background-color: #ffae57;
+    color: #ffffff;
+	text-decoration: none;
+    background-image:url(/templets/New/images/Arrow.png);
+	background-position:29% 50%;
+	background-repeat:no-repeat;
+       height:40px;
+}
+
+.wfjs {
+    padding: 15px 50px;
+    width: 620px;
+    margin-left: 3px;
+}
+#loginID a{
+display:block;
+margin-top:8px;
+margin-left:7px;
+vertical-align:middle;
+float:right;
+}
+#loginID input[type='text'],#loginID input[type='password']{width:230px; height:25px;}
+.login_denglu{margin-bottom:20px;text-align:left; font-size:22px; font-weight:bold;}
+a.help {
+    background: url("/templets/New/images/userTD.jpg") no-repeat;
+    border: 1px solid rgb(185, 212, 233);
+    width: 203px;
+    height: 86px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    float: left;
+    display: block;
+}
+
+a.game {
+    background: url("/templets/New/images/userTD.jpg") no-repeat;
+    border: 1px solid rgb(185, 212, 233);
+    width: 203px;
+    height: 86px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    float: left;
+    display: block;
+}
+
+a.user {
+    background: url("/templets/New/images/userTD.jpg") no-repeat;
+    border: 1px solid rgb(185, 212, 233);
+    width: 203px;
+    height: 86px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    float: left;
+    display: block;
+}
+
+a.protect {
+    background: url("/templets/New/images/userTD.jpg") no-repeat;
+    border: 1px solid rgb(185, 212, 233);
+    width: 203px;
+    height: 86px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    float: left;
+    display: block;
+}
+
+a.pass {
+    background: url("/templets/New/images/userTD.jpg") no-repeat;
+    border: 1px solid rgb(185, 212, 233);
+    width: 203px;
+    height: 86px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    float: left;
+    display: block;
+}
+
+a.bank {
+    background: url("/templets/New/images/userTD.jpg") no-repeat;
+    border: 1px solid rgb(185, 212, 233);
+    width: 203px;
+    height: 86px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    float: left;
+    display: block;
+}
+
+a.help {
+    margin-top: 10px;
+}
+
+a.game {
+    background-position: -203px 0px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+a.user {
+    background-position: -406px 0px;
+}
+
+a.protect {
+    background-position: 0px -86px;
+}
+
+a.pass {
+    background-position: -203px -86px;
+    margin-left: 0px;
+}
+
+a.bank {
+    background-position: -406px -86px;
+}
+
+.userTitle {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+textarea, select {
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+input[type='text'], input[type='password'] {
+    width: 200px;
+    height: 16px;
+    padding: 4px 3px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    font-family: arial,"黑体";
+}
+
+input[type='text']:focus {
+        border: 1px solid #b9d4e9;
+        border-top-color: #b6d5ea;
+        border-bottom-color: #b8d4ea;
+        box-shadow: 0 0 5px #b9d4e9;
+    }
+
+    input[type='password']:focus, textarea:focus {
+        border: 1px solid #b9d4e9;
+        border-top-color: #b6d5ea;
+        border-bottom-color: #b8d4ea;
+        box-shadow: 0 0 5px #b9d4e9;
+    }
+
+    
+    
+   .formbox {
+    width: 700px;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+   .formbox h3 {
+        font-size: 16px;
+        height: 32px;
+        color: #3366cc;
+        font-weight: 800;
+        border-bottom: solid 1px #D1D1D1;
+        margin: 0 0 20px 0;
+        padding: 0 10px;
+    }
+
+   .formbox .item {
+        padding-top: 5px;
+        height: 40px;
+        overflow: hidden;
+        line-height: 26px;
+        width: 100%;
+    }
+
+       .formbox .item a:link,.formbox .item a:visited {
+            text-decoration: underline;
+        }
+
+   .formbox .label {
+        width: 100px;
+        text-align: left;
+        font-size: 14px;
+        margin-left: 60px;
+        float: left;
+    }
+
+   .formbox .span-150 {
+        width: 150px;
+    }
+
+   .formbox .text {
+        width: 240px;
+        height: 16px;
+        padding: 4px 3px;
+        border: 1px solid #bbb;
+        font-size: 14px;
+        font-family: arial,"黑体";
+    }
+
+   .formbox .text-1 {
+        width: 100px;
+    }
+
+   .formbox .blank {
+        width: 16px;
+        height: 16px;
+        margin: 2px 5px 0;
+    }
+
+   .formbox .img img {
+        height: 26px;
+        margin: 0 5px;
+    }
+
+   .formbox .succeed {
+        background: url(/templets/New/images/pwdstrength.gif) no-repeat -105px 0;
+    }
+
+   .formbox .yellow_button {
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        background-image:url(/templets/New/images/zc.png);
+        background-repeat:no-repeat;
+width:  91px;
+height:35px;      
+ }
+
+   .formbox .highlight1 {
+        border: 1px solid #EFA100;
+        outline: 2px solid #FFDC97;
+        *border: 2px solid #ffcc66;
+        *padding: 3px 2px;
+    }
+input [type='bttton'],input[type='submit'],input[type='reset']{border:0px;}
+   .formbox .highlight2 {
+        border: 1px solid #f00;
+        outline: 1px solid #FFC1C1;
+        color: #f00;
+    }
+
+   .formbox .pwdbg {
+        background: #FFF8EB;
+    }
+
+   .formbox .focus {
+        color: #999;
+        line-height: 22px;
+        *line-height: 20px;
+    }
+
+   .formbox .null,.formbox .onError {
+        color: red;
+        line-height: 22px;
+        *line-height: 20px;
+    }
+
+   .formbox .checkbox {
+        margin-top: 6px;
+        *margin-top: 2px;
+    }
+
+   .formbox #referrer {
+        color: #999;
+        font-size: 12px;
+    }
+
+   .formbox #protocol {
+        margin: 0px 5px 0 0;
+        display: inline;
+    }
+
+#pwdstrength {
+    color: #999;
+    line-height: 22px;
+    padding-right: 10px;
+}
+
+    #pwdstrength b {
+        float: left;
+        width: 104px;
+        height: 13px;
+        overflow: hidden;
+        margin-top: 5px;
+        *margin-top: 3px;
+    }
+/*openDIV*/
+.win_box {
+    width: 600px;
+    z-index: 1000;
+    -webkit-box-shadow: 5px 2px 6px #000;
+    -moz-box-shadow: 3px 3px 6px #555;
+}
+
+    .win_box .win_box_t {
+        height: 39px;
+        line-height: 39px;
+        overflow: hidden;
+    }
+
+        .win_box .win_box_t .t_c {
+            width: 555px;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            text-indent: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            float: left;
+        }
+
+        .win_box .win_box_t strong {
+            background: url('/templets/new/images/close.png') no-repeat;
+            float: right;
+            width: 45px;
+            height: 39px;
+            overflow: hidden;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+    .win_box .win_box_m {
+        padding: 20px;
+        height: 200px;
+        border-right-color: rgb(75, 130, 190);
+        border-bottom-color: rgb(75, 130, 190);
+        border-left-color: rgb(75, 130, 190);
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+    }
+
+.win_box_m .win_con {
+    padding: 20px;
+}
+
+    .win_box_m .win_con p {
+        text-align: left;
+        line-height: 25px;
+        padding-left: 90px;
+        font-size: 14px;
+        float: left;
+    }
+
+        .win_box_m .win_con p.i_ok {
+            background: url("/templets/New/images/checkmark.png") no-repeat 20px 10px;
+        }
+
+.spanStyle {
+    width: 75%;
+    height: 40px;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 90px;
+    clear: both;
+    float: left;
+    display: inline-block;
+}
+
+.win_box_m .win_con span a {
+    margin-right: 15px;
+}
+
+.sub_safe {
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+    .sub_safe p {
+        padding: 20px 0px 15px 30px;
+        width: 100%;
+        text-align: left;
+        line-height: 20px;
+        font-size: 12px;
+        float: left;
+    }
+
+    .sub_safe li {
+        width: 176px;
+        height: 53px;
+        margin-left: 30px;
+        float: left;
+    }
+
+        .sub_safe li.pass {
+            background-position: -56px 0px;
+            background: url("/templets/New/images/dianji.png") 0px 0px;
+            width: 176px;
+            height: 53px;
+            margin-left: 30px;
+            float: left;
+        }
+
+        .sub_safe li.email {
+            background-position: -56px -51px;
+            background: url("/templets/New/images/forget.png") 0px 0px;
+            width: 176px;
+            height: 53px;
+            margin-left: 30px;
+            float: left;
+        }
+
+        .sub_safe li span b {
+            padding-top: 13px;
+            font-size: 14px;
+            display: block;
+        }
+
+        .sub_safe li.b {
+            color: rgb(241, 241, 241);
+        }
+
+        .sub_safe li.span {
+            color: rgb(241, 241, 241);
+        }
+
+        .sub_safe li span a:link {
+            padding-top: 3px;
+            padding-right: 5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .sub_safe li span a:visited {
+            padding-top: 3px;
+            padding-right: 5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .sub_safe li span a:hover {
+            padding-right: 5px;
+        }
+
+        .sub_safe li span a:active {
+            padding-right: 5px;
+        }
+
+a.btn_form01:link {
+    background: url("/templets/new/images/download1.png") no-repeat;
+    width: 146px;
+    height: 35px;
+    text-align: center;
+    line-height: 41px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.btn_form01:visited {
+    background: url("/templets/new/images/download1.png") no-repeat;
+    width: 146px;
+    height: 35px;
+    text-align: center;
+    line-height: 41px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.f_red {
+    color: rgb(232, 53, 21);
+}
+
+.tablePage {
+    border: 1px solid #999;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 5px auto;
+}
+
+    .tablePage th {
+        background: #fffebf;
+        color: #333;
+        border: 1px solid #999;
+        padding: 5px 0;
+        width: 120px;
+    }
+
+    .tablePage td {
+        border: 1px solid #999;
+        padding: 5px;
+    }
+
+    .tablePage .tdBg {
+        background-color: #eee;
+    }
+       .rightTips
+     {
+     	
+     }
+     .wrongTips
+     {
+     	font-size:13px;
+     	color:Red;
+     	
+     }

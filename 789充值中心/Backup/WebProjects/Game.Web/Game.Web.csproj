@@ -1,0 +1,938 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D43FC7D5-FE05-42EE-B17E-C0FA7AECDEBF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game.Web</RootNamespace>
+    <AssemblyName>Game.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;s</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.2.0.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.bank, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\新建文件夹\d\net\QPFront7890\WebProjects\Game.Web\bin\com.yeepay.bank.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.icc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\网银DEMO\C#\C#(VS08)\YeePay_HTMLcommon\Bin\com.yeepay.icc.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.Model.SZXCallbackResult, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.Model.SZXCallbackResult.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.model.SZXResult, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.model.SZXResult.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.DES, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.DES.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.Digest, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.Digest.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.FormatQueryString, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.FormatQueryString.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.HmacMD5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.HmacMD5.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.HttpUtils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.HttpUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.log.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.utils.SZX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\新建文件夹\demo\demo\点卡DEMO\C#-vs2008\C#\com.yeepay.cmbn\com.yeepay.utils.SZX.dll</HintPath>
+    </Reference>
+    <Reference Include="Game.Kernel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=760aa549d46f06c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\Game.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="YeePay_Distribute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\新的支付接口\网银接入\C#\c#(08)\bin\YeePay_Distribute.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\protection.xml" />
+    <Content Include="js\Check.js" />
+    <Content Include="js\inputCheck.js" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\utils.js" />
+    <Content Include="ValidateImage.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AES\AES.cs" />
+    <Compile Include="AES\TestAES.cs" />
+    <Compile Include="app_code\AlipayConfig.cs" />
+    <Compile Include="app_code\AlipayCore.cs" />
+    <Compile Include="app_code\AlipayNotify.cs" />
+    <Compile Include="app_code\AlipaySubmit.cs" />
+    <Compile Include="app_code\MD5.cs" />
+    <Compile Include="ashx\checkRegUserName.ashx.cs">
+      <DependentUpon>checkRegUserName.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\cheeckSkState.ashx.cs">
+      <DependentUpon>cheeckSkState.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\ExchangeMoney.ashx.cs">
+      <DependentUpon>ExchangeMoney.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\FindMoneyByAccount.ashx.cs">
+      <DependentUpon>FindMoneyByAccount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\GetCardState.ashx.cs">
+      <DependentUpon>GetCardState.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\Reg.ashx.cs">
+      <DependentUpon>Reg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="config\APIURLConfig.cs" />
+    <Compile Include="config\Config.cs" />
+    <Compile Include="down.aspx.cs">
+      <DependentUpon>down.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="down.aspx.designer.cs">
+      <DependentUpon>down.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\RespondJson.cs" />
+    <Compile Include="notify_weixin.aspx.cs">
+      <DependentUpon>notify_weixin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notify_weixin.aspx.designer.cs">
+      <DependentUpon>notify_weixin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderForWX.aspx.cs">
+      <DependentUpon>OrderForWX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderForWX.aspx.designer.cs">
+      <DependentUpon>OrderForWX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\callback_fastpay.aspx.cs">
+      <DependentUpon>callback_fastpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\callback_fastpay.aspx.designer.cs">
+      <DependentUpon>callback_fastpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\CallBack_zfb.aspx.cs">
+      <DependentUpon>CallBack_zfb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\CallBack_zfb.aspx.designer.cs">
+      <DependentUpon>CallBack_zfb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\CallBank.aspx.cs">
+      <DependentUpon>CallBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\CallBank.aspx.designer.cs">
+      <DependentUpon>CallBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\CallCard.aspx.cs">
+      <DependentUpon>CallCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\CallCard.aspx.designer.cs">
+      <DependentUpon>CallCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\notify_fastpay.aspx.cs">
+      <DependentUpon>notify_fastpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\notify_fastpay.aspx.designer.cs">
+      <DependentUpon>notify_fastpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\notify_zfb.aspx.cs">
+      <DependentUpon>notify_zfb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\notify_zfb.aspx.designer.cs">
+      <DependentUpon>notify_zfb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\OrderCard.aspx.cs">
+      <DependentUpon>OrderCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\OrderCard.aspx.designer.cs">
+      <DependentUpon>OrderCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\OrderForBank.aspx.cs">
+      <DependentUpon>OrderForBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\OrderForBank.aspx.designer.cs">
+      <DependentUpon>OrderForBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\OrderForFastPay.aspx.cs">
+      <DependentUpon>OrderForFastPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\OrderForFastPay.aspx.designer.cs">
+      <DependentUpon>OrderForFastPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\OrderForZFB.aspx.cs">
+      <DependentUpon>OrderForZFB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\OrderForZFB.aspx.designer.cs">
+      <DependentUpon>OrderForZFB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\Tips.aspx.cs">
+      <DependentUpon>Tips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\Tips.aspx.designer.cs">
+      <DependentUpon>Tips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RSA\RSA.cs" />
+    <Compile Include="RSA\TestRSA.cs" />
+    <Compile Include="Themes\New\Common_Footer.ascx.cs">
+      <DependentUpon>Common_Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Themes\New\Common_Footer.ascx.designer.cs">
+      <DependentUpon>Common_Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\New\Common_Header.ascx.cs">
+      <DependentUpon>Common_Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Themes\New\Common_Header.ascx.designer.cs">
+      <DependentUpon>Common_Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\New\Common_Left.ascx.cs">
+      <DependentUpon>Common_Left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Themes\New\Common_Left.ascx.designer.cs">
+      <DependentUpon>Common_Left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\New\User_Sidebar.ascx.cs">
+      <DependentUpon>User_Sidebar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Themes\New\User_Sidebar.ascx.designer.cs">
+      <DependentUpon>User_Sidebar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tools\VerifyImage.cs" />
+    <Compile Include="tools\VerifyImageInfo.cs" />
+    <Compile Include="Util\EncryptUtil.cs" />
+    <Compile Include="Util\HttpUtil.cs" />
+    <Compile Include="Util\YJPay.cs" />
+    <Compile Include="Util\YJPayUtil.cs" />
+    <Compile Include="ValidateImage.aspx.cs">
+      <DependentUpon>ValidateImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateImage.aspx.designer.cs">
+      <DependentUpon>ValidateImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ybbuy\Business.cs" />
+    <Compile Include="ybbuy\Buy.cs" />
+    <Compile Include="ybbuy\BuyCallbackResult.cs" />
+    <Compile Include="ybbuy\Digest.cs" />
+    <Compile Include="ybbuy\FormatQueryString.cs" />
+    <Compile Include="ybbuy\HmacMD5.cs" />
+    <Compile Include="yeepay\yeepaycard.aspx.cs">
+      <DependentUpon>yeepaycard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yeepay\yeepaycard.aspx.designer.cs">
+      <DependentUpon>yeepaycard.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\.svn\all-wcprops" />
+    <None Include="App_Data\.svn\entries" />
+    <Content Include="ashx\Reg.ashx" />
+    <Content Include="ashx\checkRegUserName.ashx" />
+    <Content Include="ashx\GetCardState.ashx" />
+    <Content Include="ashx\cheeckSkState.ashx" />
+    <Content Include="ashx\ExchangeMoney.ashx" />
+    <Content Include="ashx\FindMoneyByAccount.ashx" />
+    <None Include="templets\images\Thumbs.db" />
+    <Content Include="config\pm.config" />
+    <Content Include="js\jquery.metadata.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\marquee.js" />
+    <Content Include="js\messages_cn.js" />
+    <Content Include="js\My97DatePicker\calendar.js" />
+    <Content Include="js\My97DatePicker\config.js" />
+    <Content Include="js\My97DatePicker\lang\en.js" />
+    <Content Include="js\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="js\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="js\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="js\My97DatePicker\skin\blueFresh\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\blueFresh\img.gif" />
+    <Content Include="js\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="js\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\default\img.gif" />
+    <Content Include="js\My97DatePicker\skin\ext\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\ext\dateselect.gif" />
+    <Content Include="js\My97DatePicker\skin\ext\glass-bg.gif" />
+    <Content Include="js\My97DatePicker\skin\ext\hd-sprite.gif" />
+    <Content Include="js\My97DatePicker\skin\ext\img.gif" />
+    <Content Include="js\My97DatePicker\skin\ext\left-btn.gif" />
+    <Content Include="js\My97DatePicker\skin\ext\left-btn2.gif" />
+    <Content Include="js\My97DatePicker\skin\ext\right-btn.gif" />
+    <Content Include="js\My97DatePicker\skin\ext\right-btn2.gif" />
+    <Content Include="js\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="js\My97DatePicker\WdatePicker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Game.Utils\Game.Utils.csproj">
+      <Project>{3F57A7F2-3A90-43A3-8AE2-81BE3F171CB4}</Project>
+      <Name>Game.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Game.Data\Game.Data.csproj">
+      <Project>{D4B97735-CEC5-44AA-8A7E-EC7523129849}</Project>
+      <Name>Game.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Game.Entity\Game.Entity.csproj">
+      <Project>{54A1440A-6022-4BA9-91D1-3E897ED353E3}</Project>
+      <Name>Game.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Game.Facade\Game.Facade.csproj">
+      <Project>{E7E7EC24-2A56-4223-95E9-885C860EF04F}</Project>
+      <Name>Game.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Game.IData\Game.IData.csproj">
+      <Project>{8112655D-B531-4ACA-B068-79CEB119359C}</Project>
+      <Name>Game.IData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\ActionlessForm.dll" />
+    <Content Include="bin\ActionlessForm.pdb" />
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\com.yeepay.bank.dll" />
+    <Content Include="bin\com.yeepay.cmbn.dll" />
+    <Content Include="bin\com.yeepay.icc.dll" />
+    <Content Include="bin\com.yeepay.log.dll" />
+    <Content Include="bin\com.yeepay.Model.SZXCallbackResult.dll" />
+    <Content Include="bin\com.yeepay.model.SZXResult.dll" />
+    <Content Include="bin\com.yeepay.utils.DES.dll" />
+    <Content Include="bin\com.yeepay.utils.Digest.dll" />
+    <Content Include="bin\com.yeepay.utils.FormatQueryString.dll" />
+    <Content Include="bin\com.yeepay.utils.HmacMD5.dll" />
+    <Content Include="bin\com.yeepay.utils.HttpUtils.dll" />
+    <Content Include="bin\com.yeepay.utils.log.dll" />
+    <Content Include="bin\com.yeepay.utils.SZX.dll" />
+    <Content Include="bin\Debug\com.yeepay.cmbn.dll" />
+    <Content Include="bin\Game.Data.dll" />
+    <Content Include="bin\Game.Data.pdb" />
+    <Content Include="bin\Game.Entity.dll" />
+    <Content Include="bin\Game.Entity.pdb" />
+    <Content Include="bin\Game.Facade.dll" />
+    <Content Include="bin\Game.Facade.pdb" />
+    <Content Include="bin\Game.IData.dll" />
+    <Content Include="bin\Game.IData.pdb" />
+    <Content Include="bin\Game.Kernel.dll" />
+    <Content Include="bin\Game.Utils.dll" />
+    <Content Include="bin\Game.Utils.pdb" />
+    <Content Include="bin\Game.Web.dll" />
+    <Content Include="bin\Game.Web.pdb" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\YeePay_CARDpro_V3.0.dll" />
+    <Content Include="bin\YeePay_CARDpro_V3.0.pdb" />
+    <Content Include="bin\YeePay_CARDpro_V4.2.dll" />
+    <Content Include="bin\YeePay_CARDpro_V4.2.pdb" />
+    <Content Include="bin\YeePay_Distribute.dll" />
+    <Content Include="down.aspx" />
+    <Content Include="Game.Web.Publish.xml" />
+    <Content Include="images\beijin.jpg" />
+    <Content Include="images\bohai.jpg" />
+    <Content Include="images\card-9you.jpg" />
+    <Content Include="images\card-junwang.jpg" />
+    <Content Include="images\card-liantong.jpg" />
+    <Content Include="images\card-netease.jpg" />
+    <Content Include="images\card-qbi.jpg" />
+    <Content Include="images\card-shengda.jpg" />
+    <Content Include="images\card-sohu.jpg" />
+    <Content Include="images\card-szx.jpg" />
+    <Content Include="images\card-tianghong.jpg" />
+    <Content Include="images\card-tianhong.jpg" />
+    <Content Include="images\card-tianxia.jpg" />
+    <Content Include="images\card-wanmei.jpg" />
+    <Content Include="images\card-yidong.jpg" />
+    <Content Include="images\card-zhengtu.jpg" />
+    <Content Include="images\card-zongyou.jpg" />
+    <Content Include="images\gongshang.jpg" />
+    <Content Include="images\guangda.jpg" />
+    <Content Include="images\guangfa.jpg" />
+    <Content Include="images\guangzhou.jpg" />
+    <Content Include="images\huaxia.jpg" />
+    <Content Include="images\jianhang.jpg" />
+    <Content Include="images\jiaotong.jpg" />
+    <Content Include="images\load.gif" />
+    <Content Include="images\mingshen.jpg" />
+    <Content Include="images\nanjin.jpg" />
+    <Content Include="images\nonghang.jpg" />
+    <Content Include="images\pufa.jpg" />
+    <Content Include="images\shengzhen.jpg" />
+    <Content Include="images\submit.gif" />
+    <Content Include="images\xinye.jpg" />
+    <Content Include="images\zhaoshang.jpg" />
+    <Content Include="images\zhongguo.jpg" />
+    <Content Include="images\zhongxin.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery-1.7.1.min.js" />
+    <Content Include="js\Rtg.js" />
+    <Content Include="notify_weixin.aspx" />
+    <Content Include="OrderForWX.aspx" />
+    <Content Include="Pay\callback_fastpay.aspx" />
+    <Content Include="Pay\CallBack_zfb.aspx" />
+    <Content Include="Pay\CallBank.aspx" />
+    <Content Include="Pay\CallCard.aspx" />
+    <Content Include="Pay\index.html" />
+    <Content Include="Pay\notify_fastpay.aspx" />
+    <Content Include="Pay\notify_zfb.aspx" />
+    <Content Include="Pay\OrderCard.aspx" />
+    <Content Include="Pay\OrderForBank.aspx" />
+    <Content Include="Pay\OrderForFastPay.aspx" />
+    <Content Include="Pay\OrderForZFB.aspx" />
+    <Content Include="Pay\Tips.aspx" />
+    <Content Include="Pay\WiteCard.html" />
+    <Content Include="Pay\WiteNetCard.html" />
+    <Content Include="templets\bank\beijin.jpg" />
+    <Content Include="templets\bank\bohai.jpg" />
+    <Content Include="templets\bank\gongshang.jpg" />
+    <Content Include="templets\bank\guangda.jpg" />
+    <Content Include="templets\bank\guangfa.jpg" />
+    <Content Include="templets\bank\guangzhou.jpg" />
+    <Content Include="templets\bank\huaxia.jpg" />
+    <Content Include="templets\bank\jianhang.jpg" />
+    <Content Include="templets\bank\jiaotong.jpg" />
+    <Content Include="templets\bank\mingsheng.jpg" />
+    <Content Include="templets\bank\nanjin.jpg" />
+    <Content Include="templets\bank\nongye.jpg" />
+    <Content Include="templets\bank\pufa.jpg" />
+    <Content Include="templets\bank\shengzhen.jpg" />
+    <Content Include="templets\bank\xinye.jpg" />
+    <Content Include="templets\bank\zhaoshang.jpg" />
+    <Content Include="templets\bank\zhongguo.jpg" />
+    <Content Include="templets\bank\zhongxin.jpg" />
+    <Content Include="templets\base.css" />
+    <Content Include="templets\card\dx.jpg" />
+    <Content Include="templets\card\jr.jpg" />
+    <Content Include="templets\card\jw.jpg" />
+    <Content Include="templets\card\jy.jpg" />
+    <Content Include="templets\card\lt.jpg" />
+    <Content Include="templets\card\qq.jpg" />
+    <Content Include="templets\card\sd.jpg" />
+    <Content Include="templets\card\sh.jpg" />
+    <Content Include="templets\card\szx.jpg" />
+    <Content Include="templets\card\th.jpg" />
+    <Content Include="templets\card\txt.jpg" />
+    <Content Include="templets\card\wm.jpg" />
+    <Content Include="templets\card\wy.jpg" />
+    <Content Include="templets\card\yb.jpg" />
+    <Content Include="templets\card\zy.jpg" />
+    <Content Include="templets\chongzhi.jpg" />
+    <Content Include="templets\images\0base.css" />
+    <Content Include="templets\images\1.jpg" />
+    <Content Include="templets\images\100y.gif" />
+    <Content Include="templets\images\10y.gif" />
+    <Content Include="templets\images\15y.gif" />
+    <Content Include="templets\images\1ky.gif" />
+    <Content Include="templets\images\200y.gif" />
+    <Content Include="templets\images\20121221163023259.jpg" />
+    <Content Include="templets\images\20121224094427398.jpg" />
+    <Content Include="templets\images\20130813094906090.jpg" />
+    <Content Include="templets\images\20130905094156950.jpg" />
+    <Content Include="templets\images\20130927135940824.jpg" />
+    <Content Include="templets\images\20130930144151449.jpg" />
+    <Content Include="templets\images\20130930144216394.jpg" />
+    <Content Include="templets\images\20130930144231780.jpg" />
+    <Content Include="templets\images\20131018175541395.jpg" />
+    <Content Include="templets\images\20y.gif" />
+    <Content Include="templets\images\25y.gif" />
+    <Content Include="templets\images\2ky.gif" />
+    <Content Include="templets\images\3.jpg" />
+    <Content Include="templets\images\300y.gif" />
+    <Content Include="templets\images\30y.gif" />
+    <Content Include="templets\images\35y.gif" />
+    <Content Include="templets\images\40y.gif" />
+    <Content Include="templets\images\45y.gif" />
+    <Content Include="templets\images\468y.gif" />
+    <Content Include="templets\images\500y.gif" />
+    <Content Include="templets\images\50y.gif" />
+    <Content Include="templets\images\5ky.gif" />
+    <Content Include="templets\images\5y.gif" />
+    <Content Include="templets\images\60y.gif" />
+    <Content Include="templets\images\9y.gif" />
+    <Content Include="templets\images\a2.jpg" />
+    <Content Include="templets\images\a3.jpg" />
+    <Content Include="templets\images\a4.jpg" />
+    <Content Include="templets\images\a6.jpg" />
+    <Content Include="templets\images\a7.jpg" />
+    <Content Include="templets\images\account_menu_bg.jpg" />
+    <Content Include="templets\images\ad_01.png" />
+    <Content Include="templets\images\ad_03.png" />
+    <Content Include="templets\images\ad_04.png" />
+    <Content Include="templets\images\arrow.png" />
+    <Content Include="templets\images\base.css" />
+    <Content Include="templets\images\Bg1.jpg" />
+    <Content Include="templets\images\Bg2.jpg" />
+    <Content Include="templets\images\bigAdvertisingBg.png" />
+    <Content Include="templets\images\btns.png" />
+    <Content Include="templets\images\btn_download.gif" />
+    <Content Include="templets\images\btn_index.gif" />
+    <Content Include="templets\images\buys.gif" />
+    <Content Include="templets\images\bydr-1_106.jpg" />
+    <Content Include="templets\images\close.gif" />
+    <Content Include="templets\images\cloud1.png" />
+    <Content Include="templets\images\cloud2.png" />
+    <Content Include="templets\images\dandelion.png" />
+    <Content Include="templets\images\ddz_1_973.jpg" />
+    <Content Include="templets\images\DD_belatedPNG.js" />
+    <Content Include="templets\images\dl_btn.png" />
+    <Content Include="templets\images\dn_1_825.jpg" />
+    <Content Include="templets\images\dsnh-1_103.jpg" />
+    <Content Include="templets\images\ermj_1_542.jpg" />
+    <Content Include="templets\images\eventsAdvertisingBg.png" />
+    <Content Include="templets\images\eventsNavBg.png" />
+    <Content Include="templets\images\fk30m_1_121.jpg" />
+    <Content Include="templets\images\fksc_1_819.jpg" />
+    <Content Include="templets\images\footBg.png" />
+    <Content Include="templets\images\fqzs_1_22.jpg" />
+    <Content Include="templets\images\gameDown.css" />
+    <Content Include="templets\images\gameHighlight.png" />
+    <Content Include="templets\images\gameMainBg.png" />
+    <Content Include="templets\images\gameRemindBg.png" />
+    <Content Include="templets\images\gameWallBg.png" />
+    <Content Include="templets\images\game_3dPool.png" />
+    <Content Include="templets\images\game_5atom.png" />
+    <Content Include="templets\images\game_80fddz.png" />
+    <Content Include="templets\images\game_doublecall.png" />
+    <Content Include="templets\images\game_doublecall_ipad.png" />
+    <Content Include="templets\images\game_doublewz.png" />
+    <Content Include="templets\images\game_dqdz.png" />
+    <Content Include="templets\images\game_gongzhu.png" />
+    <Content Include="templets\images\game_HangZhouMJ_ipad.png" />
+    <Content Include="templets\images\game_hdddz.png" />
+    <Content Include="templets\images\game_hnddz.png" />
+    <Content Include="templets\images\game_hualun.png" />
+    <Content Include="templets\images\game_HWSanDaYiII.png" />
+    <Content Include="templets\images\game_JxRed10.png" />
+    <Content Include="templets\images\game_landlordII.png" />
+    <Content Include="templets\images\game_nAsideGo.png" />
+    <Content Include="templets\images\game_nbbDouble.png" />
+    <Content Include="templets\images\game_nbddz.png" />
+    <Content Include="templets\images\game_nblacka.png" />
+    <Content Include="templets\images\game_NCard13.png" />
+    <Content Include="templets\images\game_ncdp.png" />
+    <Content Include="templets\images\game_nddz.png" />
+    <Content Include="templets\images\game_nddz2.png" />
+    <Content Include="templets\images\game_newPaoYao.png" />
+    <Content Include="templets\images\game_NGuanPai.png" />
+    <Content Include="templets\images\game_niuniu.png" />
+    <Content Include="templets\images\game_njlred10.png" />
+    <Content Include="templets\images\game_nlandlord.png" />
+    <Content Include="templets\images\game_nliangbang.png" />
+    <Content Include="templets\images\game_nnAtom.png" />
+    <Content Include="templets\images\game_nndouble.png" />
+    <Content Include="templets\images\game_nnHzRed5.png" />
+    <Content Include="templets\images\game_nnRed10.png" />
+    <Content Include="templets\images\game_nnRed55p.png" />
+    <Content Include="templets\images\game_npaoyao.png" />
+    <Content Include="templets\images\game_nqingdun.png" />
+    <Content Include="templets\images\game_nRed5.png" />
+    <Content Include="templets\images\game_nRocket.png" />
+    <Content Include="templets\images\game_nrun.png" />
+    <Content Include="templets\images\game_nshengji4.png" />
+    <Content Include="templets\images\game_nTianDaKeng.png" />
+    <Content Include="templets\images\game_nUpgrade.png" />
+    <Content Include="templets\images\game_nUpgrade3.png" />
+    <Content Include="templets\images\game_oTriad.png" />
+    <Content Include="templets\images\game_oTriad3.png" />
+    <Content Include="templets\images\game_Red53v1P2.png" />
+    <Content Include="templets\images\game_sangong.png" />
+    <Content Include="templets\images\game_shmj_ipad.png" />
+    <Content Include="templets\images\game_sixjoin.png" />
+    <Content Include="templets\images\game_sjzddz.png" />
+    <Content Include="templets\images\game_triad_ipad.png" />
+    <Content Include="templets\images\game_twoddz.png" />
+    <Content Include="templets\images\game_tyUp2.png" />
+    <Content Include="templets\images\game_xjddz.png" />
+    <Content Include="templets\images\gamgNavCurBg.png" />
+    <Content Include="templets\images\global.css" />
+    <Content Include="templets\images\healthGames.png" />
+    <Content Include="templets\images\healthGamesBg.png" />
+    <Content Include="templets\images\hnddz.jpg" />
+    <Content Include="templets\images\HotNew.png" />
+    <Content Include="templets\images\hoverHypotenuse.png" />
+    <Content Include="templets\images\hpdn_1_970.jpg" />
+    <Content Include="templets\images\iboxHeadBg.png" />
+    <Content Include="templets\images\Ico_12.png" />
+    <Content Include="templets\images\Ico_44.png" />
+    <Content Include="templets\images\Ico_50.png" />
+    <Content Include="templets\images\Ico_67.png" />
+    <Content Include="templets\images\Ico_77.png" />
+    <Content Include="templets\images\index_2013_download.gif" />
+    <Content Include="templets\images\install_beacon.js" />
+    <Content Include="templets\images\jcby-1_197.jpg" />
+    <Content Include="templets\images\jquery-1.js" />
+    <Content Include="templets\images\kefu.png" />
+    <Content Include="templets\images\kwx-1.jpg" />
+    <Content Include="templets\images\lkpy-1_999.jpg" />
+    <Content Include="templets\images\main.js" />
+    <Content Include="templets\images\mainNavBg.png" />
+    <Content Include="templets\images\mainNavText.png" />
+    <Content Include="templets\images\mxddz_1_176.jpg" />
+    <Content Include="templets\images\newsLeftBg.png" />
+    <Content Include="templets\images\newsNav.png" />
+    <Content Include="templets\images\newsRightBg.png" />
+    <Content Include="templets\images\pageNavBtn.png" />
+    <Content Include="templets\images\pageNavBtnActive.png" />
+    <Content Include="templets\images\pageNavBtnHover.png" />
+    <Content Include="templets\images\payBg.jpg" />
+    <Content Include="templets\images\pigeon.gif" />
+    <Content Include="templets\images\police.gif" />
+    <Content Include="templets\images\punishBg.jpg" />
+    <Content Include="templets\images\punishBg.png" />
+    <Content Include="templets\images\rechargeBg.jpg" />
+    <Content Include="templets\images\rechargeBg.png" />
+    <Content Include="templets\images\rechargeSeparator.png" />
+    <Content Include="templets\images\register.css" />
+    <Content Include="templets\images\reset.css" />
+    <Content Include="templets\images\safe.gif" />
+    <Content Include="templets\images\scroll.js" />
+    <Content Include="templets\images\sdo_beacon.js" />
+    <Content Include="templets\images\serviceBg.jpg" />
+    <Content Include="templets\images\serviceBg.png" />
+    <Content Include="templets\images\serviceBottom.jpg" />
+    <Content Include="templets\images\so.swf" />
+    <Content Include="templets\images\sszp_1_735.jpg" />
+    <Content Include="templets\images\stepBg.png" />
+    <Content Include="templets\images\structureGif.gif" />
+    <Content Include="templets\images\structureGif.png" />
+    <Content Include="templets\images\structurePng.png" />
+    <Content Include="templets\images\tableLeftTransparent.png" />
+    <Content Include="templets\images\tableRightTransparent.png" />
+    <Content Include="templets\images\top_bg.jpg" />
+    <Content Include="templets\images\tq_1_774.jpg" />
+    <Content Include="templets\images\tv.png" />
+    <Content Include="templets\images\tvBg.png" />
+    <Content Include="templets\images\tvHoverHeightlight.png" />
+    <Content Include="templets\images\vipBg.jpg" />
+    <Content Include="templets\images\vipBg.png" />
+    <Content Include="templets\images\weibo.png" />
+    <Content Include="templets\images\wknh-1_580.jpg" />
+    <Content Include="templets\images\wq_1_350.jpg" />
+    <Content Include="templets\images\wzq_1_420.jpg" />
+    <Content Include="templets\images\zgxq_1_766.jpg" />
+    <Content Include="templets\images\zzdn_1_702.jpg" />
+    <Content Include="templets\images\zzlz_10_753.jpg" />
+    <Content Include="templets\kefu.jpg" />
+    <Content Include="templets\load.gif" />
+    <Content Include="templets\lxqq.jpg" />
+    <Content Include="templets\Navigation\kf1.jpg" />
+    <Content Include="templets\Navigation\kf2.jpg" />
+    <Content Include="templets\Navigation\sk1.jpg" />
+    <Content Include="templets\Navigation\sk2.jpg" />
+    <Content Include="templets\Navigation\wy1.jpg" />
+    <Content Include="templets\Navigation\wy2.jpg" />
+    <Content Include="templets\Navigation\yi1.jpg" />
+    <Content Include="templets\Navigation\yi2.jpg" />
+    <Content Include="templets\Navigation\yxdk1.jpg" />
+    <Content Include="templets\Navigation\yxdk2.jpg" />
+    <Content Include="templets\Navigation\zfb1.jpg" />
+    <Content Include="templets\Navigation\zfb2.jpg" />
+    <Content Include="templets\Net_bank.jpg" />
+    <Content Include="templets\New\css\base.css" />
+    <Content Include="templets\New\css\bing.css" />
+    <Content Include="templets\New\css\download.css" />
+    <Content Include="templets\New\css\games.css" />
+    <Content Include="templets\New\css\gameshow.css" />
+    <Content Include="templets\New\css\help.css" />
+    <Content Include="templets\New\css\index.css" />
+    <Content Include="templets\New\css\kefucenter.css" />
+    <Content Include="templets\New\css\news.css" />
+    <Content Include="templets\New\css\newsshow.css" />
+    <Content Include="templets\New\css\reset.css" />
+    <Content Include="templets\New\css\shouyou.css" />
+    <Content Include="templets\New\css\user.css" />
+    <Content Include="templets\New\css\zzsc.css" />
+    <Content Include="templets\New\images\00banner_bg.png" />
+    <Content Include="templets\New\images\0banner_bg.png" />
+    <Content Include="templets\New\images\1-1401091A3322N.png" />
+    <Content Include="templets\New\images\1-1401091A45L35.png" />
+    <Content Include="templets\New\images\1-1401091F000606.png" />
+    <Content Include="templets\New\images\1-1401091F105343.png" />
+    <Content Include="templets\New\images\1-1401091F326326.png" />
+    <Content Include="templets\New\images\1-1401091F514412.png" />
+    <Content Include="templets\New\images\1.jpg" />
+    <Content Include="templets\New\images\1.png" />
+    <Content Include="templets\New\images\1223.jpg" />
+    <Content Include="templets\New\images\2.png" />
+    <Content Include="templets\New\images\3.png" />
+    <Content Include="templets\New\images\360.png" />
+    <Content Include="templets\New\images\4.png" />
+    <Content Include="templets\New\images\42.gif" />
+    <Content Include="templets\New\images\5.png" />
+    <Content Include="templets\New\images\6.png" />
+    <Content Include="templets\New\images\7.png" />
+    <Content Include="templets\New\images\789down.jpg" />
+    <Content Include="templets\New\images\789game.png" />
+    <Content Include="templets\New\images\789youxixiazai.png" />
+    <Content Include="templets\New\images\789新网页游戏介绍---副本.jpg" />
+    <Content Include="templets\New\images\amt.gif" />
+    <Content Include="templets\New\images\amt.jpg" />
+    <Content Include="templets\New\images\android.gif" />
+    <Content Include="templets\New\images\Arrow.png" />
+    <Content Include="templets\New\images\arrows.png" />
+    <Content Include="templets\New\images\Arrow_black.png" />
+    <Content Include="templets\New\images\azyx.png" />
+    <Content Include="templets\New\images\banner_bg.jpg" />
+    <Content Include="templets\New\images\banner_bg.png" />
+    <Content Include="templets\New\images\bd.png" />
+    <Content Include="templets\New\images\bg.png" />
+    <Content Include="templets\New\images\bg2.png" />
+    <Content Include="templets\New\images\biaotilan.jpg" />
+    <Content Include="templets\New\images\btn_calendar.gif" />
+    <Content Include="templets\New\images\btn_ok.jpg" />
+    <Content Include="templets\New\images\btn_reset.jpg" />
+    <Content Include="templets\New\images\bt_dashengnaohai.png" />
+    <Content Include="templets\New\images\bt_jinchanbuyu.png" />
+    <Content Include="templets\New\images\bt_sirenniujniu.png" />
+    <Content Include="templets\New\images\bt_weiqi.png" />
+    <Content Include="templets\New\images\cert-cyberpolice.gif" />
+    <Content Include="templets\New\images\checkmark.png" />
+    <Content Include="templets\New\images\chongzhi.jpg" />
+    <Content Include="templets\New\images\close.png" />
+    <Content Include="templets\New\images\companydizhi.png" />
+    <Content Include="templets\New\images\dashengnaohai.png" />
+    <Content Include="templets\New\images\dianji.png" />
+    <Content Include="templets\New\images\dl.png" />
+    <Content Include="templets\New\images\download.png" />
+    <Content Include="templets\New\images\download1.png" />
+    <Content Include="templets\New\images\emall.png" />
+    <Content Include="templets\New\images\erm_phone_.gif" />
+    <Content Include="templets\New\images\ernn_phone_title.jpg" />
+    <Content Include="templets\New\images\erwima.png" />
+    <Content Include="templets\New\images\ewm.gif" />
+    <Content Include="templets\New\images\family.png" />
+    <Content Include="templets\New\images\feature_left.gif" />
+    <Content Include="templets\New\images\feature_right.gif" />
+    <Content Include="templets\New\images\forget.png" />
+    <Content Include="templets\New\images\get-code-btns.png" />
+    <Content Include="templets\New\images\gonggao.png" />
+    <Content Include="templets\New\images\guanfangweibo.png" />
+    <Content Include="templets\New\images\hbg.png" />
+    <Content Include="templets\New\images\help.png" />
+    <Content Include="templets\New\images\home.png" />
+    <Content Include="templets\New\images\hotgame.png" />
+    <Content Include="templets\New\images\img_youxijieshao.png" />
+    <Content Include="templets\New\images\introduce.png" />
+    <Content Include="templets\New\images\ios.gif" />
+    <Content Include="templets\New\images\i_ok.png" />
+    <Content Include="templets\New\images\jg.png" />
+    <Content Include="templets\New\images\jiankanggonggao.png" />
+    <Content Include="templets\New\images\jinchanbuyu.png" />
+    <Content Include="templets\New\images\jingjianxiazai.png" />
+    <Content Include="templets\New\images\jsyx.png" />
+    <Content Include="templets\New\images\kefu.jpg" />
+    <Content Include="templets\New\images\kefu.png" />
+    <Content Include="templets\New\images\kefu1.jpg" />
+    <Content Include="templets\New\images\kefu1.png" />
+    <Content Include="templets\New\images\kefu2.jpg" />
+    <Content Include="templets\New\images\kefu3.jpg" />
+    <Content Include="templets\New\images\kefu4.jpg" />
+    <Content Include="templets\New\images\kefucenter.png" />
+    <Content Include="templets\New\images\ksyx.png" />
+    <Content Include="templets\New\images\left_jt.png" />
+    <Content Include="templets\New\images\login-register-btns-1.png" />
+    <Content Include="templets\New\images\login-sprite.png" />
+    <Content Include="templets\New\images\login.jpg" />
+    <Content Include="templets\New\images\login_2.png" />
+    <Content Include="templets\New\images\lun2.jpg" />
+    <Content Include="templets\New\images\lun_1.jpg" />
+    <Content Include="templets\New\images\lun_2.jpg" />
+    <Content Include="templets\New\images\map.png" />
+    <Content Include="templets\New\images\menu.png" />
+    <Content Include="templets\New\images\mibao.png" />
+    <Content Include="templets\New\images\mima.jpg" />
+    <Content Include="templets\New\images\money.jpg" />
+    <Content Include="templets\New\images\nav_link_hbg.png" />
+    <Content Include="templets\New\images\new.png" />
+    <Content Include="templets\New\images\newscenter.jpg" />
+    <Content Include="templets\New\images\nn_phone.jpg" />
+    <Content Include="templets\New\images\nn_phone_.gif" />
+    <Content Include="templets\New\images\nn_phone_title.jpg" />
+    <Content Include="templets\New\images\no.jpg" />
+    <Content Include="templets\New\images\phone.png" />
+    <Content Include="templets\New\images\phonenumber.png" />
+    <Content Include="templets\New\images\qd.png" />
+    <Content Include="templets\New\images\qizi.png" />
+    <Content Include="templets\New\images\qq.png" />
+    <Content Include="templets\New\images\qqnumber.png" />
+    <Content Include="templets\New\images\question.png" />
+    <Content Include="templets\New\images\qx.png" />
+    <Content Include="templets\New\images\qyewm.jpg" />
+    <Content Include="templets\New\images\redian.gif" />
+    <Content Include="templets\New\images\register-btns.png" />
+    <Content Include="templets\New\images\register-tip.gif" />
+    <Content Include="templets\New\images\register-tip.png" />
+    <Content Include="templets\New\images\register.png" />
+    <Content Include="templets\New\images\right_jt.png" />
+    <Content Include="templets\New\images\scanv.png" />
+    <Content Include="templets\New\images\seemore.png" />
+    <Content Include="templets\New\images\sirenniujniu.png" />
+    <Content Include="templets\New\images\sk.jpg" />
+    <Content Include="templets\New\images\slider_nav_bg.png" />
+    <Content Include="templets\New\images\slider_nav_button.png" />
+    <Content Include="templets\New\images\success.png" />
+    <Content Include="templets\New\images\sx.png" />
+    <Content Include="templets\New\images\synn.jpg" />
+    <Content Include="templets\New\images\tab.gif" />
+    <Content Include="templets\New\images\Telgame.jpg" />
+    <Content Include="templets\New\images\tell.png" />
+    <Content Include="templets\New\images\top.gif" />
+    <Content Include="templets\New\images\user.gif" />
+    <Content Include="templets\New\images\user.jpg" />
+    <Content Include="templets\New\images\usercenter.jpg" />
+    <Content Include="templets\New\images\userinfo.jpg" />
+    <Content Include="templets\New\images\userTD.jpg" />
+    <Content Include="templets\New\images\wanzhnegxiazai.png" />
+    <Content Include="templets\New\images\weibo.jpg" />
+    <Content Include="templets\New\images\weibo.png" />
+    <Content Include="templets\New\images\weibo_2.png" />
+    <Content Include="templets\New\images\weiqi.png" />
+    <Content Include="templets\New\images\weixin.jpg" />
+    <Content Include="templets\New\images\weixin.png" />
+    <Content Include="templets\New\images\weixinerweima.png" />
+    <Content Include="templets\New\images\weixin_2.png" />
+    <Content Include="templets\New\images\weizhi.png" />
+    <Content Include="templets\New\images\wen.jpg" />
+    <Content Include="templets\New\images\wenti.png" />
+    <Content Include="templets\New\images\x1.jpg" />
+    <Content Include="templets\New\images\xc.png" />
+    <Content Include="templets\New\images\xian.png" />
+    <Content Include="templets\New\images\xinwengonggao_big.jpg" />
+    <Content Include="templets\New\images\xsbz.jpg" />
+    <Content Include="templets\New\images\xunzyx.png" />
+    <Content Include="templets\New\images\xzkzy.png" />
+    <Content Include="templets\New\images\xzyx.png" />
+    <Content Include="templets\New\images\youxijieshao.jpg" />
+    <Content Include="templets\New\images\youxiproduct.jpg" />
+    <Content Include="templets\New\images\youxixiazai.jpg" />
+    <Content Include="templets\New\images\zc.png" />
+    <Content Include="templets\New\images\zcdl.png" />
+    <Content Include="templets\New\images\zfb.jpg" />
+    <Content Include="templets\New\images\文字.txt" />
+    <Content Include="templets\qizi.png" />
+    <Content Include="templets\sk.jpg" />
+    <Content Include="templets\step.jpg" />
+    <Content Include="templets\yjzf.jpg" />
+    <Content Include="templets\yxdk.jpg" />
+    <Content Include="templets\zfb.jpg" />
+    <Content Include="Themes\New\Common_Footer.ascx" />
+    <Content Include="Themes\New\Common_Header.ascx" />
+    <Content Include="Themes\New\Common_Left.ascx" />
+    <Content Include="Themes\New\User_Sidebar.ascx" />
+    <Content Include="yeepay\yeepaycard.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\.svn\prop-base\" />
+    <Folder Include="App_Data\.svn\props\" />
+    <Folder Include="App_Data\.svn\text-base\" />
+    <Folder Include="App_Data\.svn\tmp\prop-base\" />
+    <Folder Include="App_Data\.svn\tmp\props\" />
+    <Folder Include="App_Data\.svn\tmp\text-base\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Themes\Standard\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3689</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>创速网络传媒 － 做中国最专业的游戏营销平台</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/userCenter.css" rel="stylesheet" type="text/css" />
+<link href="css/baseInfo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery1.8.3.js"></script>
+<script type="text/javascript" src="js/centerLeftBar.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="top_logo">
+     <a href="#" >
+        <img  alt="" src="img/cs_logo.gif" />
+     </a>
+    </div>
+
+    <div class="top_navigation">
+        <ul class="top_navigation_ul">
+          <li><a class="top_navigation_link" title="首页" href="index.html">首页</a></li>
+          <li><a class="top_navigation_link top_navigation_link_select" title="联盟公告" href="Notice.html">联盟公告</a></li>
+          <li><a class="top_navigation_link" title="广告模式" href="Cooperation.html">广告模式</a></li>
+          <li><a class="top_navigation_link" title="常见问题" href="Problem.html">常见问题</a></li>
+        </ul>
+        <div class="top_login">
+             <ul>
+                 <li id="top_login_center" style="display:none;"><a class="top_login_link_user" href="user.html">个人中心</a></li>
+                 <li id="top_login_out" style="display:none;"><a class="top_login_link_logout" href="javascript:;" onclick="logout();">退出</a></li>
+                 <li id="top_login_reg" style=""><a class="top_login_link_reg" href="Register.html">注册</a></li>
+                 <li id="top_login_in" style=""><a class="top_login_link_user" href="login.html">登陆</a></li>
+             </ul>
+        </div>
+     </div>
+</div>
+
+<div class="main">
+	  <!-- content-->
+	<div class="contentBody">
+		<div class="contentLeft">
+			<div class="list">
+				<span>功能列表</span>
+			</div>
+			<ul class="leftList">
+				<li style="margin-top:5px;" class="current" id="returnIndex"><img src="img/userCenter/c1.png" /></li>
+				<li><img src="img/userCenter/z2.png" /></li>
+				<li><img src="img/userCenter/z3.png" /></li>
+				<li><img src="img/userCenter/z4.png" /></li>
+				<li><img src="img/userCenter/z5.png" /></li>
+				<li style="margin-bottom:370px;_margin-bottom:346px;" id="closePage"><img src="img/userCenter/z6.png" /></li>
+			</ul>
+		</div>
+		
+		<div id="info1" class="contentRight">
+			<div class="lists">
+				<p><span><img src="img/userCenter/030.png" /></span><a style="cursor:pointer;color:#000004;">用户中心</a>><a style="color:#ff5b00;">基本信息</a></p>
+			</div>
+			<div class="userAllInfo">
+				<ul style="width:422px;">
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;推&nbsp;广&nbsp;员&nbsp;ID：<label id="userId">tuiguang0014</label></li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;推&nbsp;广&nbsp;平&nbsp;台：<label id="">http://www.789game.com</label></li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结&nbsp;算&nbsp;时&nbsp;间：<label id="date">每月10号-20号</label></li>
+					<li>&nbsp;&nbsp;&nbsp;上次登录时间：<label id="lastLoginDate">2014-9-11</label></li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上次登录&nbsp;IP：<label id="lastIp">250.250.250.250</label></li>
+				</ul>
+				<ul style="width:300px; ">
+					<li style="width:300px; ">星级评定：
+						<label>
+						 <img src="img/userCenter/xx0.png" />
+						 <img src="img/userCenter/xx0.png" />
+						 <img src="img/userCenter/xx0.png" />
+						 <img src="img/userCenter/xx.png" />
+						 <img src="img/userCenter/xx.png" />
+						</label>
+					</li>
+					<li style="width:300px;"></li>
+					<li style="width:300px;">已发放佣金:<label id="">26156.51</label></li>
+					<li style="width:300px;">未结算佣金:<label id="">26156.51</label></li>
+				</ul>
+				<ul  class="footerInfo">
+					<li>&nbsp;&nbsp;&nbsp;推广专用链接：<label>http://www.789game.com/buyu?pid=001</label></li>
+					<li>推广专用客户端：<label>http://www.789game.com/tuiguang001/789Gamaecenter.exe</label></li>
+				</ul>
+			</div>
+			<div class="tgLiuCheng">
+				<div class="tgTitle"><span>推广流程</span></div>
+				<div class="tgImg">
+					<ul>
+						<li>
+							<div class="imagesCss"><img src="img/userCenter/dyb.jpg" /></div>
+							<div class="descripttion">注册成为789game推广员</div>
+						</li>
+						<li>
+							<div class="imagesCss"><img src="img/userCenter/deb.jpg" /></div>
+							<div class="descripttion">将推广链接或客户端进行推广</div>
+						</li>
+						<li style="background:none;">
+							<div class="imagesCss"><img src="img/userCenter/dsb.jpg" /></div>
+							<div class="descripttion">根据广告投放模式结算佣金</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tgLiuCheng">
+				<div class="tgTitle"><span>推广指南</span></div>
+				<div class="tgIntro">
+					<p>1、推广员账号注册成功后，789游戏中心会赋予一个专有的推广链接和客户端链接，把该链接在非789游戏的其他平台进行推广，推广员获得相应的佣金。</p>
+					<p>2、推广链接和客户端自动绑定推广员ID，数据精确。</p>
+					<p>3、所获佣金根据推广模式不同获得相应的现金回报，由789游戏中心统一支付，对玩家无任何影响。</p>
+					<p>4、杜绝作弊，专业数据统计，专职数据分析团队，最终解释权归789游戏中心所有。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	 <!---->
+</div>
+<div class="float_clean"></div> 
+<div id="footer">
+   <p class="footer_link">
+        <a href="http://www.789game.com/index.aspx">网站首页</a> |
+        <a href="http://www.789game.com/NewsList.aspx">新闻公告</a> |
+        <a href="http://www.789game.com/GameIntroduction.aspx">游戏介绍</a> |
+        <a href="http://pay.789game.com:8199">充值中心</a> |
+        <a href="http://www.789game.com/download.html">下载中心</a> |
+        <a href="http://www.789game.com/QuestionList.aspx">常见问题</a> |
+        <a href="http://www.789game.com/fuwuzhongxin.html">客服中心</a> |
+        <a href="http://www.789game.com/lianxiwomen.html">联系我们</a> |
+		<a href="http://www.789game.com/service.html">关于我们</a> 
+    </p>
+    <p class="footer_copy">
+       <script language="JavaScript" src="js/footer.js" type="text/JavaScript"></script>
+        789游戏中心 豫ICP备12014032号-1
+        网络文化经营许可证 豫网文[2012]0133-0005号 文网游备字[2014]C-CBG035号</p>
+        <p class="footer_img">
+            <img border="0" src="img/360.png" alt="">
+             <a><img src="img/wen.jpg" alt=""></a> 
+             <img src="img/scanv.png" alt="" />
+             <img src="img/cert-cyberpolice.gif" alt="">
+     </p>
+</div>
+</body>
+</html>
+

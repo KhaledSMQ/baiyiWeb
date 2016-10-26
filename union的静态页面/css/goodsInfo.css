@@ -1,0 +1,214 @@
+   .userAllInfo {
+	width:732px;
+	margin:0px auto;
+	margin-top:10px;
+	font-family:"宋体";
+	font-size:14px;
+	}
+	.goodsBig{
+	width:100%;
+	height:33px;
+	background-color:#eff2f7;
+	border:1px solid #e4e4e4;
+	}
+     .goodsBig span{
+	 color:#ff7d01;
+	 width:90px;
+	 float:left;
+	 display:inline;
+	 text-align:center;
+	 margin-top:10px;
+	 }
+	 .goodsTit{
+	 float:left;
+	 display:inline;
+	 width:86px;
+	 height:26px;
+	 margin-right:6px;
+	 margin-top:4px;
+	 background-color:#ff7d01; /*(#999999)*/
+	 }
+	 .goodsTit span{
+	 float:left;
+	 width:100%;
+	 text-align:center;
+	 color:white;
+	 margin-top:5px;
+	 }
+	 .goodsCiCun{
+	width:100%;
+	height:51px;
+	background-color:#eff2f7;
+	border-left:1px solid #e4e4e4;
+	border-right:1px solid #e4e4e4;
+	border-bottom:1px solid #e4e4e4;
+	 }
+	 .goodsCiCun span{
+	 color:#ff7d01;
+	 width:90px;
+	 float:left;
+	 display:inline;
+	 text-align:center;
+	 margin-top:19px;
+	 }
+	 .goodsCiBig{
+	 float:left;
+	 display:inline;
+	 width:86px;
+	 height:26px;
+	 margin-right:6px;
+	 margin-top:13px;
+	 background-color:#ff7d01; /*(#999999)*/
+	 }
+	 .goodsCiBig span{
+	 float:left;
+	 width:100%;
+	 text-align:center;
+	 color:white;
+	 margin-top:5px;
+	 }
+	 .goodsJs{
+	 width:100%;
+	 margin-top:24px;
+	 }
+	 .showGoodsJs{
+	 float:left;
+	 display:inline;
+	 border:1px solid #ff7d01;
+	 color:#ff7d01;
+	 width:85px;
+	 height:24px;
+	 margin-right:10px;
+	 }
+	 .showGoodsJs span{
+	 float:left;
+	 width:100%;
+	 text-align:center;
+	 margin-top:5px;
+	 }
+	 .JsShow{
+	 float:left;
+	 display:inline;
+	 width:524px;
+	 height:79px;
+	 border:1px solid #e4e4e4;
+	 margin-right:12px;
+	 }
+	 .JsShow  textarea{
+		 width:524px;
+		height:79px;
+	 }
+	 .copyJs{
+	 width:86px;
+	 height:26px;
+	 float:left;
+	 display:inline;
+	 background-color:#ff7d01;
+	 margin-top:55px;
+	 }
+	 .copyJs span{
+	 float:left;
+	 display:inline;
+	 width:100%;
+	 text-align:center;
+	margin-top:5px;
+	color:white;
+	 }
+	 .goods1{
+	 width:100%;
+	 float:left;
+	 height:142px;
+	 border:1px solid #e4e4e4;
+	 margin-top:23px;
+	 }
+	 .goods1Name{
+	 width:70px;
+	 float:left;
+	 display:inline;
+	 height:142px;
+	 }
+	.goods1Name span{
+	float:left;
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+	height:142px;
+	line-height:142px;
+	}
+	 .goods{
+	 width:553px;
+	 float:left;
+	 display:inline;
+	 border-left:1px solid #e4e4e4;
+	 border-right:1px solid #e4e4e4;
+	  height:142px;
+	 }
+	.goodsCopy {
+	 width:106px;
+	 float:left;
+	 display:inline;
+	 height:142px;
+	 }
+	.copyGoodJs{
+	 width:86px;
+	 height:26px;
+	 background-color:#ff7d01;
+	 margin:0px auto;
+	 margin-top:55px;
+	 }
+	 .copyGoodJs span{
+	 float:left;
+	 display:inline;
+	 width:100%;
+	 text-align:center;
+	margin-top:5px;
+	color:white;
+	 }
+	 .goods ul{
+	 list-style:none;
+	 float:left;
+	 display:inline;
+	 }
+	 .goods ul li{
+	 float:left;
+	 display:inline;
+	 }
+	  .goodsTop1, .goodsTop2, .goodsTop3{
+	  width:135px;
+	  text-align:center;
+	  }
+	 .goodsTop1{
+	 height:28px;
+	 background-color:#eff2f7;
+	 border-bottom:1px solid #e4e4e4;
+	 }
+	 .goodsTop1 span{
+	 line-height:28px;
+	 height:28px;
+	 width:100%;
+	 text-align:center;
+	 }
+	 .goodsTop2{
+	 height:38px;
+	 border-bottom:1px solid #e4e4e4;
+	 }
+	  .goodsTop2 span{
+	   line-height:38px;
+	 height:38px;
+	 width:100%;
+	 text-align:center;
+	  }
+	 .goodsTop3{
+	 height:74px;
+	 background-color:#eff2f7;
+	 }
+	 .goodsTop3 span{
+	  line-height:74px;
+	 height:74px;
+	 width:100%;
+	 text-align:center;
+	 }
+	 .goodsTop3 span img{
+	 margin-top:8px;
+	 border:0px;
+	 }

@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>6513棋牌游戏中心官方网站_6513棋牌游戏大厅下载_最好玩的6513捕鱼比赛</title>
+<meta name="keywords" content="6513游戏中心,6513棋牌游戏,6513捕鱼比赛，6513官网" />
+<meta name="description" content="6513游戏中心-最好玩的6513棋牌游戏中心注册就送金币，6513捕鱼比赛万人火爆在线,24小时客服,棋牌游戏就选6513棋牌游戏中心；" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/findPassword.css" />
+<link rel="stylesheet" type="text/css" href="css/Unbound.css" />
+</head>
+<body>
+ <!--[if lte IE 6]>
+<script src="images/DD_belatedPNG_0.0.8a.js"></script>
+<script>
+DD_belatedPNG.fix('div,ul,img,li,input,a,.png_bg'); 
+</script>
+<![endif]-->
+ <script type="text/javascript">
+        $(document).ready(function () {
+		  //找回方式的效果显示
+		  //用户名找回的方式
+              $(".loginPassword").hover(function () {
+                  $(this).css("border"," 1px solid #AED098");
+				  $(this).find("img").attr("src"," images/name-1.jpg");
+				  $(this).find("p").css("color"," #63973e");
+              },function(){
+			   $(this).css("border"," 1px solid #b8b8b8");
+				  $(this).find("img").attr("src"," images/name-01.jpg");
+				  $(this).find("p").css("color"," #888888");
+			  
+			  });
+			  //用户id找回
+			 $(".safePassword").hover(function () {
+                  $(this).css("border"," 1px solid #AED098");
+				  $(this).find("img").attr("src"," images/id-1.jpg");
+				  $(this).find("p").css("color"," #63973e");
+              },function(){
+			   $(this).css("border"," 1px solid #b8b8b8");
+				  $(this).find("img").attr("src"," images/id-01.jpg");
+				  $(this).find("p").css("color"," #888888");
+			  });
+			  //邮箱验证
+			  $(".emali").hover(function(){
+				  $(this).css("border"," 1px solid #AED098");
+				  $(this).find("img").attr("src"," images/emil-1.jpg");
+				  $(this).find("p").css("color"," #63973e");
+				  $("#chooseInfo").html("请填写您绑定的邮箱：");
+			  },function(){
+			   $(this).css("border"," 1px solid #b8b8b8");
+				  $(this).find("img").attr("src"," images/emil-01.jpg");
+				  $(this).find("p").css("color"," #888888");
+				  $("#chooseInfo").html("请填写您绑定的邮箱：");
+			  });
+			  //手机验证
+			  $(".phone").hover(function(){
+				  $(this).css("border"," 1px solid #AED098");
+				  $(this).find("img").attr("src"," images/phone-1.jpg");
+				  $(this).find("p").css("color"," #63973e");
+				  $("#chooseInfo").html("请填写您的手机验证码：");
+				  $("#emailInput").css("display","none");
+				  $("#emailInputInfo").css("display","none");
+				  $("#phoneInput").css("display","block");
+				  $("#phoneInputInfo").css("display","block");
+			  },function(){
+			   $(this).css("border"," 1px solid #b8b8b8");
+				  $(this).find("img").attr("src"," images/phone-01.jpg");
+				  $(this).find("p").css("color"," #888888");
+				  $("#emailInput").css("display","block");
+				  $("#emailInputInfo").css("display","block");
+				  $("#phoneInput").css("display","none");
+				  $("#phoneInputInfo").css("display","none");
+			  });
+			
+			 // 需要找回账号的验证
+		  $("#main_txtAccount").bind("blur",function(){
+		  $("#main_txtAccount").css("border","1px solid #63973e");
+			var  account=$("#main_txtAccount").val();
+			if(account == ""){
+			$("#errorDiv").find("span").html("请输入账号");
+			return false;
+			}else{
+			return true;
+			}
+		  });
+		  //邮箱值的验证
+		  $("#txtemail").bind("blur",function(){
+		  $("#txtemail").css("border","1px solid #63973e");
+			var  account=$("#txtemail").val();
+			if(account == ""){
+			$("#errorDivs").find("span").html("请输入账号");
+			return false;
+			}else{
+			return true;
+			}
+		  });
+		  
+		  //验证输入的新密码
+		  $("#txtPwd").bind("blur",function(){
+		    $("#txtPwd").css("border","1px solid #63973e");
+		    var pwd=$("#txtPwd").val();
+			if(pwd ==""){
+		     $("#showError").find("span").html("请输入密码");
+		   }else{
+		   return true;
+		   }
+		  });
+		  //验证输入的确认新密码
+		  $("#txtRePwd").bind("blur",function(){
+		    $("#txtRePwd").css("border","1px solid #63973e");
+			  var pwd=$("#txtPwd").val();
+		      var repPwd=$("#txtRePwd").val();
+			 if(pwd == "" && repPwd== "" ){
+			 $("#showError").find("span").html("请输入新密码");
+			  return false;
+			 }else if(repPwd="" ){
+			  $("#showError").find("span").html("请输入新密码");
+			   return false;
+			 }else if(repPwd != pwd){
+			 $("#showError").find("span").html("请输入新密码");
+			 return false;
+			 }else{
+			 return true;
+			 }
+		  });
+		  //进行下一步操作时的按钮样式切换的效果
+		  $("#main_btnNext").bind("mousedown",function(){
+		  $(this).css("background","url(images/btn-next2.jpg) no-repeat");
+		  });
+		  $("#btnNext3").bind("mousedown",function(){
+		  $(this).css("background","url(images/btn-next2.jpg) no-repeat");
+		  });
+		  $("#btnNext4").bind("mousedown",function(){
+		  $(this).css("background","url(images/btn-OK2.jpg) no-repeat");
+		  });
+		  
+		    
+		   //1、2、3、4步向下进行时顶部效果的切换
+			  $("#firstChoose").click(function(){
+				$("#showStep1").css("display","none");
+			    $("#showStep2").css("display","block");
+				$("#topshow1").find("img").attr("src","images/dh-1.jpg");
+				$("#shoetop1").find("img").attr("src","images/dht-1.jpg")
+				$("#steps1").css("color","");
+				$("#topshow2").find("img").attr("src","images/dh-02.jpg");
+				$("#shoetop2").find("img").attr("src","images/dht-01.jpg");
+				$("#steps2").css("color","#FF6A2A");
+			  });
+			 $("#secondChoose").click(function(){
+				$("#showStep1").css("display","none");
+			    $("#showStep2").css("display","block");
+				$("#topshow1").find("img").attr("src","images/dh-1.jpg");
+				$("#shoetop1").find("img").attr("src","images/dht-1.jpg")
+				$("#steps1").css("color","");
+				$("#topshow2").find("img").attr("src","images/dh-02.jpg");
+				$("#shoetop2").find("img").attr("src","images/dht-01.jpg");
+				$("#steps2").css("color","#FF6A2A");
+			 });
+			 $("#main_btnNext").click(function(){
+				$("#showStep2").css("display","none");
+			    $("#showStep3").css("display","block");
+				$("#topshow2").find("img").attr("src","images/dh-2.jpg");
+				$("#shoetop2").find("img").attr("src","images/dht-1.jpg")
+				$("#steps2").css("color","");
+				$("#topshow3").find("img").attr("src","images/dh-03.jpg");
+				$("#shoetop3").find("img").attr("src","images/dht-01.jpg");
+				$("#steps3").css("color","#FF6A2A");
+			 });
+			 $("#btnNext3").click(function(){
+				$("#showStep3").css("display","none");
+			    $("#showStep4").css("display","block");
+				$("#topshow3").find("img").attr("src","images/dh-2.jpg");
+				$("#shoetop3").find("img").attr("src","images/dht-1.jpg")
+				$("#steps3").css("color","");
+				$("#topshow4").find("img").attr("src","images/dh-04.jpg");
+				$("#steps4").css("color","#FF6A2A");
+			 });
+        });
+    </script>
+
+<div class="mid">
+	<!--header  begin-->
+	<div class="banner">
+		<div class="bannerTop">
+			<div class="logo"><a href="" target="_blank"><img src="images/logo.png"/></a></div>
+			<div class="navBar">
+				<span>欢迎您来到6513游戏中心<label class="labels"><a href="login.html" target="_blank">[登录]</a></label><label><a href="register.html" target="_blank">[免费注册]</a></label></span>
+			</div>
+			<div class="navBar1">
+				<ul>
+					<li style="border-left:none;"><a href="index.html">网站首页</a><img src="images/1-1.jpg" /></li>
+					<li><a href="newsList.html">新闻公告</a><img src="images/1-1.jpg" /></li>
+					<li><a href="chongzhi.html">充值中心</a><img src="images/1-1.jpg" /></li>
+					<li><a href="gameShow.html">游戏介绍</a><img src="images/1-1.jpg" /></li>
+					<li><a href="userCenter.html">用户中心</a><img src="images/1-1.jpg" /></li>
+					<li><a href="">礼品商城</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<div class="topImg1"></div>
+	<!--header  end-->
+	<!--content  begin-->
+	<div class="pageBody">
+		<!--内容主体 start-->	
+		<div class="findPassword">
+			<div style="width:96%;margin:0px auto;">
+				<ul class="findList">
+					<li id="topshow1">
+					   <div><img src="images/dh-01.jpg" /></div>
+					   <div class="tiao" id="shoetop1"><img src="images/dht-01.jpg" /></div>
+					</li>
+					<li id="topshow2">
+						<div><img src="images/dh-2.jpg" /></div>
+						<div class="tiao" id="shoetop2"><img src="images/dht-1.jpg" /></div>
+					</li>
+                    <li id="topshow3">
+						<div><img src="images/dh-3.jpg" /></div>
+						<div class="tiao" id="shoetop3"><img src="images/dht-1.jpg" /></div>
+					</li>
+					<li id="topshow4"><div><img src="images/dh-4.jpg" /></div></li>
+				</ul>
+			</div>
+			<div style="float:left;margin-top:10px;">
+				<ul class="findList1">
+                    <li id="steps1" style="color:#FF6A2A;">解除绑定类型</li>
+                    <li id="steps2">确认账号</li>
+                    <li id="steps3">安全验证</li>
+					<li id="steps4" style="width:64px;margin-right:0px;">解除绑定</li>
+                </ul>
+			</div>
+			<div class="clear"></div>
+        	<div class="allChoose" id="showStep1">
+				<ul class="findGenre">
+					<li class="loginPassword" id="firstChoose">
+						<a>
+							<span><img src="images/name-01.jpg"></span>
+							<p>用户名找回</p>
+						</a>
+					</li>
+					<li class="safePassword" id="secondChoose">
+						<a>
+							<span><img src="images/id-01.jpg"></span>
+							<p>用户ID找回</p>
+						</a>
+					</li>
+				</ul>
+				<div class="Cozy" id="Tishi">
+					<span>温馨提示：</span>
+					<p>如果您想解除绑定，可以通过输入游戏用户名或者用户ID进行解绑，<br> 获得验证码后即可解除绑定。</p>
+				</div>
+			</div>
+			<div class="allChoose" style="display:none;" id="showStep2">
+				<div class="confirm">
+					<div class="inputBox">
+						<label>请填写您需要找回的帐号：</label>
+						<input name="ctxtAccount" id="main_txtAccount" type="text"> 
+						<div id="errorDiv">
+						   <span></span>
+						</div>
+					</div>
+					<div class="inputBox">
+						<label>验证码：</label><input name="txtCode" id="main_txtCode" class="code" type="text">
+						<span>
+							<img id="imgValidateCode" src="" height="30" width="70"> 
+						</span>
+						<a title="点击换一张" href="javascript:void(0)" onclick="document.getElementById('imgValidateCode').src='ValidationImage.ashx?r' + Math.random()">看不清楚？再换一张</a>
+					</div>
+				</div>
+				<input name="btnNext" value="" id="main_btnNext" class="next_step" type="submit">
+			</div>
+			<div class="allChoose" style="display:none;" id="showStep3">
+				<ul class="findChoose">
+					<li class="emali">
+						<a>
+							<span><img src="images/emil-01.jpg"></span>
+							<p>邮箱验证</p>
+						</a>
+					</li>
+					<li class="phone">
+						<a>
+							<span><img src="images/phone-01.jpg"></span>
+							<p>手机验证码</p>
+						</a>
+					</li>
+				</ul>
+				<div class="confirm">
+					<div class="inputBox">
+						<label id="chooseInfo"></label>
+						<input name="email" id="txtemail" type="text"> 
+						<div id="errorDivs">
+						   <span></span>
+						</div>
+					</div>
+					<div class="inputBox" id="emailInput">
+						<label>验证码：</label><input name="txtCode" id="main_txtCode" class="code" type="text">
+						<div id="showinfo"> 
+							<span>
+								发送成功，
+							</span>
+							<a title="" href="">立即进入邮箱</a>
+						</div>
+					</div>
+					<div class="inputBox" id="emailInputInfo">
+						<label></label><input name="txtReCode" id="txtReCode" value="邮箱验证码" class="code" type="submit">
+					</div>
+					<!--phone-->
+					<div class="inputBox" id="phoneInput" style="display:none;">
+						<label>验证码：</label><input name="txtphoneCode" id="main_txtphoneCode" class="code" type="text">
+						<div id="showinfo"> 
+							<span style="width:150px;">
+								发送成功，请注意查收
+							</span>
+						</div>
+					</div>
+					<div class="inputBox" id="phoneInputInfo" style="display:none;">
+						<label></label><input name="txtphoneCode" id="txtphoneCode" value="手机验证码" class="code" type="submit">
+					</div>
+					
+				</div>
+				<input name="btnNext" value="" id="btnNext3" class="next_step" type="submit">
+			</div>
+			<div style="display:none;" class="Step4" id="showStep4">
+				<div style="float:left; margin-top:50px;">
+					<div class="success" style="">
+						<p>您正在解除的账号是：<label>xxxxxxxxxx</label></p>
+					    <p style="font-size:25px;color:#7FAC5B;margin-top:30px;">恭喜您，解除绑定成功！</p>
+					</div>
+					
+					<div class="inputBoxs" style="margin-top:20px;"> 
+						<div class="Complete">
+							<input type="button" id="btnNext4" value="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容主体  end-->
+	</div>
+	<!--content  end-->
+	<div class="footer">
+		<div class="footerCon">
+			<div class="footerleft">
+				<img src="images/logo2.png"/>
+			</div>
+			<div class="footerRig">
+				<div class="companyInfo">
+					<p>|<a>网站首页</a></p>
+					<p>|<a>新闻公告</a></p>
+					<p>|<a>充值中心</a></p>
+					<p>|<a>游戏介绍</a></p>
+					<p>|<a>用户中心</a></p>
+					<p>|<a>礼品商城</a></p>
+				</div>
+				<div class="footerCopy">
+					<script type="text/javascript" src="js/footer.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

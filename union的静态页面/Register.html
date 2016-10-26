@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery1.8.3.js"></script>
+<script type="text/javascript" src="js/check.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="top_logo">
+    <a href="#">
+      <img  src="img/cs_logo.gif" alt="" />
+    </a>
+    </div>
+
+    <div class="top_navigation">
+        <ul class="top_navigation_ul">
+          <li><a class="top_navigation_link" title="首页" href="index.html">首页</a></li>
+          <li><a class="top_navigation_link" title="联盟公告" href="bulletin.html">联盟公告</a></li>
+          <li><a class="top_navigation_link" title="广告模式" href="advert.html">广告模式</a></li>
+          <li><a class="top_navigation_link" title="常见问题" href="faq.html">常见问题</a></li>
+        </ul>
+    
+        <div class="top_login">
+			<ul>
+                <li id="top_login_center" style="display:none;"><a class="top_login_link_user" href="user.html">个人中心</a></li>
+                <li id="top_login_out" style="display:none;"><a class="top_login_link_logout" onclick="logout();">退出</a></li>
+                <li id="top_login_reg" style=""><a class="top_login_link_reg" href="Register.html">注册</a></li>
+                <li id="top_login_in" style=""><a class="top_login_link_user" href="login.html">登陆</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="user_login_main_form_title">
+         <a href="index.html"><img alt="首页" src="img/cs_nagv_icon_home.jpg"></a>
+                当前位置：<a href="index.html">首页</a> &gt; 用户注册
+    </div>
+    <div class="user_register_title"  style="height:730px;">
+        <img class="user_register_title_img1" src="img/cs_register_step1.jpg" alt="" />
+        <img class="user_register_title_img2" src="img/cs_register_step2.jpg" alt="" />
+        <div class="user_register_form">
+            <div class="float_clean"></div>
+            <div class="user_register_form_content" id="user_register_form_step1" style="display:block">
+                 <div class="user_register_form_content_title">登陆信息</div>
+                 <div class="user_register_form_content_input_row">
+                   用户账号：
+                      <input type="text" class="user_register_form_content_input_text" id="user_name">
+                      <font color="red">*</font>
+                      <span id="user_name_span">请输入用户名，3-20位的字母或数字</span>
+                  </div>
+
+                  <div class="user_register_form_content_input_row">
+                     用户密码：
+                     <input type="password" class="user_register_form_content_input_text" id="user_pwd">
+                     <font color="red">*</font>
+                     <span id="user_pwd_span">请输入用户密码，6-20位的字符组成的字母</span>
+                  </div>
+                  
+                  <div class="user_register_form_content_input_row">
+                      确认密码：
+                     <input type="password" class="user_register_form_content_input_text" id="user_pwd2">
+                     <font color="red">*</font>
+                     <span id="user_pwd2_span">请再次输入一次相同的密码</span>
+                  </div>
+                  
+                  <div class="user_register_form_content_input_row">
+                      选择类型：
+                     <input type="radio" value="个人信息" name="testradip" id="Info1" /> 个人信息
+                     <input type="radio" value="网站信息" name="testradip" id="Info2" /> 网站信息
+                     <font color="red">*</font>
+                     <span id="user_bid_span">请点击选择类型</span>
+                  </div>
+                    <!-- 网站信息  begin-->
+                 <div class="user_register_form_content" id="user_register_form_step2" style="display:none;">
+                    <div class="user_register_form_content_input_row">
+                       站点类型：
+                         <select  class="user_register_form_content_input_select" id="website_type">
+                              <option value="0">选择类型</option>
+                              <option value="1">综合资讯</option>
+                              <option value="2">小说站点</option>
+                              <option value="3">影视类站点</option>
+                              <option value="4">小游戏站</option>
+                              <option value="5">动漫类站点</option>
+                              <option value="6">IT资讯</option>
+                        </select>
+                        <font color="red">*</font>
+                        <span id="website_type_span">请选择网站类型</span>
+                    </div>
+                    
+                    <div class="user_register_form_content_input_row">
+                       网站名称：
+                      <input type="text" class="user_register_form_content_input_text" id="website_name">
+                      <font color="red">*</font>
+                      <span id="website_name_span">请输入网站名称(只能是中文、字母、或者数字)</span>
+                    </div>
+                    
+                    <div class="user_register_form_content_input_row">
+                        网站网址：
+                      <input type="text" class="user_register_form_content_input_text" id="website_domain">
+                      <font color="red">*</font>
+                      <span id="website_domain_span">请输入网站的域名(不需要输入http://)</span>
+                    </div>
+                </div>
+                <!--网站信息  end-->
+
+                <div class="user_register_form_content_input_row">
+                    手机号码：
+                    <input type="text" class="user_register_form_content_input_text" id="user_tel">
+                    <font color="red">*</font>
+                    <span id="user_tel_span">请正确如实填写，否则您的帐号可能无法通过管理员审核!</span>
+                </div>
+                    
+                <div class="user_register_form_content_input_row">
+                    邮箱地址：
+                    <input type="text" class="user_register_form_content_input_text" id="user_email">
+                    <font color="red">*</font>
+                    <span id="user_email_span">请输入您的电子邮箱！</span>
+                </div>
+                    
+                    
+                 <div class="user_register_form_btn_div_over" id="userRegister" >
+                      <div class="user_register_form_btn_div_over_detail">
+                          <input type="checkbox" id="user_register_agree_rule" class="user_register_agree_rule_checkbox_class">
+                          &nbsp;
+                          <a href="" target="_blank" class="user_register_form_link">789game服务条款</a>
+                          <span id="user_register_agree_rule_span" style="margin-left:10px;" >必须同意服务条款才能注册！</span>
+                       </div>
+					   <button class="user_register_form_btn" id="next1Click"  title="点击注册">点击注册</button>
+                 </div>
+				 
+				<!--网站信息填写后的注册-->
+				 <div class="user_register_form_btn_div_over" id="webRegister" style="display:none;">
+                      <div class="user_register_form_btn_div_over_detail">
+                          <input type="checkbox" id="user_register_agree_rule2" class="user_register_agree_rule_checkbox_class">
+                          &nbsp;
+                          <a href="" target="_blank" class="user_register_form_link">789game服务条款</a>
+                          <span id="user_register_agree_rule_span2" style="margin-left:10px;">必须同意服务条款才能注册！</span>
+                       </div>
+					    <button class="user_register_form_btn" id="webClick"  title="点击注册">点击注册</button>
+                 </div>
+				 <!---->
+            </div>
+            <div class="user_register_form_content" id="user_register_form_sccuess" style="display:none;">
+                <div class="user_register_form_sccuess_message">
+                    ^_^恭喜您成功注册，请耐心等待商务审核注册信息！
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+<div class="float_clean"></div> 
+<div id="footer">
+   <p class="footer_link">
+        <a href="http://www.789game.com/index.aspx">网站首页</a> |
+        <a href="http://www.789game.com/NewsList.aspx">新闻公告</a> |
+        <a href="http://www.789game.com/GameIntroduction.aspx">游戏介绍</a> |
+        <a href="http://pay.789game.com:8199">充值中心</a> |
+        <a href="http://www.789game.com/download.html">下载中心</a> |
+        <a href="http://www.789game.com/QuestionList.aspx">常见问题</a> |
+        <a href="http://www.789game.com/fuwuzhongxin.html">客服中心</a> |
+        <a href="http://www.789game.com/lianxiwomen.html">联系我们</a> |
+		<a href="http://www.789game.com/service.html">关于我们</a> 
+    </p>
+
+    <p class="footer_copy">
+       <script language="JavaScript" src="js/footer.js" type="text/JavaScript"></script>
+        789游戏中心 豫ICP备12014032号-1 
+        网络文化经营许可证 豫网文[2012]0133-0005号 文网游备字[2014]C-CBG035号</p>
+        <p class="footer_img">
+            <img border="0" src="img/360.png" alt="">
+             <a><img src="img/wen.jpg" alt=""></a> 
+             <img src="img/scanv.png" alt="" />
+             <img src="img/cert-cyberpolice.gif" alt="">
+        </p>
+</div>
+<script type="text/javascript">
+    //注册信息的验证
+    $(document).ready(function () { 
+		//选择类型的判断
+        //第一个radio为选种值
+        if ($("input[name=testradip]:checked").length == 0) {
+            $('input:radio').eq(0).attr('checked', 'true');
+        }
+        $("input[name=testradip]").click(function () {
+            switch ($("input[name=testradip]:checked").attr("id")) {
+                case "Info1":
+                    $("#user_register_form_step2").css("display", "none");
+					$("#webRegister").css("display","none");
+					$("#userRegister").css("display","block");
+                    break;
+                case "Info2":
+                    $("#user_register_form_step2").css("display", "block");
+					$("#userRegister").css("display","none");
+					$("#webRegister").css("display","block");
+                    break;
+                default:
+                    break;
+            }
+        });
+        $("#user_name").blur(function(){checkUserAccount();});
+        $("#user_pwd").blur(function(){checkUserPwd();});
+		$("#user_pwd2").blur(function(){checkRepPwd();});
+		$("#user_tel").blur(function(){checkPhone();});
+		$("#user_email").blur(function(){checkEmail();});
+		$("#website_type").blur(function(){checkWebsiteType();});
+		$("#website_name").blur(function(){checkWebsiteName();});
+		$("#website_domain").blur(function(){checkWebsiteDomain();});
+        
+        //下一步按钮事件
+        $("#next1Click").click(function () {
+		    if(checkInput()){
+				alert("success")
+			}
+        });
+       
+		$("#webClick").click(function(){
+			alert(checkInputWeb());
+			if(checkInputWeb()){
+				alert("success");
+			}
+			
+		});
+    });
+</script>
+</body>
+</html>

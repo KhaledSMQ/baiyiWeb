@@ -1,0 +1,73 @@
+ img{border:0;vertical-align:bottom;}
+  .rightBars{
+  width:74.3%;
+  float:left;
+  margin-right:0.5%;
+  display:inline; 
+  background-color:white;
+  border:1px solid #E0E0E0;
+  }
+  .leftBars{
+  background-color:white;
+  width:22.2%;
+  float:left;
+  display:inline; 
+  border-left:1px solid #E0E0E0;
+  border-bottom:1px solid #E0E0E0;
+  }
+  
+}
+  /*左侧内容begin*/
+.lanmu-list{
+width:98%; 
+margin:0px auto; 
+font-family:"宋体";
+}
+.lanmu-list ul{list-style: none;}
+.lanmu-list li {
+	width:70%;
+	height:38px;
+	margin:0px auto;
+	border-bottom:1px solid #e3e3e3;
+	font-weight:bolder;
+	font-size:14px;
+	}
+.lanmu-list li  a{
+color:#4e4e4e;
+text-decoration:none;
+width:218px;
+height:38px;
+}
+/*左侧点击的效果（字体变化）*/
+aclick{
+color:#2d96ff;
+}
+.lanmu-list li span{
+line-height:37px;
+margin-left:22px;
+}
+/*rightBar */
+.rightCon{
+width:98%;
+margin-left:20px;
+height:620px;
+overflow:hidden;
+}
+.showtitle {
+width: 100%;
+margin-top: 7px;
+float:left;
+display:inline;
+
+}
+.showtitle span {
+float: left;
+margin-top: 8px;
+font-size: 20px;
+}
+.showtitle a {
+height: 20px;
+font-size: 0.8125em;
+color: #1a92de;
+margin-top: 5px;
+}

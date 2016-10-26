@@ -1,0 +1,56 @@
+   .userAllInfo,.tgLiuCheng{
+	width:722px;
+	margin-left:20px;
+	float:left;
+	margin-top:20px;
+	font-size:14px;
+	}
+	.userAllInfo ul{
+	list-style:none;
+	float:left;
+	}
+	.userAllInfo li{
+	height:30px;
+	width:422px;
+	}
+	.userAllInfo li label{
+	margin-left:15px;
+	text-align:left;
+	display:inline;
+	font-family:"宋体";
+	color:#696969;
+	font-size:13px;
+	display:inline;
+	}
+.footerInfo li{width:100%;}
+
+
+.tgImg{
+width:657px;
+height:120px;
+border:1px solid #d8d6c9;
+margin:0px auto;
+margin-top:20px;
+}
+.tgImg ul{list-style:none;} 
+.tgImg li{
+width:210px;height:120px;
+float:left;
+display:inline;
+text-align:center;
+vertical-align:middle;
+background:url(../img/userCenter/020.png) right no-repeat;
+display:inline;
+}
+.imagesCss{margin-top:35px;}
+.descripttion{margin-top:10px;}
+.tgIntro{
+width:657px;
+margin:0px auto;
+margin-top:20px;
+}
+.tgIntro  p{
+font-size:13px;
+color:#656565;
+line-height:25px;
+}

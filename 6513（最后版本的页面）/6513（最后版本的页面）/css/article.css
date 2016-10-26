@@ -1,0 +1,96 @@
+/*右侧部分*/
+.rightTop1{
+width:99.3%;
+float:left;
+background-color:white;
+border:1px solid #E0E0E0;
+min-height:678px;
+height:auto;
+}
+/*新闻公告信息显示*/
+.showtitle{
+width:100%;
+margin-top:7px;
+}
+/*新闻公告标题*/
+.showtitle p
+ {
+ float:left;
+ margin:10px 20px 0px;
+ font-size:1em;
+ color:#000000;
+ width:80px;
+ height:18px;
+ }
+.showtitle span
+ {
+ float:right;
+ margin-top:8px;
+ margin-right:10px;
+ }
+  .showtitle a{
+ height:20px;
+ font-size:0.8125em;
+ color:#1a92de;
+ margin-top:5px;
+ }
+ .showtitle a:hover{
+ text-decoration:none;
+ }
+ /*新闻公告内容*/
+.articleListShow{
+float: left;
+position: relative;
+width: 97%;
+margin: 25px 10px 0px 0px;
+}
+/*新闻信息的题名*/
+.articleTitle{
+text-align:center;
+font-size:1.25em;
+font-size: 20px;
+font-weight: bold;
+}
+/*新闻信息的时间*/
+.articledate{
+margin-top:10px;
+text-align:center;
+margin-bottom:13px;
+font-size:0.9em;
+}
+.articledate a{margin-right:5px;}
+/*新闻信息内容*/
+.articleContent{
+width:92%;
+font-size: 13px;
+line-height: 23px;
+margin:0px auto;
+}
+.newsInfos,.gameStep,.gameQuestion,.newsInfoFooter
+{
+margin-top:15px;
+}
+/*新闻信息显示*/
+.newsInfos{
+width:100%;
+text-indent:30px;
+}
+/*游戏活动步骤*/
+.gameStep{
+text-align:left;
+}
+.articleContent p a{
+color:blue;
+font-weight:bold;
+}
+.articleContent p a:hover{
+text-decoration:none;
+}
+/*咨询在线客服*/
+.gameQuestion{
+font-weight:bold;
+}
+/*发布信息的时间和地址*/
+.newsInfoFooter  span{
+float:right;
+}

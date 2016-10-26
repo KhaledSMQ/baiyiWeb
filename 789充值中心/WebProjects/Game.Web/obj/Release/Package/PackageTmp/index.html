@@ -1,0 +1,936 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title></title>
+
+    <link rel="stylesheet" href="/templets/New/css/base.css" />
+	  <link href="css/base.css" rel="stylesheet" />
+   <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/js/jquery.iDialog.js" dialog-theme="default"></script>
+
+    <style>
+        .i-content {
+        text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+<div id="header">
+    <div class="logo">
+    </div>
+    <div class="ad"></div>
+    <div class="clear"></div>
+    <div class="nav">
+        <div class="navbar">
+           
+           <ul class="nav_link left">
+                <li style="width: 100px;">
+                    <img src="/templets/New/images/home.png" alt="" style="margin-right: 5px; margin-top:-8px;" /><a href="http://www.789game.com/Index.aspx">首页</a>
+                <li><a href="http://www.789game.com/NewsList.aspx">新闻公告</a>
+                <li><a href="http://www.789game.com/GameIntroduction.aspx">游戏介绍</a>
+                <li><a href="/">充值中心</a>
+                <li><a href="http://www.789game.com/download.html">下载中心</a>
+                <li><a href="http://www.789game.com/User/UserInfoCenter.aspx">用户中心</a>
+                <li style="background: none"><a href="http://www.789game.com/xinshoubangzhu.html">新手帮助</a>
+            </ul>
+			
+            <ul class="nav_ico right" style="margin-left:140px;float:left;">
+                <li><a href="/Login.aspx" id="login">
+                    <img src="/templets/New/images/login.jpg" alt="登录" /></a></li>
+                <li><a href="#" id="weixin">
+                    <img src="/templets/New/images/weixin.jpg" alt="微信" /></a></li>
+                <li><a href="#" id="weibo">
+                    <img src="/templets/New/images/weibo.jpg" alt="新浪微博" /></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="mainShow">
+<div class="header"><img src="/images/paystep.jpg"/></div>
+<div class="contentDiv">
+<!--左侧导航-->
+<div class="leftDiv">
+    <ul>
+        <li class="current"><img src="images/d1.png" /></li>
+        <li><img src="images/z2.jpg" /></li>
+        <li><img src="images/z3.jpg" /></li>
+        <li><img src="images/z4.jpg" /></li>
+        <li><img src="images/z5.jpg" /></li>
+        <li><img src="images/z6.jpg" /></li>
+        <li><img src="images/z7.jpg" /></li>
+    </ul>
+</div>
+<!--右侧内容-->
+<!--网银充值-->
+<div class="rightDiv">
+    <!--右侧头部的标志-->
+   <div class="header">网银充值</div>
+    <!--开始-->
+<div class="applyDiv">
+    <form name="yeepaybank" action="/orderForBank.aspx" target="_blank" method="post">
+        <!--开始-->
+        <!--输入充值用户的信息-->
+ <div class="step1">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请填写以下信息：</span></div>
+    <div class="userpayinfo">
+        <table>
+            <tr>
+                <td>请输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text"  name="yeepayBankUser"/></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+             <tr>
+                <td>再次输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text"  name="ReyeepayBankUser"/></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+        </table>
+    </div>
+        </div>
+         <!--选择充值方式-->
+ <div class="step2">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请选择充值银行：</span></div>
+    <div class="userpaybank">
+       <ul>
+           <li class="common1" >
+               <input type="radio" name="yeepayBankName" value="ICBC-NET-B2C" checked="checked"/><img src="images/gongshang.jpg" />
+           </li>
+         <li>
+               <input type="radio" name="yeepayBankName" value="ABC-NET-B2C" /><img src="images/nongye.jpg" />
+           </li>
+            <li>
+               <input type="radio" name="yeepayBankName" value="CCB-NET-B2C" /><img src="images/jianhang.jpg" />
+           </li>
+            <li>
+               <input type="radio" name="yeepayBankName" value="CEB-NET-B2C" /><img src="images/guangda.jpg" />
+           </li>
+
+            <li  class="common1">
+               <input type="radio" name="yeepayBankName" value="GDB-NET-B2C" /><img src="images/guangfa.jpg" />
+           </li>
+         <li>
+               <input type="radio" name="yeepayBankName" value="CBHB-NET-B2C" /><img src="images/bohai.jpg" />
+           </li>
+            <li>
+               <input type="radio"  name="yeepayBankName" value="HXB-NET-B2C"/><img src="images/huaxia.jpg" />
+           </li>
+            <li>
+               <input type="radio"  name="yeepayBankName" value="BOCO-NET-B2C" /><img src="images/jiaotong.jpg" />
+           </li>
+            <li  class="common1">
+               <input type="radio"  name="yeepayBankName" value="CMBC-NET-B2C"/><img src="images/mingsheng.jpg" />
+           </li>
+         <li>
+               <input type="radio" name="yeepayBankName" value="NJCB-NET-B2C" /><img src="images/nanjin.jpg" />
+           </li>
+            <li>
+               <input type="radio"  name="yeepayBankName" value="SPDB-NET-B2C"/><img src="images/pufa.jpg" />
+           </li>
+            <li>
+               <input type="radio" name="yeepayBankName" value="SDB-NET-B2C" /><img src="images/shengzhen.jpg" />
+           </li>
+            <li  class="common1">
+               <input type="radio" name="yeepayBankName" value="CIB-NET-B2C" /><img src="images/xinye.jpg" />
+           </li>
+         <li>
+               <input type="radio" name="yeepayBankName" value="CMBCHINA-NET-B2C" /><img src="images/zhaoshang.jpg" />
+           </li>
+            <li>
+               <input type="radio" name="yeepayBankName" value="BOC-NET-B2C" /><img src="images/zhongguo.jpg" />
+           </li>
+            <li>
+               <input type="radio" name="yeepayBankName" value="ECITIC-NET-B2C" /><img src="images/zhongxin.jpg" />
+           </li>
+       </ul>
+
+    </div>
+        </div>
+   
+        <!--选择充值金额-->
+<div class="step3">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请选择充值金额：</span></div>
+    <div class="userpaymoney">
+         <ul>
+            <li><input type="radio" name="yeepayBankMoney" ugold="15" value="10"  id="yeepay10" checked="checked" /><label for="yeepay10">10元</label></li>
+            <li><input type="radio" name="yeepayBankMoney" ugold="30" value="20"  id="yeepay20" /><label for="yeepay20">20元</label></li>
+            <li><input type="radio" name="yeepayBankMoney" ugold="45" value="30"  id="yeepay30" /><label for="yeepay30">30元</label></li>
+            <li><input type="radio" name="yeepayBankMoney" ugold="75" value="50"  id="yeepay50" /><label for="yeepay50">50元</label></li>
+            <li><input type="radio" name="yeepayBankMoney" ugold="150" value="100" id="yeepay100" /><label for="yeepay100">100元</label></li>
+            <li><input type="radio" name="yeepayBankMoney" ugold="300" value="200" id="yeepay200" /><label for="yeepay200">200元</label></li>
+            <li><input type="radio" name="yeepayBankMoney" ugold="750" value="500" id="yeepay500" /><label for="yeepay500">500元</label></li>
+            <li><input type="radio" name="yeepayBankMoney" ugold="1500" value="1000" id="yeepay1000"/><label for="yeepay1000">1000元</label></li>
+          <li style="width:100%;line-height:0.9em;"><input  type="radio"  name="yeepayBankMoney" value="0" uother="1" id="yeepayother"/><label for="yeepayother">其他</label>&nbsp;&nbsp;<input type="text"  name="selfMoney" class="selfMoney" style="width:5em;" placeholder="默认为100"/>&nbsp;元&nbsp;&nbsp;&nbsp;&nbsp;<label style="color:#64A589;">充值兑换比例:1金币=10000幸运豆</label></li>
+         <li style="width:100%;margin-top:0em;line-height:1em;"><label style="color:#C42739;padding-left:0.7em;" class="showMsg">充值10元,获取15个金币</label></li>
+        </ul>
+    </div>
+        </div>
+
+        <!--提交充值-->
+    <div class="step4">
+    <div style="margin-top:2em;display:block;float:none;text-align:center;">
+                <input type="submit" value="" style="background-image:url('/images/pay.jpg'); background-repeat:no-repeat; width:10em;height:3.6em; border:0em;" />
+    </div>
+        </div>
+		  <div class="step5">
+        <div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">温馨提示：</span></div>
+     <div class="userpaymoney">
+       <ul style="border:0px;">
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">1.用网银充值的用户,请保证你的网银账号有足够的余额</li>
+			<li style="width:100%;text-indent:2em;margin-bottom:1em;">4.网银兑换比率为1:1.5,单笔充值满50元赠送10金币,满100元赠送30金币,单笔充值满500元赠送200金币,不足一金币按0处理</li>
+       </ul>
+    </div>
+        </div>
+        </form>
+</div>
+</div>
+<!--支付宝支付-->
+<div class="rightDiv" style="display:none;">
+    <!--右侧头部的标志-->
+   <div class="header">支付宝充值</div>
+    <!--开始-->
+<div class="applyDiv">
+    <form name="alipay" action="/orderForAlipay.aspx" method="post" target="_blank">
+        <!--开始-->
+
+        <!--输入充值用户的信息-->
+ <div class="step1">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请填写以下信息：</span></div>
+    <div class="userpayinfo">
+        <table>
+            <tr>
+                <td>请输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text" name="payZfbUser" /></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+             <tr>
+                <td>再次输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text" name="RepayZfbUser"  /></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+        </table>
+    </div>
+        </div>
+
+        <!--选择充值金额-->
+<div class="step3">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请选择充值金额：</span></div>
+    <div class="userpaymoney">
+               <ul>
+            <li><input type="radio" name="payZfbMoney" value="10"  ugold="15"  id="zfb10" checked="checked"/><label for="zfb10">10元</label></li>
+            <li><input type="radio" name="payZfbMoney" value="20" ugold="30"  id="zfb20" /><label for="zfb20">20元</label></li>
+            <li><input type="radio" name="payZfbMoney" value="30" ugold="45"  id="zfb30" /><label for="zfb30">30元</label></li>
+            <li><input type="radio" name="payZfbMoney" value="50" ugold="75"  id="zfb50" /><label for="zfb50">50元</label></li>
+            <li><input type="radio" name="payZfbMoney"  value="100" ugold="150" id="zfb100" /><label for="zfb100">100元</label></li>
+            <li><input type="radio" name="payZfbMoney" value="200" ugold="300" id="zfb200" /><label for="zfb200">200元</label></li>
+            <li><input type="radio" name="payZfbMoney" value="500" ugold="750" id="zfb500" /><label for="zfb500">500元</label></li>
+            <li><input type="radio" name="payZfbMoney" value="1000" ugold="1500" id="zfb1000" /><label for="zfb1000">1000元</label></li>
+          <li style="width:100%;line-height:0.9em;"><input  type="radio" uother="2"  name="payZfbMoney" value="0" id="b" /><label for="b">其他</label>&nbsp;&nbsp;<input type="text"  placeholder="默认100元"  name="selfMoney" style="width:5em;" class="selfMoney"/>&nbsp;元&nbsp;&nbsp;&nbsp;&nbsp;<label style="color:#64A589;">充值兑换比例:1金币=10000幸运豆</label></li>
+         <li style="width:100%;margin-top:0em;line-height:1em;"><label style="color:#C42739;padding-left:0.7em;" class="showMsg">充值10元,获取15个金币</label></li>
+        </ul>
+    </div>
+        </div>
+
+        <!--提交充值-->
+    <div class="step4">
+    <div style="margin-top:2em;display:block;float:none;text-align:center;">
+                      <input type="submit" value="" style="background-image:url('/images/pay.jpg'); background-repeat:no-repeat; width:10em;height:3.6em; border:0em;" />
+    </div>
+        </div>
+
+         <div class="step5">
+        <div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">温馨提示：</span></div>
+     <div class="userpaymoney">
+       <ul style="border:0px;">
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">1.用支付宝支付的用户,请保证你的支付宝账号有足够的余额</li>
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">2.如遇到其他问题,请联系在线客服.</li>
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">3.充值所赠送的蓝钻等福利，均需用户重新登录大厅方可显示。敬请注意！.</li>
+		   		   <li style="width:100%;text-indent:2em;margin-bottom:1em;">4.支付宝兑换比率为1:1.5,单笔充值满50元赠送10金币,满100元赠送30金币,单笔充值满500元赠送200金币,不足一金币按0处理</li>
+       </ul>
+    </div>
+        </div>
+        </form>
+</div>
+</div>
+<!--快捷支付-->
+<div class="rightDiv" style="display:none;">
+    <!--右侧头部的标志-->
+   <div class="header">易宝快捷支付</div>
+    <!--开始-->
+<div class="applyDiv">
+    <form name="yeepayfast" action="/orderForFastpay.aspx" method="post" target="_blank">
+        <!--开始-->
+
+        <!--输入充值用户的信息-->
+ <div class="step1">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请填写以下信息：</span></div>
+    <div class="userpayinfo">
+        <table>
+            <tr>
+                <td>请输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text" name="fastYeepayUser" /></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+             <tr>
+                <td>再次输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text"   name="RefastYeepayUser"/></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+        </table>
+    </div>
+        </div>
+
+        <!--选择充值金额-->
+<div class="step3">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请选择充值金额：</span></div>
+    <div class="userpaymoney">
+           <ul>
+            <li><input type="radio" name="fastYeepayMoney"  ugold="15" value="10" id="ybkjzf10" checked="checked" /><label for="ybkjzf10">10元</label></li>
+            <li><input type="radio" name="fastYeepayMoney"  ugold="30" value="20" id="ybkjzf20" /><label for="ybkjzf20">20元</label></li>
+            <li><input type="radio" name="fastYeepayMoney"  ugold="45" value="30" id="ybkjzf30" /><label for="ybkjzf30">30元</label></li>
+            <li><input type="radio" name="fastYeepayMoney"  ugold="75" value="50" id="ybkjzf50" /><label for="ybkjzf50">50元</label></li>
+            <li><input type="radio" name="fastYeepayMoney"  ugold="150" value="100" id="ybkjzf100" /><label for="ybkjzf100">100元</label></li>
+            <li><input type="radio" name="fastYeepayMoney"  ugold="300" value="200" id="ybkjzf200" /><label for="ybkjzf200">200元</label></li>
+            <li><input type="radio" name="fastYeepayMoney"  ugold="750" value="500" id="ybkjzf500" /><label for="ybkjzf500">500元</label></li>
+            <li><input type="radio" name="fastYeepayMoney"  ugold="1500" value="1000" id="ybkjzf1000"/><label for="ybkjzf1000">1000元</label></li>
+          <li style="width:100%;line-height:0.9em;"><input  type="radio"  uother="1" value="0"  name="fastYeepayMoney" id="f" /><label for="f">其他</label>&nbsp;&nbsp;<input type="text"  placeholder="默认100" name="selfMoney" style="width:5em;" class="selfMoney"/>&nbsp;元&nbsp;&nbsp;&nbsp;&nbsp;<label style="color:#64A589;">充值兑换比例:1金币=10000幸运豆</label></li>
+         <li style="width:100%;margin-top:0em;line-height:1em;"><label style="color:#C42739;padding-left:0.7em;" class="showMsg">充值10元,获取15个金币</label></li>
+        </ul>
+    </div>
+        </div>
+
+        <!--提交充值-->
+    <div class="step4">
+    <div style="margin-top:2em;display:block;float:none;text-align:center;">
+                      <input type="submit" value="" style="background-image:url('/images/pay.jpg'); background-repeat:no-repeat; width:10em;height:3.6em; border:0em;" />
+    </div>
+        </div>
+
+           <div class="step5">
+        <div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">温馨提示：</span></div>
+     <div class="userpaymoney">
+       <ul style="border:0px;">
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">1.使用“易宝一键支付”无需开通网银，可直接通过开户时的身份信息与预留手机号码进行付款.</li>
+            <li style="width:100%;text-indent:2em;margin-bottom:1em;">2.银行预留手机号是您申请银行卡或办理银行卡相关业务时在银行登记的手机号</li>
+             <li style="width:100%;text-indent:2em;margin-bottom:1em;">3.单笔累计支付上限为1000元,当日累计支付上限为2000元,当月累计支付上限为5000元</li>
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">4.充值过程中遇到问题，请及时联系客服人员。</li>
+		   <li style="width:100%;text-indent:2em;margin-bottom:1em;">3.一键支付兑换比率为1:1.5,单笔充值满50元赠送10金币,满100元赠送30金币,单笔充值满500元赠送200金币,不足一金币按0处理</li>
+       </ul>
+    </div>
+        </div>
+        </form>
+</div>
+</div>
+<!--游戏点卡充值-->
+<div class="rightDiv" style="display:none;">
+    <!--右侧头部的标志-->
+   <div class="header">游戏点卡充值</div>
+    <!--开始-->
+<div class="applyDiv">
+    <form name="yeepaycard" action="/orderForCard.aspx" method="post" target="_blank">
+        <!--开始-->
+
+        <!--输入充值用户的信息-->
+ <div class="step1">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请填写以下信息：</span></div>
+    <div class="userpayinfo">
+        <table>
+            <tr>
+                <td>请输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text" name="yeepayCardUser" /></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+             <tr>
+                <td>再次输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text" name="ReyeepayCardUser"/></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+        </table>
+    </div>
+        </div>
+         <!--选择充值方式-->
+ <div class="step2">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请选择充值卡类型：</span></div>
+    <div class="userpaybank">
+     <ul style="height:14.56em;" class="paycard">
+           <li class="common1" >
+               <input type="radio" name="yeepayCardName" value="ZHENGTU-NET" style="height:2.375em;line-height:2.375em;" /><img src="images/jr.jpg" />
+           </li>
+         <li>
+               <input type="radio" name="yeepayCardName" value="JUNNET-NET" style="height:2.375em;line-height:2.375em;" checked="checked" /><img src="images/jw.jpg" />
+           </li>
+            <li>
+               <input type="radio" name="yeepayCardName" value="JIUYOU-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/jy.jpg" />
+           </li>
+            <li>
+               <input type="radio" name="yeepayCardName" value="UNICOM-NET" style="height:2.375em;line-height:2.375em;" /><img src="images/lt.jpg" />
+           </li>
+
+            <li  class="common1">
+               <input type="radio" name="yeepayCardName" value="QQCARD-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/qq.jpg" />
+           </li>
+         <li>
+               <input type="radio" name="yeepayCardName" value="SNDACARD-NET" style="height:2.375em;line-height:2.375em;" /><img src="images/sd.jpg" />
+           </li>
+            <li>
+               <input type="radio"  name="yeepayCardName" value="SOHU-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/sh.jpg" />
+           </li>
+            <li>
+               <input type="radio"  name="yeepayCardName" value="SZX-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/szx.jpg" />
+           </li>
+            <li  class="common1">
+               <input type="radio"  name="yeepayCardName" value="TIANHONG-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/th.jpg" />
+           </li>
+         <li>
+               <input type="radio" name="yeepayCardName" value="TIANXIA-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/txt.jpg" />
+           </li>
+            <li>
+               <input type="radio"  name="yeepayCardName" value="WANMEI-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/wm.jpg" />
+           </li>
+            <li>
+               <input type="radio" name="yeepayCardName" value="YPCARD-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/yb.jpg" />
+           </li>
+            <li  class="common1">
+               <input type="radio" name="yeepayCardName" value="ZONGYOU-NET" style="height:2.375em;line-height:2.375em;"/><img src="images/zy.jpg" />
+           </li>
+       </ul>
+    </div>
+        </div>
+   
+        <!--选择充值金额-->
+<div class="step3">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请输入充值金额：</span></div>
+    <div class="userpaymoney">
+        <ul>
+           
+          <li style="width:100%;line-height:0.9em;">&nbsp;&nbsp;<input type="text" style="width:5em;" placeholder="默认10元"   name="yeepayCardMoney" class="selfMoneys"/>&nbsp;元&nbsp;&nbsp;&nbsp;&nbsp;<label style="color:#64A589;">（注:请手动填写充值面额）</label></li>
+         <li style="width:100%;margin-top:0em;line-height:1em;"><label style="color:red;padding-left:0.7em;">提示:你填写的金额与游戏卡面额必须一致，否则将可能导致支付不成功或者支付余额丢失！！</label></li>
+                 <li style="width:100%;margin-top:0em;line-height:1em;"><label style="color:#C42739;padding-left:0.7em;" class="showMsgs">充值10元,获取12个金币</label></li>
+        </ul>
+    </div>
+        </div
+        <!--提交充值-->
+    <div class="step4">
+    <div style="margin-top:2em;display:block;float:none;text-align:center;">
+                       <input type="submit" value="" style="background-image:url('/images/pay.jpg'); background-repeat:no-repeat; width:10em;height:3.6em; border:0em;" />
+    </div>
+        </div>
+		  <div class="step5">
+        <div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">温馨提示：</span></div>
+     <div class="userpaymoney">
+       <ul style="border:0px;">
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">1.游戏点卡充值兑换比率为1:1.2,单笔充值满50元赠送10金币,满100元赠送30金币,单笔充值满500元赠送200金币,不足一金币按0处理</li>
+       </ul>
+    </div>
+        </div>
+        </form>
+</div>
+</div>
+<!--微信支付-->
+<div class="rightDiv" style="display:none;">
+    <!--右侧头部的标志-->
+   <div class="header">微信支付</div>
+    <!--开始-->
+<div class="applyDiv">
+        <!--开始-->
+        <!--输入充值用户的信息-->
+ <div class="step1">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请填写以下信息：</span></div>
+    <div class="userpayinfo">
+        <table>
+            <tr>
+                <td>请输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text" name="webchartUser" id="webchartuser" /></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+             <tr>
+                <td>再次输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text"   name="RewebchartUser"/></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+        </table>
+    </div>
+        </div>
+
+        <!--选择充值金额-->
+<div class="step3">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请选择充值金额：</span></div>
+    <div class="userpaymoney">
+      <ul>
+            <li><input type="radio" name="webchartMoney" ugold="15"  value="10" id="weixinzf10" checked="checked" /><label for="weixinzf10">10元</label></li>
+            <li><input type="radio" name="webchartMoney" ugold="30" value="20" id="weixinzf20" /><label for="weixinzf20">20元</label></li>
+            <li><input type="radio" name="webchartMoney" ugold="45" value="30" id="weixinzf30" /><label for="weixinzf30">30元</label></li>
+            <li><input type="radio" name="webchartMoney" ugold="75" value="50" id="weixinzf50" /><label for="weixinzf50">50元</label></li>
+            <li><input type="radio" name="webchartMoney" ugold="150" value="100" id="weixinzf100" /><label for="weixinzf100">100元</label></li>
+            <li><input type="radio" name="webchartMoney" ugold="300" value="200" id="weixinzf200" /><label for="weixinzf200">200元</label></li>
+            <li><input type="radio" name="webchartMoney" ugold="750" value="500" id="weixinzf500" /><label for="weixinzf500">500元</label></li>
+            <li><input type="radio" name="webchartMoney" ugold="1500" value="1000" id="weixinzf1000" /><label for="weixinzf1000">1000元</label></li>
+          <li style="width:100%;line-height:0.9em;"><input  type="radio"  uother="1"   name="webchartMoney" id="g" value="0" /><label for="g">其他</label>&nbsp;&nbsp;<input type="text" style="width:5em;" placeholder="默认100" id="webchartselftmoney" name="selfMoney" class="selfMoney"/>&nbsp;元&nbsp;&nbsp;&nbsp;&nbsp;<label style="color:#64A589;">充值兑换比例:1金币=10000幸运豆</label></li>
+         <li style="width:100%;margin-top:0em;line-height:1em;"><label style="color:#C42739;padding-left:0.7em;" class="showMsg">充值10元,获取15个金币</label></li>
+        </ul>
+    </div>
+        </div>
+        <!--提交充值-->
+    <div class="step4">
+    <div style="margin-top:2em;display:block;float:none;text-align:center;">
+                      <input type="submit" value="" uaction="webchart" style="background-image:url('/images/pay.jpg');  background-repeat:no-repeat; width:10em;height:3.6em; border:0em;" />
+    </div>
+        </div>
+
+    <div class="step5">
+        <div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">温馨提示：</span></div>
+     <div class="userpaymoney">
+       <ul style="border:0px;">
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">1.使用“微信支付”无需开通网银和其它支付方式，可以快速实现二维码扫描支付</li>
+            <li style="width:100%;text-indent:2em;margin-bottom:1em;">2.充值过程中遇到问题，请及时联系客服人员</li>
+			 <li style="width:100%;text-indent:2em;margin-bottom:1em;">3.微信支付兑换比率为1:1.5,单笔充值满50元赠送10金币,满100元赠送30金币,单笔充值满500元赠送200金币,不足一金币按0处理</li>
+       </ul>
+    </div>
+        </div>
+</div>
+</div>
+<!--6513点卡支付-->
+<div class="rightDiv" style="display:none;">
+    <!--右侧头部的标志-->
+   <div class="header">6513点卡充值</div>
+    <!--开始-->
+<div class="applyDiv">
+        <!--开始-->
+
+        <!--输入充值用户的信息-->
+ <div class="step1">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请填写以下信息：</span></div>
+    <div class="userpayinfo">
+        <table>
+            <tr>
+                <td>请输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text"  id="cardUser"/></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+             <tr>
+                <td>再次输入充值账号:&nbsp;&nbsp;</td>
+                 <td><input type="text" /></td>
+                 <td class="errorTd"><label class="errorMsg"></label></td>
+            </tr>
+        </table>
+    </div>
+        </div>
+        <!--输入点卡信息-->
+  <div class="step2">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">请输入卡号密码：</span></div>
+    <div class="userpayinfo">
+        <table>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入卡号:&nbsp;&nbsp;</td>
+                 <td><input type="text" id="cardSerialId"/></td>
+                 <td class="errorTd"><label class="errorMsg" id="errorMsgCard"></label></td>
+            </tr>
+             <tr>
+                <td>请输入卡密:&nbsp;&nbsp;</td>
+                 <td><input type="text"  id="cardPwd"/></td>
+                 <td class="errorTd" id="Td1"><label class="errorMsg" id="errorMsgCardPwd"></label></td>
+            </tr>
+        </table>
+    </div>
+        </div>
+        <!--提交充值-->
+    <div class="step4">
+    <div style="margin-top:2em;display:block;float:none;text-align:center;">
+          <input type="submit" value="" uaction="skcz" style="background-image:url('/images/pay.jpg'); background-repeat:no-repeat; width:10em;height:3.6em; border:0em;" />
+    </div>
+        </div>
+
+        <div class="step5">
+        <div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">温馨提示：</span></div>
+     <div class="userpaymoney">
+       <ul style="border:0px;">
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">1.实卡充值请认真核对填写信息</li>
+		   <li style="width:100%;text-indent:2em;margin-bottom:1em;">2.实卡充值比率为1:1</li>
+       </ul>
+    </div>
+        </div>
+</div>
+</div>
+<!--客服代充-->
+<div class="rightDiv" style="display:none;">
+    <!--右侧头部的标志-->
+   <div class="header">客服代充</div>
+    <!--开始-->
+<div class="applyDiv">
+    <form name="contactservice" action="">
+        <!--开始-->
+
+        <!--输入充值用户的信息-->
+ <div class="step1">
+     <div class="top">如果你无法使用已有的充值方式正常充值,请联系我的官方客服代充人员,客服人员将人工为你代充</div>
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">官方代充客服：</span></div>
+        </div>
+         <!--选择充值方式-->
+ <div class="step2">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">汇款流程：</span></div>
+    <div class="userpaybank" style="margin-top:1em;">
+       <ul style="border:0px;height:7em; ">
+          <li style="width:100%;text-indent:2em;">1.联系客服专员,确认充值客服在线,可以代充.(请勿在未联系客服前就汇款)</li>
+           <li style="width:100%;text-indent:2em;">2.根据客服的提示,将充值金额汇入指定的账户,并将汇款提交后的返回页面截图,发送给充值客服.</li>
+           <li style="width:100%;text-indent:2em;">3.请用户保存隐含转账存根,提供给充值客服核对转账信息.</li>
+           <li style="width:100%;text-indent:2em;">4.请与充值客服二次确认需要充值的用户名,充值金额等信息.</li>
+       </ul>
+    </div>
+        </div>
+   
+
+
+        <!--提交充值-->
+
+         <div class="step3">
+<div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">汇款流程：</span></div>
+    <div class="userpaybank" style="margin-top:1em;">
+      <ul style="border:0px; height:6em;">
+          <li style="width:100%;text-indent:2em; margin-bottom:1em;">1.开户行:中国银行</li>
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">2.开户账号:621 7858 0000 0297 2930</li>
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">3.户名:张雪姣.</li>
+       </ul>
+    </div>
+        </div>
+        
+    <div class="step4">
+        <div class="top"><span style="width:8em;height:1em;border:1px solid #ccc;padding:0.3em; color:#A76F34;">温馨提示：</span></div>
+     <div class="userpaymoney">
+       <ul style="border:0px;">
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">1.目前客服支持中行的代充值服务。(使用客服充值,不享受特惠折扣)</li>
+           <li style="width:100%;text-indent:2em;margin-bottom:1em;">2.充值注意:联系客服专员后,务必确认官方汇款账号;汇款的金额,充值的用户名等信息.</li>
+       </ul>
+    </div>
+        </div>
+        </form>
+</div>
+</div>
+    </div>
+    </div>
+
+    <div style="text-align:center; display:none;" id="userwarm">
+    <div style="float:left;height:50px;line-height:50px;">
+    <img src="images/warning.jpg" />
+    </div>
+      <div style="float:left;margin-left:3px;padding-bottom:30px;">
+          <label style="font-size:17px;font-weight:bold;">请在新打开的页面完成充值</label><br />
+           (完成充值前请不要关闭此窗口)<br />
+        <label style="font-size:12px; color:#F49A43;">若你无法使用网银,请选择IE浏览器继续付款！</label>         
+    </div>
+ <div style="text-align:center; float:left;width:100%;height:40px;line-height:40px;">   
+     <div style="float:left; height:40px;margin-left:40px;">
+    <input type="button" onclick="javascript: window.location.href = '/showpayInfo.html'" style="background-image:url('/images/ok.jpg'); background-repeat:no-repeat;width:160px;height:40px;border:0px; margin-right:7px;" />
+         </div>
+     <div style="float:left;"> <a href="#">支付遇到问题?</a></div>
+         </div>
+    </div>
+
+
+
+
+	<div id="footer">
+   <p class="footer_link">
+        <a href="http://www.789game.com/index.aspx" >网站首页</a> |
+        <a href="http://www.789game.com/NewsList.aspx">新闻公告</a> |
+        <a href="http://www.789game.com/GameIntroduction.aspx">游戏介绍</a> |
+        <a href="/">充值中心</a> |
+        <a href="http://www.789game.com/download.html">下载中心</a> |
+        <a href="http://www.789game.com/QuestionList.aspx">常见问题</a> |
+        <a href="http://www.789game.com/fuwuzhongxin.html">客服中心</a> |
+         <a href="http://www.789game.com/lianxiwomen.html">联系我们</a> |
+		 <a href="http://www.789game.com/service.html">关于我们</a> 
+    </p>
+
+    <p class="footer_copy"><script language="JavaScript" src="/js/footer.js" type="text/JavaScript"></script>网络文化经营许可证 豫网文[2012]0133-0005号 文网游备字[2014]C-CBG035号</p>
+
+    <p class="footer_img"><img border="0" src="/templets/New/images/360.png"/><a ><img src="/templets/New/images/wen.jpg"/></a> <img src="/templets/New/images/scanv.png"/><img src="/templets/New/images/cert-cyberpolice.gif"/></p>
+</div>
+
+</body>
+</html>
+    <script type="text/javascript">
+        var commonUse = 1;
+        var commonUse1 = 1;
+        var commonUse2 = 1;
+        $(document).ready(
+            function () {
+                $(".selfMoney").attr("disabled", true);
+                /**左侧导航栏的悬浮和点击事件绑定**/
+                $(".leftDiv").find("li").each(function (j) {
+                    $(this).bind("mouseover", function () {
+                        var index = $(".leftDiv").find(".current").index();
+                        for (var i = 0; i < $(".leftDiv").find("li").length; i++) {
+                            if (i == j && i != index) {
+                                $(this).find("img").attr("src", "images/x" + (i + 1) + ".jpg");
+                            } else {
+                                if (i != j && i != index) {
+                                    $(".leftDiv").find("li").eq(i).find("img").attr("src", "/images/z" + (i + 1) + ".jpg");
+                                }
+                            }
+                        }
+                    });
+                    $(this).bind("click", function () {
+                        var index = $(".leftDiv").find(".current").index();
+                        for (var i = 0; i < $(".leftDiv").find("li").length; i++) {
+                            if (i == j) {
+                                $(".leftDiv").find("li").eq(index).find("img").attr("src", "/images/z" + (index + 1) + ".jpg");
+                                $(".leftDiv").find("li").eq(index).removeClass("current");
+                                $(this).find("img").attr("src", "/images/d" + (i + 1) + ".png");
+                                $(this).addClass("current");
+                                var data = $(".rightDiv").eq(j);
+                                data.siblings(".rightDiv").hide();
+                                data.show();
+                            } else {
+
+                            }
+                        }
+                    });
+                });
+                /*右侧内容中点击选择银行操作时激发**/
+                $(".userpaybank").find("li").bind("click", function (i) {
+                    if ($(this).find("input[type='radio']")) {
+                        $(this).find("input[type=radio]").attr("checked", 'checked');
+                    }
+                });
+                /**校验输入的充值账号数据*/
+
+                /**校验输入的充值账号数据*/
+                $(".rightDiv").each(function (i) {
+                    if ($(this).find(".step1")) {
+                        var input1 = $(".rightDiv").eq(i).find(".step1").find("table tr").eq(0).find("td").eq(1).find("input");
+                        var input2 = $(".rightDiv").eq(i).find(".step1").find("table tr").eq(1).find("td").eq(1).find("input");
+                        var errorMsg1 = $(".rightDiv").eq(i).find(".step1").find("table tr").eq(0).find("td").eq(2).find("label");
+                        var errorMsg2 = $(".rightDiv").eq(i).find(".step1").find("table tr").eq(1).find("td").eq(2).find("label");
+                        input1.bind("blur", function () {
+                            var input1Val = input1.val();
+                            if (input1Val == '') {
+                                errorMsg1.html("请输入你的充值账号");
+                                commonUse1 = 1;
+                            } else {
+                                $.post(
+                                    "/ashx/checkRechargeName.ashx",
+                                    { rechargeUser: input1Val },
+                                    function (data) {
+                                        if (data == 0) {
+                                            errorMsg1.html("");
+                                            commonUse1 = 0;
+                                        } else {
+                                            errorMsg1.html("你输入的用户名不存在");
+                                            commonUse1 = 2;
+                                        }
+                                    }
+                                    , "text");
+                            }
+                        });
+                        input2.bind("blur", function () {
+                            var input1Val = input1.val();
+                            var input2Val = input2.val();
+                            if (input2Val == '' && input1Val != '') {
+                                errorMsg2.html("请再次确认你的充值账号");
+                                commonUse2 = 1;
+                            }
+                            else if (input2Val == '' && input1Val == '') {
+                                errorMsg1.html("请输入你的充值账号");
+                                errorMsg2.html("请再次确认你的充值账号");
+                                commonUse2 = 1;
+                            }
+                            else if (input2Val != input1Val) {
+                                errorMsg2.html("抱歉,你两次输入的充值账号不同");
+                                commonUse2 = 1;
+                            }
+                            else {
+                                errorMsg2.html("");
+                                commonUse2 = 0;
+                            }
+                        });
+                    }
+                });
+                /**校验结束**/
+
+                /**右侧点击提交按钮时激发***/
+                $(".rightDiv").each(function (i) {
+                    if ($(this).find(".step4").find("input[type='submit']")) {
+                        $(this).find(".step4").find("input[type='submit']").bind("click", function () {
+                            if ($(".rightDiv").eq(i).find(".step1").find("table")) {
+                                var input1 = $(".rightDiv").eq(i).find(".step1").find("table tr").eq(0).find("td").eq(1).find("input");
+                                var input2 = $(".rightDiv").eq(i).find(".step1").find("table tr").eq(1).find("td").eq(1).find("input");
+                                var errorMsg1 = $(".rightDiv").eq(i).find(".step1").find("table tr").eq(0).find("td").eq(2).find("label");
+                                var errorMsg2 = $(".rightDiv").eq(i).find(".step1").find("table tr").eq(1).find("td").eq(2).find("label");
+                                if (input1.val() == '' || input2.val() == '') {
+                                    if (input1.val() == '' && input2.val() == '') {
+                                        errorMsg1.html("请输入你的充值账号");
+                                        errorMsg2.html("请再次确认你的充值账号");
+                                        commonUse == 1;
+                                    }
+                                    else if (input1.val() == '' && input2.val() != '') {
+                                        errorMsg1.html("请输入你的充值账号");
+                                        commonUse == 1;
+                                    } else if (input2.val() == '' && input1.val() != '') {
+                                        errorMsg2.html("请再次确认你的充值账号");
+                                        commonUse == 1;
+                                    }
+                                } else {
+                                    errorMsg1.html("");
+                                    errorMsg1.html("");
+                                    commonUse = 0;
+                                }
+                            }
+                            if (commonUse == 0 && commonUse1 == 0 && commonUse2 == 0) {
+                                /**实卡充值**/
+                                if ($(".rightDiv").eq(i).find(".step4").find("input[type='submit']").attr("uaction") == "skcz") {
+                                    $("#cardSerialId").bind("blur", function () {
+                                        if ($("#cardSerialId").val() == '') {
+                                            $("#errorMsgCard").html("请输入充值的卡号");
+                                            commonUse = 1;
+                                            return false;
+                                        } else {
+                                            $("#errorMsgCard").html("");
+                                        }
+                                    });
+                                    $("#cardPwd").bind("blur", function () {
+                                        if ($("#cardPwd").val() == '') {
+                                            $("#errorMsgCardPwd").html("请输入充值的卡号密码");
+                                            commonUse = 1;
+                                            return false;
+                                        } else {
+                                            $("#errorMsgCardPwd").html("");
+                                        }
+                                    });
+                                    if ($("#cardSerialId").val() == '') {
+                                        $("#errorMsgCard").html("请输入充值的卡号");
+                                        commonUse = 1;
+                                        return false;
+                                    }
+                                    if ($("#cardPwd").val() == '') {
+                                        $("#errorMsgCardPwd").html("请输入充值的卡号密码");
+                                        commonUse = 1;
+                                        return false;
+                                    }
+
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "/ashx/cheeckSkState.ashx",
+                                        data: { txtAccounts: $("#cardUser").val(), txtSerialID: $("#cardSerialId").val(), txtPassword: $("#cardPwd").val() },
+                                        dataType: "text",
+                                        success: function (data) {
+                                            var msg = "";
+                                            if (data == '0') {
+                                                msg = "支付成功";
+                                            } else {
+                                                msg = "<label style='color:red;'>" + data + "</label>";
+                                            }
+                                            $.dialog({
+                                                id: 'paysk',
+                                                title: '支付提示',
+                                                lock: true,
+                                                fixed: true,
+                                                width: 410,
+                                                height: 200,
+                                                content: msg
+                                            });
+                                        }
+                                    });
+                                    return false;
+                                    commonUse = 1;
+                                }
+                                /**实卡充值结束**/
+                                /**微信支付开始**/
+                                if ($(".rightDiv").eq(i).find(".step4").find("input[type='submit']").attr("uaction") == "webchart") {
+                                    $.dialog({
+                                        id: 'payforwebchart',
+                                        title: '扫描下方二维码进行支付',
+                                        lock: true,
+                                        fixed: true,
+                                        width: 400,
+                                        height: 310,
+                                        content: '<img src=\"/images/loadding.gif\" style=\"width:190px;height:14px;text-align:center;vertical-align:middle;\"/>'
+                                    });
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "/orderForWebchart.aspx",
+                                        data: { webchartUser: $("#webchartuser").val(), webchartMoney: $("input[name='webchartMoney']:checked").val(), selfMoney: $("#webchartselftmoney").val() },
+                                        dataType: "text",
+                                        success: function (data) {
+                                            if (data == '-3') {
+                                                $.dialog.get['payforwebchart'].$content.html("<label style=\"color:red; font-size:17px;\">该用户不存在.</label>");
+                                            }
+                                            if (data == '-1') {
+                                                $.dialog.get['payforwebchart'].$content.html("<label style=\"color:red; font-size:14px;\">生成订单号出现错误,请及时联系客服人员.</label>");
+                                            }
+                                            if (data.indexOf("*") < 0) {
+                                                $.dialog.get['payforwebchart'].$content.html("<label style=\"color:red; font-size:14px;\">生成订单号出现错误,请及时联系客服人员.</label>");
+                                            }
+                                            if (data.indexOf('*') >= 0) {
+                                                var result = Array();
+                                                result = data.split('*');
+                                                $.dialog.get['payforwebchart'].$content.html('<img src=' + result[1] + '  style=\"width:180px;height:180px;text-align:center;\"/><br/><div style=\"text-align:center;\">订单号:<label style=\"color:red;"\>' + result[0] + '</label></div><br/><div style=\"text-align:center;\"><a href="showpayInfo.html">支付成功后,查看支付情况</a></div>');
+                                            }
+                                        }
+                                    });
+                                    commonUse = 1;
+                                }
+                                    /**微信支付**/
+                                else {
+                                    $.dialog({
+                                        id: 'payinfo',
+                                        title: '支付提示',
+                                        padding: '20px 20px 20px 40px',
+                                        lock: true,
+                                        fixed: true,
+                                        width: 400,
+                                        height: 235,
+                                        content: document.getElementById('userwarm')
+                                    });
+                                    commonUse = 1;
+                                    return true;
+                                }
+                            } else {
+                                if (commonUse1 == 2) {
+                                    errorMsg1.html("你输入的用户名不存在");
+                                }
+                                return false;
+                            }
+                        });
+                    }
+                });
+
+                /**选择金额数据*/
+                $(".rightDiv").each(function (i) {
+                    if ($(this).find(".step3")) {
+                        $(this).find(".step3").find("input[type='radio']").bind("click", function () {
+                            var money = $(this).attr("value");
+                            var gold = $(this).attr("ugold");
+                            var msg = "";
+                            if ($(this).attr("uother")) {
+                                $(".rightDiv").eq(i).find(".selfMoney").attr("disabled", false);
+                                $(".rightDiv").eq(i).find(".selfMoney").bind("keyup", function () {
+                                    var filterVal = $(this).val().replace(/\D|^0/g, '');
+                                    $(this).val(filterVal)
+                                    msg = "充值" + $(this).val() + "元,获得金币" + parseInt(filterVal * 1.5) + "个";
+                                    $(".rightDiv").eq(i).find(".showMsg").html(msg);
+                                });
+                            } else {
+                                $(".rightDiv").eq(i).find(".selfMoney").val("");
+                                $(".rightDiv").eq(i).find(".selfMoney").attr("disabled", true);
+                                msg = "充值" + money + "元,获得金币" + gold + "个";
+                                $(".rightDiv").eq(i).find(".showMsg").html(msg);
+                            }
+
+                        });
+                    }
+                });
+
+                $(".selfMoneys").bind("keyup", function () {
+                    var filterVal = $(this).val().replace(/\D|^0/g, '');
+                    $(this).val(filterVal)
+                    msg = "充值" + $(this).val() + "元,获得金币" + parseInt(filterVal * 1.2) + "个";
+                    $(".showMsgs").html(msg);
+                });
+                /**选择金额数据**/
+            }
+            );
+    </script>

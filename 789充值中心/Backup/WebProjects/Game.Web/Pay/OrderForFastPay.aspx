@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OrderForFastPay.aspx.cs" Inherits="Game.Web.Pay.OrderForFastPay" %>

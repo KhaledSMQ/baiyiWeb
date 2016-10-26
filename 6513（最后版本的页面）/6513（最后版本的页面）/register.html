@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>6513棋牌游戏中心官方网站_6513棋牌游戏大厅下载_最好玩的6513捕鱼比赛</title>
+<meta name="keywords" content="6513游戏中心,6513棋牌游戏,6513捕鱼比赛，6513官网" />
+<meta name="description" content="6513游戏中心-最好玩的6513棋牌游戏中心注册就送金币，6513捕鱼比赛万人火爆在线,24小时客服,棋牌游戏就选6513棋牌游戏中心；" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/register.css" />
+</head>
+<body>
+ <!--[if lte IE 6]>
+<script src="images/DD_belatedPNG_0.0.8a.js"></script>
+<script>
+DD_belatedPNG.fix('div,ul,img,li,input,a,.png_bg'); 
+</script>
+<![endif]-->
+<div class="mid">
+	<!--header  begin-->
+	<div class="banner">
+		<div class="bannerTop">
+			<div class="logo"><a href="" target="_blank"><img src="images/logo.png"/></a></div>
+			<div class="navBar">
+				<span>欢迎您来到6513游戏中心<label class="labels"><a href="login.html" target="_blank">[登录]</a></label><label><a href="register.html" target="_blank">[免费注册]</a></label></span>
+			</div>
+			<div class="navBar1">
+				<ul>
+					<li style="border-left:none;"><a href="index.html">网站首页</a><img src="images/1-1.jpg" /></li>
+					<li><a href="newsList.html">新闻公告</a><img src="images/1-1.jpg" /></li>
+					<li><a href="chongzhi.html">充值中心</a><img src="images/1-1.jpg" /></li>
+					<li><a href="gameShow.html">游戏介绍</a><img src="images/1-1.jpg" /></li>
+					<li><a href="">用户中心</a><img src="images/1-1.jpg" /></li>
+					<li><a href="">礼品商城</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+		<div class="topImg1">
+			<div class="down"></div>
+		</div>
+	<!--header  end-->
+	<script type="text/javascript">
+	var error1=0;
+	var error2=0;
+	var error3=0;
+	var error4=0;
+	var error5=0;
+	var error6=0;
+	//触发焦点的提示
+	function errorTips(o, t, c) {
+			var c = c || "";
+			var html = "<p><i class=" + c + "></i>" + t + "</p>"
+			o.parent().append(html);
+		}
+    //填写正确的提示
+	function successTips(o, t) {
+		var t="";
+		var html = "<p><i class='true'></i>" + t + "</p>"
+		o.parent().append(html)
+	} 
+	
+	//显示验证码
+	function ShowValidatePic() {
+		if ($("#validatePicArea").style.display == "none") {
+			$("#validatePicArea").style.display = "inline";
+			$("#validateImage").src = "ValidationImageReg.ashx?" + Math.random();
+		}
+	}
+	$(document).ready(function(){
+	//获取焦点的部分
+	var regist=$("#regist");
+	var registerInput=regist.find("input").not("#btnSubmit");
+	
+	registerInput.focus(function(){
+		var  _this=$(this);
+		if(_this.parent().find("i").attr("class") == "true"){
+		     return false;
+		}
+		_this.parent().find("p").remove();
+		//账号获取焦点
+		if(this.id=="txtAccount"){
+		  var t="4-12位英文或数字，区分大小写";
+		  errorTips(_this,t,"warn");
+		  return false;
+		}
+		//昵称获取焦点
+		if(this.id == "txtNickName"){
+		var t="6-18个字符";
+		errorTips(_this,t,"warn");
+		  return false;
+		}
+		//设置密码获取焦点
+		if(this.id == "txtPassword"){
+		   var t="请输入您的密码"
+		   errorTips(_this,t,"warn");
+		   return false;
+		}
+		//确认密码获取焦点
+		if(this.id == "txtConfirmPassword"){
+			var t="请再次输入您的密码"
+		   errorTips(_this,t,"warn");
+		   return false;
+		}
+		//验证码获取焦点
+		if(this.id == "txtValidCode"){
+		   ShowValidatePic();
+		}
+	});
+	//blur 事件
+	registerInput.blur(function(){
+	    var v=this.value;
+		var _this=$(this);
+		_this.parent().find("p").remove();
+		//验证账号
+		if(this.id == "txtAccount"){
+			if (v==""){
+				var t="账号不能为空";
+				errorTips(_this,t,"error");
+				error1=0;
+				return false;
+			}
+			if (v.length<4 || v.length>12){
+				var t="长度不正确，请输入4-12位的英文或数字";
+				errorTips(_this,t,"error");
+				error1=2;
+				return false;
+			}
+			var pattentn=/^[A-Za-z0-9]+$/;
+			if(!pattentn.test(v)){
+				var t="账号只能是英文和或数字的组合";
+				errorTips(_this,t,"error");
+				error1=3;
+				return false;
+			}
+			successTips(_this);	
+			error1=1;
+			return true;
+		}
+		//昵称的验证
+		if(this.id=="txtNickName"){
+			var nickName=v;
+			if(nickName == ""){
+				var t="昵称不能为空";
+				errorTips(_this,t,"error");
+				error2=0;
+				return false;
+			}
+			if(nickName.length<2 || nickName.length>16){
+				var t="昵称的长度为2到16";
+				errorTips(_this,t,"error");
+				error2=2
+				return false;
+			}
+			successTips(_this);	
+			error2=1;
+			return true;
+		}
+		//验证密码
+		if(this.id=="txtPassword"){
+			if(v == ""){
+				errorTips(_this,"密码不能为空","error");
+				error3=0;
+				return false;
+			}
+			if(v == $("#txtAccount").val()){
+				errorTips(_this,"密码和账号不能一样","error");
+				error3=2
+				return false;
+			}
+			if(v.length<6 || v.length>18){
+			var t="密码的长度为6到18的英文或数字";
+				errorTips(_this,t,"error");
+				error3=3;
+				return false;
+			}
+			var pattern=/^[A-Za-z0-9]+$/;
+			if(!pattern.test(v)){
+				var t="密码只能是英文和或数字的组合";
+				errorTips(_this,t,"error");
+				error3=4
+				return false;
+			}
+			successTips(_this,v);
+			error3=1;
+			return true;
+		}
+		//确认密码
+		if(this.id=="txtConfirmPassword"){
+			var pwd=$("#txtPassword").val();
+			if(v == ""){
+				errorTips(_this,"确认密码不能为空","error");
+				error4=0;
+				return false;
+			}
+			if(v.length<6 || v.length>18){
+				var t="密码的长度为6到18的英文或数字";
+				errorTips(_this,t,"error");
+				error4=2;
+				return false;
+			}
+			if(pwd !=v){
+				var t="两次输入的密码不一致";
+				errorTips(_this,t,"error");
+				error4=3;
+				return false;
+			}
+			successTips(_this);
+			error4=1;
+			return true;
+		}
+		//验证码的验证
+		if(this.id=="txtValidCode"){
+		  if(v.length ==0){
+		    var t="请输入验证码";
+			errorTips(_this,t,"error");
+			error5=0;
+			return false;
+		  }
+		  successTips(_this);
+		  error5=1;
+			return true;
+		}
+		
+		//检查阅读协议
+	 $("#Checkbox1").blur(function(){
+		if ($("#Checkbox1").attr("checked")) {
+		    error6=1;
+			return true;
+		}
+		error6=0;
+		return false;
+	  });
+	});
+	  $("#btnSubmit").click(function(){
+	    if(error1 !=1 || error2 !=1 || error3 !=1 || error4 !=1 || error5 !=1 || error6!=1){
+			if(error1==0){
+				var t="用户名不能为空";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtAccount").parent().append(html);
+			}
+			if(error1==2){
+				var t="长度不正确，请输入4-12位的英文或数字";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtAccount").parent().append(html);
+			}
+			if(error1==3){
+				var t="账号只能是英文和或数字的组合";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtAccount").parent().append(html);
+			}
+			if(error2==0){
+				var t="昵称不能为空";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtNickName").parent().append(html);
+			}
+			if(error2==2){
+				var t="昵称的长度为2到16";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtNickName").parent().append(html);
+			}
+			if(error3==0){
+				var t="密码不能为空";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtPassword").parent().append(html);
+			}
+			if(error3==2){
+				var t="密码和账号不能一样";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtPassword").parent().append(html);
+			}
+			if(error3==3){
+				var t="密码的长度为6到18的英文或数字";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtPassword").parent().append(html);
+			}
+			if(error3==4){
+				var t="密码只能是英文和或数字的组合";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtPassword").parent().append(html);
+			}
+			if(error4==0){
+				var t="确认密码不能为空";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtConfirmPassword").parent().append(html);
+			}
+			if(error4==2){
+				var t="密码的长度为6到18的英文或数字";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtConfirmPassword").parent().append(html);
+			}
+			if(error4==3){
+				var t="两次输入的密码不一致";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtConfirmPassword").parent().append(html);
+			}
+			if(error5==0){
+				var t="请输入验证码";
+				var html = "<p><i class=" + error + "></i>" + t + "</p>"
+				$("#txtValidCode").parent().append(html);
+			}
+			if(error6==0){
+				alert("请先选中阅读协议");
+			}
+		}else{
+		 alert("注册成功");
+		
+		}
+	  
+	  });
+	});
+	
+	</script>
+	<!--content  begin-->
+	<div class="content">
+		<div class="leftBar">
+			<div class="rightTop1" id="regist">
+				<div class="registerTop">
+					<p>账号注册<label>已有6513账号？<span><a href="login.html">立即登录</a></span></label></p>
+				</div>
+				<div class="registMain">
+					<ul>
+						<li class="clearfix">
+							<label class="name" for="txtAccount"><em class="star">*</em>游戏账号：</label>
+							<input type="text" id="txtAccount" name="txtAccount" maxlength="12" class="input" value="">
+							
+						</li>
+						<li class="clearfix">
+							<label class="name" for="txtNixkName"><em class="star">*</em>用户昵称：</label>
+							<input type="text" id="txtNickName" name="txtAccount" maxlength="12" class="input" value="">
+							
+						</li>
+						<li class="clearfix">
+							<label class="name" for="txtPassword"><em class="star">*</em>设置密码：</label>
+							<input type="password" id="txtPassword" name="txtPassword" maxlength="18" class="input" value="">
+							
+						</li>
+						<li class="clearfix">
+							<label class="name" for="txtConfirmPassword"><em class="star">*</em>确认密码：</label>
+							<input type="password" id="txtConfirmPassword" name="txtConfirmPassword" maxlength="18" class="input" value="">
+							
+						</li>
+						<li class="clearfix">
+							<label class="name" for="NewCard"><em class="star"></em>新手卡：</label>
+							<input type="text" id="NewCard" name="NewCard" maxlength="10" class="input" value="">
+						</li>
+						<li class="clearfix">
+							<label class="name" for="txtValidCode"><em class="star">*</em>验证码：</label>
+							<input type="text" id="txtValidCode" size="4" maxlength="10" name="txtValidCode" class="code">
+							<span id="validatePicArea" style="display: inline;">            
+								<img id="validateImage" height="38" alt="看不清?点击换一张" src="ValidationImageReg.ashx?0.13206639094278216" width="72" align="absBottom" name="validateImage"> 
+								<a class="ac" onclick="document.getElementById('validateImage').src='ValidationImageReg.ashx?r=' + Math.random(); return false;">
+									<font color="gray" style="font-size:0.75em;">换一张</font>
+								</a>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="send">
+					<p>
+						<span><input type="checkbox" id="Checkbox1"></span>
+						<label for="Checkbox1">我已经看过并接受6513游戏<a href="" target="_blank">《用户服务条款》</a>。</label>
+					</p>
+					<input class="btnSubmit" name="btnSubmit" type="submit" id="btnSubmit" value="">
+				</div>
+				<div class="promptList">
+					<a href="" target=""><img src="images/register/help_01.jpg" alt=""/></a>
+					<img src="images/register/help_02.jpg" alt=""/>
+					<img src="images/register/help_03.jpg" alt=""/>
+				</div>
+			</div>
+		</div>
+		<div class="rightBar">
+			<div class="showhelp">
+				<p style="font-size:1.25em">自助服务</p>
+				<p><img src="images/Q-1.jpg" /> </p>
+				<p><img src="images/c-1.jpg" /></p>
+				<p>
+					<img src="images/4-1.jpg"  width="99px" height="67px;" id="images1" style="margin-right:5px;margin-left:1px;" />
+					<img src="images/4-2.jpg"  width="99px" height="67px;" id="images2" />
+				</p>
+				<p style="margin-bottom:12px;">
+					<img src="images/4-3.jpg"  width="99px" height="67px;" id="images3" style="margin-right:5px;margin-left:1px;" />
+					<img src="images/4-4.jpg"  width="99px" height="67px;" id="images4"/>
+				</p>
+			</div>
+            <div class="showUserInfo">
+			<div class="title">
+				<ul>
+					<li class="active">财富排行</li>
+					<li class="">充值排行</li>
+					<li class="">比赛排行</li>
+				</ul>
+			</div>
+			<div class="showAllInfo">
+				<div id="state1">
+					<table>
+						<tr>
+							<td class="leftFloat"><img src="images/01.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/1.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="leftFloat"><img src="images/02.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/2.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="leftFloat"><img src="images/03.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/3.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td class="leftFloat">04</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">05</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">06</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">07</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">08</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">09</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">10</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+					</table>
+				</div>
+				<div id="state2" style="display:none;">
+					<table>
+						<tr>
+							<td class="leftFloat"><img src="images/01.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/1.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="leftFloat"><img src="images/02.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/5.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="leftFloat"><img src="images/03.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/6.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td class="leftFloat">04</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">05</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">06</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">07</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">08</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">09</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">10</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+					</table>
+				</div>
+				<div id="state3" style="display:none;">
+					<table>
+						<tr>
+							<td class="leftFloat"><img src="images/01.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/7.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="leftFloat"><img src="images/02.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/8.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="leftFloat"><img src="images/03.jpg"/></td>
+							<td class="leftFloat3" style="height:40px;"><img src="images/face/9.png"/></td>
+							<td>
+								<label style="color:#666666;">阿斯顿马丁一号啊</label><br/>
+								<label style="color:#888888;">1234567890123</label>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td class="leftFloat">04</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">05</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">06</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">07</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">08</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">09</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+						<tr>
+							<td class="leftFloat">10</td>
+							<td class="leftfloat2">xxxxxxxx</td>
+							<td>12121212222</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!--content  end-->
+	<div class="footer">
+		<div class="footerCon">
+			<div class="footerleft">
+				<img src="images/logo2.png"/>
+			</div>
+			<div class="footerRig">
+				<div class="companyInfo">
+					<p>|<a>网站首页</a></p>
+					<p>|<a>新闻公告</a></p>
+					<p>|<a>充值中心</a></p>
+					<p>|<a>游戏介绍</a></p>
+					<p>|<a>用户中心</a></p>
+					<p>|<a>礼品商城</a></p>
+				</div>
+				<div class="footerCopy">
+					<script type="text/javascript" src="js/footer.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

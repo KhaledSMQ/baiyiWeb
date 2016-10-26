@@ -1,0 +1,48 @@
+
+.list_content{
+padding-bottom:20px;
+width:10%;
+float:left;
+}
+.list_content .title{
+width:100%;
+background-image:url(/templets/New/images/new.png);
+background-repeat:no-repeat;
+background-position:0% 30%;
+height:30px;
+margin-top:20px;
+}
+
+.list_gonggao{
+width:100%;
+
+}
+.list_gonggao ul{
+width:680px;
+padding-top:10px;
+font-size:13px;
+}
+
+.list_gonggao li{
+width:100%;
+line-height:35px;
+background-image:url(/templets/New/images/gonggao.png);
+background-position:5px 50%;
+background-repeat:no-repeat;
+border-bottom:1px dashed #046091;
+padding-left:50px;
+font-size:13px;
+width:680px;
+float:left;
+} 
+.list_gonggao li a{
+float:left;
+margin:0px;
+padding:0px;
+}
+.list_gonggao ul li .time{
+float:right;
+color:#909fa6;
+margin-right:7px;
+}
+
