@@ -1,0 +1,33 @@
+登陆：http://m-api.789game.com/index.php/Api/JiangQuan/login.php?jsoncallback=124&uid=47475&phoneno=18237155769
+
+
+登陆后获取列表：http://m-api.789game.com/index.php/Api/JiangQuan/getList.php?jsoncallback=547
+
+
+单机获取奖励：http://m-api.789game.com/index.php/Api/JiangQuan/getReward.php?jsoncallback=547&typeid=101
+
+
+未登陆获取列表：http://m-api.789game.com/index.php/Api/JiangQuan/getDefaultList.php?jsoncallback=dfdf
+
+
+判断是否登陆：http://m-api.789game.com/index.php/Api/JiangQuan/checkIsLogin.php?jsoncallback=dfdf
+
+
+
+http://www.cnblogs.com/afuge/archive/2013/08/22/3274946.html
+
+http://bbs.csdn.net/topics/390087825
+
+
+
+
+
+
+http://pc-api.789game.com/index.php/Api/Index/login.php
+
+测试的账号：
+1000020     13213135483
+
+
+wangyong(王勇) 15:46:53
+ID：1000004   手机号：18336360322

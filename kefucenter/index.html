@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0" />
+    <title>百易科技-捕鱼游戏-反馈</title>
+    <style type="text/css">
+	*{margin:0;padding:0;font-size:1em;font-family:"微软雅黑"}html,body{width:100%;height:100%;}body{ background-color:#b8e6ff;}textarea{width:98%;height:125px;padding:5px 0px;margin:0px auto;resize:none;border-radius:5px;border:2px solid #5995c4}textarea::-webkit-input-placeholder{color:#90aace;line-height:25px;padding:2px}img{width:auto}.divCenter{width:90%;height:95%;margin:0 auto;position:relative}.marTop3{margin-top:3%}  .marTop1{margin-top:1%}
+    </style>
+</head>
+<body>
+    <div class="divCenter" id="mainShow" style="margin-bottom:10px;">
+        <img src="images/tip01.png" class="marTop1" style="width:682px;height:68px;" />
+        <textarea class="marTop1" id="say_msg" onKeyUp="keyup();" onchange="changeValue();" style="height:125px;" placeholder="&nbsp;&nbsp;&nbsp;欢迎您在这里向我们倾诉(50字以内)您对我们的产品和服务的任何牢骚,点子,甚至是情绪,感谢您对我们的支持！"></textarea>
+         <span style="width:100%;float:left;position:relative;text-align:right;font-size:1.2em;color:#004499;">（还可输入<label  id="lastnum" style="color:red;padding:0% 1%;">50</label>字）</span>
+		<div style="text-align: center;" class="marTop3">
+            <img src="images/btn_submit_01.png" id="submit_button" onclick="getUserinfo();" style="width:225px;height:90px;" />
+        </div>
+        <div style="position: absolute; bottom: 0px; width: 100%;" id="foot">
+            <span>
+                <img src="images/serviceweixin.png" style="width:179px;height:38px;" id="weixin1" /><img src="images/serviceweixin_no.png" style="margin-right: 20px;width:189px;height:29px;" id="marRight" />
+                <img src="images/servicephone.png" style="width:145px;height:36px;" id="tel1" /><img src="images/servicephone_no.png" onclick="getuserPhone();" style="width:143px;height:30px;" id="tel2" />
+            </span>
+        </div>
+    </div>
+</body>
+<!--<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script type="text/javascript">
+    var normal_width_size = 760;    //原始比例宽度
+    var normal_height_size = 430;    //原始比例高度
+    var win_width_size =document.body.clientWidth;  //window.screen.width;//给出的webview宽度
+    var win_height_size = document.body.clientHeight;//window.screen.height;//给出的webview高度
+    var scale_width = win_width_size / normal_width_size;//计算自适应的宽度百分百
+    var scale_height = win_height_size / normal_height_size;//计算自适应的高度百分百
+    
+	
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]); return null;
+	  }	
+	
+	//初始化自适应操作
+	window.onload=function(){
+		var w=getQueryString("w");
+		var h=getQueryString("h");
+		if(w!=null && w!=""){
+			 win_width_size =w;  //window.screen.width;//给出的webview宽度
+		     win_height_size = h;//window.screen.height;//给出的webview高度
+			 scale_width = win_width_size / normal_width_size;//计算自适应的宽度百分百
+			 scale_height = win_height_size / normal_height_size;//计算自适应的高度百分百	
+			 if(w==685 && h==516){
+				document.body.style.width=90+"%";
+				document.getElementById("foot").style.bottom= 60 * scale_width+"px";
+			 }
+				
+		}
+		
+		resize_size_by_screen();
+	}
+    //自适应方法
+    function resize_size_by_screen() {
+		document.getElementById("marRight").style.marginRight= 20 * scale_width+"px";
+		document.getElementById("mainShow").style.fontSize=  1.2 * scale_width+"em";
+        var textarea_height = parseInt(document.getElementById("say_msg").style.height);
+        document.getElementById("say_msg").style.height=textarea_height * scale_height+"px";
+		//alert(win_height_size);
+		document.body.style.paddinfBottom=win_height_size-68+"px";
+		var imgLength=document.getElementsByTagName("img");
+		
+		for(var i=0;i<imgLength.length;i++){
+			var img_width = parseInt(imgLength[i].style.width);
+            var img_height = parseInt(imgLength[i].style.height);
+            var img_resize_width = scale_width * img_width;
+            var img_resize_height = scale_height * img_height;
+			imgLength[i].style.width=img_resize_width + "px";
+			imgLength[i].style.height=img_resize_height + "px";			
+		}
+    }
+	
+	function keyup(){
+		var input= document.getElementById('say_msg').value;
+		var inputLeng=input.length;
+		var overLeng=50-inputLeng;
+			if(overLeng<0){
+				var subStr=input.substring(0,50);
+				document.getElementById('say_msg').innerText=subStr;
+				document.getElementById('lastnum').innerHTML=0;
+			}else{
+				document.getElementById('lastnum').innerHTML=overLeng;
+			}
+	}
+	
+	
+	function changeValue(){
+		var input= document.getElementById('say_msg').value;
+		var inputLeng=input.length;
+		var overLeng=50-inputLeng;
+			if(overLeng<0){
+				var subStr=input.substring(0,50);
+				document.getElementById('say_msg').innerText=subStr;
+				document.getElementById('lastnum').innerHTML=0;
+			}else{
+				document.getElementById('lastnum').innerHTML=overLeng;
+			}
+	}
+	function getUserinfo(){
+		var getuserinfo=encodeURI(document.getElementById('say_msg').value);
+		window.location.href="item:info?"+getuserinfo;
+	}	
+	
+	function getuserPhone(){
+		window.location.href="item:tel?"+4000371814;
+		console.log("item:tel?"+4000371814);
+	}
+</script>
+</html>

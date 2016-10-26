@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+<style type="text/css">
+*{padding:0px;margin:0px;}
+body{background-color:#000;padding:35px 0 0;
+				margin:auto;
+				text-align:center;}
+.nav{display:inline-block;}
+
+.nav:after,.nav:before{margin-top:0.5em;content:"";float:left;border:1.5em solid #fff;}
+.nav:before{border-left-color:transparent;}
+.nav:after{border-right-color:transparent;}
+.nav a{float:left;display:inline-block;}
+.nav a:link,.nav a:visited{color:#000;text-decoration:none;float:left;height:3.5em;overflow:hidden;}
+.nav span{
+		 background:#fff;display:inline-block;line-height:3em;padding:0 1em;
+		  margin-top:0.5em;
+		  position:relative;
+          -webkit-transition:background-color 0.2s,margin-top 0.2s;
+		  -moz-transition:background-color 0.2s,margin-top 0.2s;
+		  -o-transition:background-color 0.2s,margin-top 0.2s;
+		  transition:background-color 0.2s,margin-top 0.2s;
+		  }
+		  .nav a:hover span {
+				background:#FFD204;
+				margin-top:0;
+			}
+
+			.nav a:hover span:before {
+				content: "";
+				position:absolute;
+				top:3em;
+				left:0;
+				border-right:0.5em solid #9B8651;
+				border-bottom:0.5em solid #fff;
+			}
+
+			.nav a:hover span:after {
+				content: "";
+				position:absolute;
+				top:3em;
+				right:0;
+				border-left:0.5em solid #9B8651;
+				border-bottom:0.5em solid #fff;
+			}
+</style>
+<body>
+		<div class="nav"> 
+            <a><span>Home</span></a>
+            <a><span>About</span></a>
+            <a><span>Services</span></a>
+            <a><span>Contact</span></a>
+        </div>
+	
+</body>
+</html>

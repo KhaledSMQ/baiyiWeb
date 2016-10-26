@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+<title></title>
+<meta name="keywords" content="" >
+<meta name="description" content="" >
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="js/skin/layer.css" rel="stylesheet" />
+</head>
+<body style="background-position: 50% 67px;">
+	<div class="header-1">
+		 <div class="navbar">
+			<ul>
+				<li style="width:80px;"><a href="/">首页</a></li>
+				<li><a href="/xinwengonggao">新闻公告</a></li>
+				<li><a href="">领奖中心</a></li>
+				<li style="width:250px;"><a href="/"><img src="images/logo.png"  class="logo"/></a></li>
+				<li><a href="">礼包领取</a></li>
+				<li><a href="/youxigonglue">游戏攻略</a></li>
+			</ul>
+		</div> 
+	</div>
+
+	<div class="wrap">
+    	<div class="bg-header1">
+			<div class="header-2"></div>
+            <div class="header-3">
+				<div class="contents">
+					<div class="wf100">
+						<div style="width:316px;float:left;display:inline;">
+							<div class="userlogin userfirst" style="display:block;">
+								<div class="wf100" id="userinput">
+									<span>游戏ID:</span>
+									<input type='text' name='gameid' id='gameid' placeholder="请输入你的游戏ID" />
+								</div>
+								<div class="wf100" id="userinput">
+									<span>手机号:</span>
+									<input type='text' name='phoneid' id='phoneid' placeholder="请输入你的手机号" />
+								</div>
+								<div class="wf100">
+									<label class="error"> 亲，请输入ID及手机号</label>
+								</div>
+								<div class="wf100" id="userinput">
+									<input type="submit" name="userclick" class="userclick" value="" />
+								</div>
+							</div>
+							<!--userlofined-->
+							<div class="userlogin userloginedinfoshow" style="display:none;">
+								<p class="wf100">用户信息</p>
+								<div class="infologined wf100">
+									<p>游戏ID：<label id="lblusergameid"></label></p>
+									<p>手机号：<label id="lbluserphonenno"></label></p>
+								</div>
+							</div>
+							
+							<div class="peizelingqu wf100">
+								<img src="images/bt-ljsm.png" />
+								<div class="shuominginfo">
+									<p>1、每个账号限领取礼包一次。</p>
+									<p>2、游戏发放在1-3个工作日内。</p>
+									<p>3、请在截止日期前领取奖励，逾期将视为作废。</p>
+								</div>
+							</div>
+						</div>
+						<div class="prizeinfo" id="usernologinpeice">
+							<ul>
+								
+							</ul>
+							<div id="kkpager"></div>
+						</div>
+					</div>
+					<div class="wf100 lastinfo">
+						<img src="images/bt-zxhd.png" />
+						<div class="showalllibao">
+							<ul>
+								<li>
+									<div class="bgimg"></div>
+									<p>开始时间：2015.8.13</p>
+								</li>
+								<li>
+									<div class="bgimg"></div>
+									<p>开始时间：2015.8.13</p>
+								</li>
+								<li>
+									<div class="bgimg"></div>
+									<p>开始时间：2015.8.13</p>
+								</li>
+								<li>
+									<div class="bgimg"></div>
+									<p>开始时间：2015.8.13</p>
+								</li>
+								<li>
+									<div class="bgimg"></div>
+									<p>开始时间：2015.8.13</p>
+								</li>
+							</ul>
+						
+						</div>
+					</div>
+				</div>
+			
+            </div>
+			<!--footer-->
+			<div class="footer">
+				<p>郑州百易科技有限公司 豫ICP备12014032号-1</p>
+				<p><a>站长统计</a> 客服电话：<label>40087565555</label></p>
+			</div> 
+        </div>
+    </div>
+   <!--弹框的信息-->
+	<div class="userwriteinfo" id="writeuserinfo" style="display:none;">
+		<p class="wf100">请输入您的邮寄地址</p>
+		<p class="wf100">游戏ID:<label id="useridealogId"></label></p>
+		<p class="wf100">手机号:<label id="useridealogtel"></label></p>
+		<div class="wf100" id="userinputaddr">
+			<span>填写真实姓名:</span>
+			<input type='text' name='username' id='username' placeholder="(收件人姓名)" />
+		</div>
+		<div class="wf100" id="userinputaddr">
+			<span>填写邮寄地址:</span>
+			<input type="text" name='useraddress' id='useraddress' placeholder="(虚拟物品不需要填写)" />
+		</div>
+		<div class="wf100">
+			<label class="error1"> *请确保你的信息填写完整</label>
+		</div>
+		<div class="wf100" id="userinputaddr">
+			<input type="submit"  class="userinfocli" value="" />
+		</div>
+	</div>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/layer.js"></script>
+		<script type="text/javascript" src="js/kkpager.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/kkpager_blue.css" />
+	 <script type="text/javascript">
+	var input_success_1=false;
+	var input_success_2=false;
+	var input_username=false;
+	var input_useraddress=false;
+	
+		/*保存用户登陆*/
+	function  userlogined(){
+		$.ajax({
+			async:false,
+			url: 'http://test.huazai.com/index.php/Api/Index/checkIsLogin.php',
+			type: "GET",
+			dataType: 'jsonp',
+			jsonp: 'jsoncallback',
+			data:{},
+			success: function (json) {
+				if(json.status == "success"){
+					userloginResult();
+					$(".userfirst").css("display","none");
+					$(".userloginedinfoshow").css("display","block");
+					$("#lblusergameid").html(json.loginid);
+					$("#lbluserphonenno").html(json.phoneno);
+				}else{
+				}
+			}
+		});	 
+	}
+	
+	
+	
+	/*获取用户登陆后的显示结果*/
+	function userloginResult(){
+		$.ajax({
+			async:false,
+			url: 'http://test.huazai.com/index.php/Api/Index/getRecord.php',
+			type: "GET",
+			dataType: 'jsonp',
+			jsonp: 'jsoncallback',
+			data:{},
+			success: function (json) {
+				if(json.status == "success"){
+				var str="";
+				$.each(json.list,function(index,value){
+						var statusimg;
+						var statueid=value.status;
+						if(statueid == 0){ //可以领取
+							statusimg="<img src=\'images/btn-djlq.png\'  goodsid="+value.id+" goodsentityid="+value.entityid+" class=\'haveprizeclick\' />";
+						}else if(statueid == 2){ //已领取
+							statusimg="<img src=\'images/btn-ylq.png\'  goodsid="+value.id+" goodsentityid="+value.entityid+"  class=\'userlookforinfo\' />";
+						}else if(statueid == 1){ //在处理
+							statusimg="<img src=\'images/btn-yfh.png\'  goodsid="+value.id+" goodsentityid="+value.entityid+"   class=\'userlookforinfo\' />";
+						}
+						str=str+"<li><span class=\'w1\'>"+value.name+"</span><span class=\'w2\'>"+value.rewardname+"</span><span class=\'w3\'>"+value.insertdate+"</span><span class=\'w4\'>"+statusimg+"</span></li>";
+						});
+					$("#usernologinpeice ul").empty();
+					$("#usernologinpeice ul").html(str);
+				var totalPage = json.pages;
+				var totalRecords = json.count;	
+				kkpager.generPageHtml({
+					pno : 1,//总页码
+					total : totalPage,//总数据条数
+					totalRecords : totalRecords, 
+					mode : 'click',//默认值是link，可选link或者click
+					click : function(n){
+						str="";
+						$.ajax({
+							async:false,
+							url: 'http://test.huazai.com/index.php/Api/Index/getRecord.php',
+							type: "GET",
+							dataType: 'jsonp',
+							jsonp: 'jsoncallback',
+							data:{'pageindex':n,'pageshowcount':5},
+							success: function (json) {
+								if(json.status == "success"){
+									$.each(json.list,function(index,value){
+										var statusimg;
+										var statueid=value.status;
+										if(statueid == 0){ //可以领取
+											statusimg="<img src=\'images/btn-djlq.png\'  goodsid="+value.id+" goodsentityid="+value.entityid+" class=\'haveprizeclick\' />";
+										}else if(statueid == 2){ //已领取
+											statusimg="<img src=\'images/btn-ylq.png\'  goodsid="+value.id+" goodsentityid="+value.entityid+"  class=\'userlookforinfo\' />";
+										}else if(statueid == 1){ //在处理
+											statusimg="<img src=\'images/btn-yfh.png\'  goodsid="+value.id+" goodsentityid="+value.entityid+"   class=\'userlookforinfo\' />";
+										}
+										str=str+"<li><span class=\'w1\'>"+value.name+"</span><span class=\'w2\'>"+value.rewardname+"</span><span class=\'w3\'>"+value.insertdate+"</span><span class=\'w4\'>"+statusimg+"</span></li>";
+									});
+									$("#usernologinpeice ul").html(str);
+								}else{
+								}
+							}
+						});
+						
+						this.selectPage(n);
+						return false;
+					}
+				});	
+					
+					
+					/*点击领取*/
+					$(".haveprizeclick").unbind('click').click(function(){
+						var dataid= $(this).attr("goodsid");
+						var dataentityid=$(this).attr("goodsentityid");
+						$("#useridealogId").html($("#lblusergameid").text());
+						$("#useridealogtel").html($("#lbluserphonenno").text());
+					var b=layer.open({
+							type:1,
+							title:false,
+							closeBtn:true,
+							skin:'layui-layer-nobg',
+							area:['620px','440px'],
+							shadeClose:true,
+							content:$('#writeuserinfo')
+						});
+						/*确定*/
+							$(".userinfocli").click(function(){
+								if(input_username==true){
+									var usernames=encodeURI($.trim($("#username").val()));
+									var  useraddr=encodeURI($.trim($("#useraddress").val()));
+									$.ajax({
+										async:false,
+										url: 'http://test.huazai.com/index.php/Api/Index/writeForm.php',
+										type: "GET",
+										dataType: 'jsonp',
+										jsonp: 'jsoncallback',
+										data:{'id':dataid,'entityid':dataentityid,'name':usernames,'detailaddr':useraddr},
+										success: function (json) {
+											if(json.status == "success"){
+												layer.open({
+													content:json.msg,
+													btn: ['知道了'],
+													yes:function(index){
+														layer.close(index);
+														layer.close(b);
+													}
+												});
+											}else{
+												 layer.open({
+													content:"兑换失败了！",
+													btn: ['知道了'],
+													yes:function(index){
+														layer.close(index);
+													}
+												});;
+											}
+										}
+									});
+								}
+							});
+					});
+					
+						/*查看状态*/
+						$(".userlookforinfo").unbind('click').click(function(){
+							var dataid= $(this).attr("goodsid");
+							var dataentityid=$(this).attr("goodsentityid");
+							if(dataid == 0){
+								$.ajax({
+									async:false,
+									url: 'http://test.huazai.com/index.php/Api/Index/getEntityInfo.php',
+									type: "GET",
+									dataType: 'jsonp',
+									jsonp: 'jsoncallback',
+									data:{'id':dataid,'entityid':dataentityid},
+									success: function (json) {
+										if(json.status == "success"){
+											alert(json.msg);
+										}else{
+											 alert(json.msg);
+										}
+									}
+								});
+							}else{
+								$(this).css("cursor","default");
+							}
+						});
+					
+					
+					
+					
+					
+				}else{
+					 layer.open({
+						content:json.msg,
+						btn: ['知道了']
+					});
+				}
+			}
+		});
+	}
+	
+	
+	
+	 $(document).ready(function(){
+		userlogined();
+	 	/*验证*/
+	 	$("#gameid").bind("blur",function(){
+			var usergameid=$.trim($(this).val());
+			var reg= /^\d+$/;
+			if(reg.test(usergameid)){
+				$(".error").html("");
+				input_success_1=true;	
+			}else{
+				$(".error").html("*请输入您的游戏ID!");
+				$(this).focus();
+			}
+		});
+	    /*验证电话*/
+		$("#phoneid").bind("blur",function(){
+			var userinputphoneno=$.trim($(this).val());
+		    var params=RegExp(/^1[3|4|5|8][0-9]{9}$/);
+		    if(!params.test(userinputphoneno)){
+		    		$(".error").html("*您输入的手机号码格式错误!");
+					$(this).focus();
+			}else{
+				$(".error").html("");
+				input_success_2=true;	
+			}
+		});
+        
+		/*验证用户名*/
+		$("#username").bind("blur",function(){
+			var userinputname=$.trim($(this).val());
+		    if(userinputname ==""){
+		    		$(".error1").html("请输入您的姓名!");
+					$(this).focus();
+			}else{
+				$(".error1").html("");
+				input_username=true;	
+			}
+		});
+		
+		/*验证用户输入地址*/
+		$("#useraddress").bind("blur",function(){
+			var userinputaddress=$.trim($(this).val());
+		    if(userinputaddress ==""){
+		    		$(".error1").html("*请输入您的邮寄地址!");
+					$(this).focus();
+			}else{
+				$(".error1").html("");
+				input_useraddress=true;	
+			}
+		});
+		
+		
+      /*点击提交信息*/
+		$(".userclick").click(function(){
+			if(input_success_1==true && input_success_2==true){
+				var inputuserid=$.trim($("#gameid").val());
+				var inpoutusertel=$.trim($("#phoneid").val());
+				$.ajax({
+					async:false,
+					url: 'http://test.huazai.com/index.php/Api/Index/login.php',
+					type: "GET",
+					dataType: 'jsonp',
+					jsonp: 'jsoncallback',
+					data:{'uid':inputuserid,'phoneno':inpoutusertel},
+					success: function (json) {
+						if(json.status == "success"){
+							userloginResult();
+							$(".userfirst").css("display","none");
+							$(".userloginedinfoshow").css("display","block");
+							$("#userloginedinfoshow").html(inputuserid);
+							$("#lbluserphonenno").html(inpoutusertel);
+						}else{
+							layer.open({
+								content:json.msg,
+								btn: ['知道了']
+							});
+						}
+					}
+				});
+			}
+		});
+        
+		
+		
+		
+	});
+
+
+
+	
+	 </script>
+</body>
+</html>

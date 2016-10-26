@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试demoinex</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container-inner">
+			<div class="logo">
+				<a>
+					<h1>
+						<span class="top-mono">安全者</span>
+						<span class="top-bloger"><编程改变世界  /></span>
+					</h1>
+				</a>
+			</div>
+
+		</div>
+		<div class="navbar" id="nav-header">
+			<ul class="nav">
+				<li><a class="on">首页</a></li>
+				<li><a>推荐</a></li>
+				<li><a>前端</a></li>
+				<li><a>编程</a></li>
+				<li><a>数据库</a></li>
+				<li><a>经验分享</a></li>
+			    <li><a>建站</a></li>
+			    <li><a>wip主题</a></li>
+			    <li><a>文章</a></li>
+			</ul>
+			<div class="screen-mini">
+				<button data-type="screen-nav" class="btn btn-inverse screen-nav">
+					<i class="fa fa-list"></i>
+				</button>
+			</div>
+		</div>
+	</header>
+	<section class="container">
+		<div class="content-wrap">
+			<div class="content"><!--这一步css的设置-->
+				<div class="breadcrumbs">
+					<a>
+						<img src="images/home.png" alt=""  title="" />
+					    <small>></small>
+					    <a>编程</a>
+					    <small>></small>
+					    <span class="muted">使用css制作效果</span>
+					</a>
+				</div>
+				<header class="article-header">
+					<h1 class="article-title"><a>使用csshtml js 实现网站的效果</a></h1>
+					<div class="mate">
+						<span class="muted"><i></i><a>运维</a></span>
+						<span class="muted"><i></i><a>安全者</a></span>
+						<span class="muted"><i></i><a>3天前</a></span>
+						<span class="muted"><i></i><a>0评论</a></span>
+					</div>
+				</header>
+				<article class="article-content">
+					<p>解决git 冲突的问题</p>
+					<p>使用css制作webpage要注意的事项是</p>
+				</article>
+				<footer class="article-footer">
+					<div class="article-tags"><a>nav导航</a></div>
+				</footer>
+				<nav class="article-nav">
+					<span class="article-nav-prev">
+						<i class="showsortpage">上一篇</i><a>java多线程中的生产者和消费</a>
+					</span>
+					<span class="article-nav-next">
+						<a>java多线程中的生产者和消费</a><i class="showsortpage">下一篇</i>
+					</span>
+				</nav>
+			</div>
+		</div>
+		<!--右侧栏目-->
+		<aside class="sidebar">
+			<div class="widget widget_text">
+				<div class="textwidget">
+					<div class="social">
+						<a class="sinaweibo"></a>
+						<a class="qqweibo"></a>
+						<a class="weixin"></a>
+						<a class="email"></a>
+						<a class="qq"></a>
+						<a class="ress"></a>
+					</div>
+				</div>
+			</div>
+            
+            <div class="widget widget_text d_postlist">
+            	<div class="title">
+            		<h2>最新文章</h2>
+            	</div>
+				<div class="textwidget">
+					<ul>
+						<li>
+							<a>
+								<span class="thumbnail"><img src="images/timthumb.png" /></span>
+								<span class="text">git冲突Please move or remove them before you can merge</span>
+								<span class="muted">2015-01-23</span>
+								<span class="muted"></span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="thumbnail"><img src="images/timthumb.png" /></span>
+								<span class="text">git冲突Please move or remove them before you can merge</span>
+								<span class="muted">2015-01-23</span>
+								<span class="muted"></span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="thumbnail"><img src="images/timthumb.png" /></span>
+								<span class="text">git冲突Please move or remove them before you can merge</span>
+								<span class="muted">2015-01-23</span>
+								<span class="muted"></span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="thumbnail"><img src="images/timthumb.png" /></span>
+								<span class="text">git冲突Please move or remove them before you can merge</span>
+								<span class="muted">2015-01-23</span>
+								<span class="muted"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+            </div>
+            
+            <div class="widget widget_text d_comment">
+            	<div class="title"><h2>最新新闻</h2></div>
+                <div class="textwidget">
+                	<ul>
+                		<li>
+                			<a>
+                				<div class="muted">
+                					<i>laguarjack</i>
+                					郑州百易科技有限公司
+                				</div>
+                			</a>
+                		</li>
+                		<li>
+                			<a>
+                				<div class="muted">
+                					<i>laguarjack</i>
+                					郑州百易科技有限公司
+                				</div>
+                			</a>
+                		</li>
+                	</ul>
+                </div>
+            </div>
+		</aside>
+	</section>
+	<footer class="footer">
+		<div class="footer-inner">
+			郑州百易科技有限公司倾力著作
+		</div>
+
+	</footer>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(".btn").click(function(){
+				$(".nav").slideToggle();
+			});
+
+	</script>
+</body>
+</html>

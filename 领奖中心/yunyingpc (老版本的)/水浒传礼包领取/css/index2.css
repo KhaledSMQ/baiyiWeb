@@ -1,0 +1,108 @@
+@charset "utf-8";
+    html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;font-family:Arial,Microsoft YaHei}
+    body{font-family:Microsoft YaHei;}
+    li,ul{ list-style:none;}
+    em{ font-style:normal;}
+    a{color:#000;text-decoration:none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+    a:active{ opacity:0.9}
+    img{ border:none; vertical-align:middle;max-width:100%;}
+	input{vertical-align:middle; box-shadow:none; border-radius:0;-webkit-border-radius:0; font-size:1em;outline:none}
+	body{}
+    #wrap{position:relative;width:100%;overflow:hidden;}
+	
+    /*list*/
+    .Hindex{line-height:0; position:relative; margin:0 auto; }
+    .Hindex .Hpic{ display: block;width:100%;margin:0 auto;padding-top:11%;}
+    .nav{background:url(../images/ding.png) no-repeat; background-size:100% 100%; height:15%; position:relative; color:#fff; font-size:1em; position:absolute; top:0; left:0;  width: 100%; z-index:9;}
+    .nav .icobtn { display:inline-block;width:8%; height:77%;vertical-align:middle; background-size:80% auto; margin:1.5% 10px 0;}
+    .nav .home{ background-position:center -4%;}
+    .nav .bbs{float:right; background-position:center 7%;}
+    .nav .logo{ position:absolute; top:0%; left:37%; width:24.5%; overflow:hidden; z-index:99; color:#fff;text-align:center;}
+    .nav .logo img{ width:100%}
+    .nav .icobtn:active{ opacity:0.8}
+   
+    .Ntit{ clear:both; overflow:hidden;width: 100%; padding:5px 0 5px 23%;margin-top:-6%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; position:relative; z-index:99}
+    .Ntit li{ float:left; width:48.5%;text-align:center;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; padding:0 10px 5px 0;color:#fff;line-height:2em; font-size:0.875em}
+    .Ntit li:first-child{margin-right:2%;}
+	.Ntit li a{ display:block; padding:2px 0; height:100%;color:#fff;border-radius:3px;}
+    .Ntit li a img{ width:100%;}
+    .Ntit li em.ico_ios{ background-position:0 -86px;}
+
+	.contentlist{width:100%;float:left;position:relative;margin-top:2%;}
+	.contentlist ul li{width:100%;margin-bottom:2%;float:left;background-color:#fff;}
+	.contentlist ul li:last-child{margin-bottom:0%;}
+    .contentlist ul li  .leftimg{float:left;width:13%;padding:2% 2%;margin:1.5% 0% 1% 2%;border:2px solid #d2d1d1;vertical-align:middle;text-align:center;}
+	.contentlist ul li  .middesc{float:left;width:50%; padding:1% 0% 0% 3%;}
+	.contentlist ul li  .middesc p{padding:1% 0%;font-size:1em;color:#666666;width:100%;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+	.contentlist ul li  .middesc p.fontweight{font-weight:bold;color:#121212;font-size:1.05em;padding:2.5% 0%;}
+	.contentlist ul li  .middesc p label{margin:0% 1%;}
+	.contentlist ul li  .rightbtn{float:left;width:24%;margin:4% 0% 1% 0%;}
+	.contentlist ul li  .rightbtn img{cursor:pointer;}
+	/*兑换礼品的*/
+	.wf100{width:100%;float:left;}
+	/*.prizeinfo{padding:0% 5% 5% 5%;text-align:center;background-color:#fff;margin-bottom:3%;}
+	.topsection{}
+	.topsection p{width:70%;padding-top:1%;float:left;color:#ff0000;text-align:center;font-weight:bold;font-size:1.3em;}
+	.topsection span{width:70%;float:left;text-align:center;font-size:1em;color:red;}
+	.sectiontwo{width:100%;float:left;margin-top:3%;}
+	.sectiontwo .twosectionleft{width:100%;float:left;}
+	.sectiontwo .twosectionleft p{width:100%;float:left;font-size:1.2em;margin-bottom:1em;text-align:left;}
+	#userinput{margin:2% 0%;}
+	#userinput span{width:auto;float:left;font-size:1.2em;margin-top:1%;}
+	#userinput input {width:40%;padding:2%;vertical-align:middle;border-radius:6px;border:1px solid #666666;float:left;margin-left:2%;outline:0px;}
+	input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
+	#userinput label{color:red;float:left;width:25%;margin-top:1%;}
+	.sectiontwo .twosectionright{float:left;width:100%;}
+	.sectiontwo .twosectionright .userclick{width:23%;padding:3% 0%;background:url(../images/btn-login.png) no-repeat;background-size:100% 100%;border:none;cursor:pointer;}
+	*/
+	/*other*/
+	.prizeinfo{min-width:320px;overflow:hidden;position:relative;font-size:1em;}
+	.prizeinfo header{background-color:#4AB631;  line-height: 40px;}
+	.prizeinfo header h1{padding:0 50px;font-size:1.2em;font-weight:normal;text-align:center;color:#fff;}
+    #login .Myself{ float:none; width:100%;}
+	a.Hreg{ float:left; width:40px; margin:7px 0 0 10px; line-height:1.9em;text-align:center; height:22px; font-size:0.75em; color:#fff; border:1px solid #1D7D3B; border-radius:3px;-webkit-border-radius:3px;}
+	.Log_in{ padding:15px 0;}
+	.Log_in dd{ background:#fff;border-top:1px solid #CCCCCC; padding:5px 18px 0;}
+	.Log_in dd:nth-child(2){ border-bottom:1px solid #CCCCCC;border-top:none}
+	.Log_in dd:first-child div{ border-bottom:1px solid #ccc}
+	.Log_in dd div{display:-moz-box;display:-webkit-box;display:box; width:100%; }
+
+.Log_in dd input.input{-moz-box-flex:1;-webkit-box-flex:1;box-flex:1; border:none; background:none;display: block;line-height: 1.6em; font-size:1em;height: 38px; margin-bottom:4px;background:url(../images/login1106.png) no-repeat; background-size:20px auto; padding:0 20px 0 38px;}
+.Log_in dd input.username{ background-position:left 7px;}
+.Log_in dd input.username:valid{ background-position:left -28px}
+.Log_in dd input.password{ background-position:left -63px;}
+.Log_in dd input.password:valid{ background-position:left -98px}
+.Log_in dd a.clear { display: none; position: absolute; width: 20px; height: 20px; margin: 0 0 0 -28px;padding: 10px; background:url(../images/login1106.png) no-repeat center -132px #fff; background-size:20px auto; z-index:999; }
+.input::-ms-clear { display: none; }
+.input:valid + .clear { display: inline; }
+
+
+.Log_in dd a{ width:126px;display:inline-block; font-size:0.75em; color:#00578a}
+.Log_in dd a em{ display:inline-block; margin-right:3px; border:1px solid #C4C4C4; width:50px; height:20px;margin-bottom: 2px; vertical-align:middle; background:#EEEEEE;}
+.Log_in dd a.yc{ width:40px; text-align:center;border:1px solid #C4C4C4; vertical-align:middle; background:#EEEEEE; color:#000;line-height: 34px;}
+.Log_in dt.Terms{ font-size:0.75em; text-align:center; color:#9d9d9d; padding:10px 0}
+.Log_in dt.Terms a{ color:#2f7ce5;}
+.Log_in dt.btnlogin{ margin:5px 8px 0 8px}
+
+.Log_in dt a.btnok{margin: 0 10px;display: block;border-radius: 3px;-webkit-border-radius: 3px;text-align: center;font-size: 1em;color: #fff;background: #4AB631;line-height: 40px;}
+.Log_in dt a.btnok:active{ background:#58B440}
+.Log_in dt.war{ padding-left:10px; height:14px; color:#F00; font-size:0.625em; padding-bottom:8px;}
+
+	
+	
+	
+	
+	
+	
+	
+	.footer{margin-top:2%;width:100%;float:left;background:#474747 url(../images/di.png) repeat-x; text-align:center;padding-top:10px; }
+    .footer p{color:#c8c8c8;padding-top:0.18em;}
+    .footer a{ color:#c8c8c8;}
+	 .loadingstatus{}
+	/*微信打开的提示*/ 
+   .bgtips{width:100%;height:157px;position:fixed;right:2%;top:2%;z-index:99999;}
+   .bgtips .bg_4_tip{width:60%;position:absolute;right:2%;z-index:10000000}
+	
+	
+	

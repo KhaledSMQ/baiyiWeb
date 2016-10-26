@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+	<meta name="format-detection" content="telphone=no, email=no"/>
+	
+	<meta http-equiv="pragma" content="no-cache">
+    <title></title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+	<link href="css/layer.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="wrap">
+	<img src="images/bg.png" style="position:absolute;width:100%;height:100%;z-index:-1;" />
+	<header class="Hindex">
+        <a><img src="images/dabg.png" alt="" class="Hpic"></a>
+		<div class="nav"><span class="logo"><img src="images/logo.png" alt=""></span></div>
+	</header>
+	<ul class="Ntit">
+		<li class="ico_green">
+            <a href="javascript:void(0);"><img src="images/lv.png" alt="" id="userdownload"></a>
+        </li>
+		<li class="ico_red"><a href=""><img src="images/huang.png" alt=""></a></li>
+	</ul>
+	<div class="contentlist" >
+		<div class="prizeinfo wf100" style="display:none;min-height:250px; padding-bottom:0;background:#EDEDF3; height:100%;">
+			<header><h1>登录</h1></header>
+			<dl class="Log_in" id="login-wrap">
+				<dd><div><input id="gameid" type="text"  alt="" placeholder="请输入游戏ID" class="username input"><a href="javascript:void(0);" class="clear"></a></div></dd>
+				<dd><div><input id="phoneid" type="text" alt="" placeholder="请输入手机号" class="password input"><a href="javascript:void(0);" class="clear"></a></div></dd>
+				<dt id="login-msg" class="war"></dt>
+				<dt class="btnlogin"><a id="login-btn" href="javascript:void(0);" class="btnok userclick">登录</a></dt>
+			 </dl>
+		</div>
+		
+		<ul id="usernologinpeice" ></ul>
+	</div>
+    <div class="footer" id="footer">
+		<p><a href="">百易水浒传</a> | <a href="">活动</a> |<a href="javascript:void(0);" class="downloadfooter">下载</a></p>
+		<p><a href="">789游戏中心</a> </p>
+	</div>
+	
+	<div class="bgtips" id="bgtips" style="display:none;">
+		<div class="bg_4_tip" id="bg_4_tip" >
+			<img src="images/ios.png" style="width:100%;" />
+		</div>
+	</div>
+	<div class="bgtips" id="bgtips2" style="display:none;">
+		<div class="bg_4_tip" id="bg_5_tip" >
+			<img src="images/anzhuo.png" style="width:100%;" />
+		</div>
+	</div> 
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/layer.m.js"></script>
+	<script type="text/javascript">
+    var normal_width_size = 720;    //原始比例宽度
+    //var normal_height_size = 1774;    //原始比例高度
+    var win_width_size =document.body.clientWidth;  //window.screen.width;//给出的webview宽度
+    var win_height_size = document.body.clientHeight;//window.screen.height;//给出的webview高度
+    var scale_width = win_width_size / normal_width_size;//计算自适应的宽度百分百
+	//初始化自适应操作
+	window.onload=function(){
+		resize_size_by_screen();
+	}
+    //自适应方法
+    function resize_size_by_screen() {
+		$("#usernologinpeice").css("font-size",1.2 * scale_width+"em");
+		$("#footer").css("font-size",1.2 * scale_width+"em");
+    }
+	//判断是否是微信扫描  
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        $("#userdownload").bind('click', function(){
+            if (checkIsApple()) {
+				document.getElementById("bgtips").style.display="block";  
+			}else{
+				document.getElementById("bgtips2").style.display="block";
+			}       
+        }); 
+		
+		 $(".Hpic").bind('click', function(){
+            if (checkIsApple()) {
+				document.getElementById("bgtips").style.display="block";  
+			}else{
+				document.getElementById("bgtips2").style.display="block";
+			}       
+        }); 
+		
+		 $(".downloadfooter").bind('click', function(){
+            if (checkIsApple()) {
+				document.getElementById("bgtips").style.display="block";  
+			}else{
+				document.getElementById("bgtips2").style.display="block";
+			}       
+        }); 
+		
+    }else{
+       $("#userdownload").bind('click', function(){
+            if (checkIsApple()) {
+                    window.location.href = "itms-services://?action=download-manifest&url=https://dn-789game.qbox.me/590145BY.plist";
+              }else{
+                    window.location.href = "http://download.6513.com/phoneGame/590145BY.apk";
+              }        
+        });  
+		
+		 $(".Hpic").bind('click', function(){
+            if (checkIsApple()) {
+                    window.location.href = "itms-services://?action=download-manifest&url=https://dn-789game.qbox.me/590145BY.plist";
+              }else{
+                    window.location.href = "http://download.6513.com/phoneGame/590145BY.apk";
+              }        
+        }); 
+		$(".downloadfooter").bind('click', function(){
+            if (checkIsApple()) {
+                    window.location.href = "itms-services://?action=download-manifest&url=https://dn-789game.qbox.me/590145BY.plist";
+              }else{
+                    window.location.href = "http://download.6513.com/phoneGame/590145BY.apk";
+              }        
+        });
+    }
+    
+  //判断是否是苹果设备
+      function checkIsApple(){
+         var u = navigator.userAgent, app = navigator.appVersion;
+         var ios=!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+         var iPad=u.indexOf('iPad') > -1;
+         var iPhone=u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1;
+         if(ios || iPad || iPhone){
+            return true;
+         }else{
+            return false;
+         }
+    }
+	
+	/*保存用户登陆*/
+	function  userlogined(){
+		$.ajax({
+			async:false,
+			url: 'http://test.huazai.com/index.php/Api/Index/checkIsLogin.php',
+			type: "GET",
+			dataType: 'jsonp',
+			jsonp: 'jsoncallback',
+			data:{},
+			success: function (json) {
+				if(json.status == "success"){
+					userloginResult();
+				}else{
+					userNologinResult();
+				}
+			}
+		});	 
+	}
+	
+	/*获取未登录的显示结果*/
+	function userNologinResult(){
+		$.ajax({
+			async:false,
+			url: 'http://test.huazai.com/index.php/Api/Index/getDefaultList.php',
+			type: "GET",
+			dataType: 'jsonp',
+			jsonp: 'jsoncallback',
+			data:{},
+			success: function (json) {
+				if(json.status == "success"){
+					var str="";
+					$.each(json.list,function(index,value){
+						var statusimg;
+						var imgtype;
+						var statueid=value.status;
+						var imgtypeid=value.exchangecodetypeid;
+						if(statueid == 0){
+							statusimg="<img src=\'images/btn-lq.png\' id="+value.id+"  typeid="+value.exchangecodetypeid+" price="+value.rewardname+" class=\'userduihuan\' />";
+						}else if(statueid == 2){
+							statusimg="<img src=\'images/btn-ysw.png\' id="+value.id+"  typeid="+value.exchangecodetypeid+" price="+value.rewardname+" style=\'cursor:default;\' />";
+						}
+						
+						if(imgtypeid == 109){
+							imgtype="<img src=\'images/lb01.png\' />";
+						}else if(imgtypeid == 110){
+							imgtype="<img src=\'images/lb01.png\' />";
+						}else if(imgtypeid == 101){
+							imgtype="<img src=\'images/lb01.png\' />";
+						}
+						str=str+"<li><div class=\'leftimg\'>"+imgtype+"</div><div class=\'middesc\'><p class=\'fontweight\'>【新手礼包】"+value.name+"</p><p>金币：<label>"+value.rewardname+"</label></p><p>剩余："+value.surplus+"个</p></div><div class=\'rightbtn\'>"+statusimg+"</div></li>";
+						});
+					$("#usernologinpeice").empty();
+					$("#usernologinpeice").html(str);
+					/*点击领取*/
+					$(".userduihuan").unbind('click').click(function(){
+						 layer.open({
+							content: "请先登陆",
+							btn: ['好的']
+						});
+						$(".prizeinfo").css("display","block");
+					});
+				}else{
+					layer.open({
+						content: result["msg"],
+						btn: ['知道了']
+					});	
+				}
+			}
+		});
+	}
+	/*获取登录的显示结果*/
+	function userloginResult(){
+		$.ajax({
+			async:false,
+			url: 'http://test.huazai.com/index.php/Api/Index/getLoginList.php',
+			type: "GET",
+			dataType: 'jsonp',
+			jsonp: 'jsoncallback',
+			data:{},
+			success: function (json) {
+				if(json.status == "success"){
+					var str="";
+					$.each(json.list,function(index,value){
+						var statusimg;
+						var imgtype;
+						var statueid=value.status;
+						var imgtypeid=value.exchangecodetypeid;
+						if(statueid == 0){
+							statusimg="<img src=\'images/btn-lq.png\' id="+value.id+"  typeid="+value.exchangecodetypeid+" price="+value.rewardname+" class=\'userduihuan\' />";
+						}else if(statueid == 1){
+							statusimg="<img src=\'images/btn-ylq.png\' id="+value.id+"  typeid="+value.exchangecodetypeid+" price="+value.rewardname+" style=\'cursor:default;\' />";
+						}else if(statueid == 2){
+							statusimg="<img src=\'images/btn-ysw.png\' id="+value.id+"  typeid="+value.typeid+" price="+value.rewardname+" style=\'cursor:default;\' />";
+						}
+						
+						if(imgtypeid == 109){
+							imgtype="<img src=\'images/lb01.png\' />";
+						}else if(imgtypeid == 110){
+							imgtype="<img src=\'images/lb01.png\' />";
+						}else if(imgtypeid == 101){
+							imgtype="<img src=\'images/lb01.png\' />";
+						}
+						str=str+"<li><div class=\'leftimg\'>"+imgtype+"</div><div class=\'middesc\'><p class=\'fontweight\'>【新手礼包】"+value.name+"</p><p>金币：<label>"+value.rewardname+"</label></p><p>剩余："+value.surplus+"个</p></div><div class=\'rightbtn\'>"+statusimg+"</div></li>";
+						});
+					$("#usernologinpeice").empty();
+					$("#usernologinpeice").html(str);
+					/*点击领取*/
+					$(".userduihuan").unbind('click').click(function(){
+					var userclicktypeid=$(this).attr("typeid");
+					var userhasprice=$(this).attr("price");
+					var userhasid=$(this).attr("id");
+							$.ajax({
+								async:false,
+								url: 'http://test.huazai.com/index.php/Api/Index/getReward.php',
+								type: "GET",
+								dataType: 'jsonp',
+								jsonp: 'jsoncallback',
+								data:{'id':userhasid},
+								success: function (json) {
+									if(json.status == "success"){
+										layer.open({
+											content:"恭喜你领取"+userhasprice+"成功！",
+											btn: ['知道了']
+										});
+										userloginResult();
+									}else if(json.status == "fail"){
+										layer.open({
+											content:json.msg,
+											btn: ['知道了']
+										});
+									}
+								}
+							});
+					});
+				}else{
+					layer.open({
+						content: json.msg,
+						btn: ['知道了']
+					}); 
+				}
+			}
+		});
+	}
+	
+	/*初始化加载*/
+	$(document).ready(function(){
+		userNologinResult();
+		userlogined();
+		 /*验证ID*/
+		 var inputfirst=false;
+		 var inputsecond=false;
+		$("#gameid").bind("blur",function(){
+			var usergameid=$.trim($(this).val());
+			var reg= /^\d+$/;
+			if(reg.test(usergameid)){
+				$("#login-msg").html("");
+				inputfirst=true;	
+			}else{
+				$("#login-msg").html("请输入您的游戏ID!");
+				$(this).focus();
+			}
+		});
+	    /*验证电话*/
+		$("#phoneid").bind("blur",function(){
+			var userinputphoneno=$.trim($(this).val());
+		    var params=RegExp(/^1[3|4|5|8][0-9]{9}$/);
+		    if(params.test(userinputphoneno)){
+				$(".war").html("");
+				inputsecond=true;
+			}else{
+				$(".war").html("请输入您的手机号码!");
+				$(this).focus();
+			}
+		});
+		
+		//登陆
+		$(".userclick").click(function(){
+			if(inputfirst==true && inputsecond==true){
+				var inputuserid=$.trim($("#gameid").val());
+				var inpoutusertel=$.trim($("#phoneid").val());
+				$.ajax({
+						async:false,
+						url: 'http://test.huazai.com/index.php/Api/Index/login.php',
+						type: "GET",
+						dataType: 'jsonp',
+						jsonp: 'jsoncallback',
+						data:{'uid':inputuserid,'phoneno':inpoutusertel},
+						success: function (json) {
+							if(json.status == "success"){
+								$(".prizeinfo").css("display","none");
+								userloginResult();
+							}else if(json.status == "fail"){
+								layer.open({
+									content:json.msg,
+									btn: ['知道了']
+								});
+							}
+						}
+					});	 
+			}
+		});
+	});
+	
+</script>
+</body>
+</html>

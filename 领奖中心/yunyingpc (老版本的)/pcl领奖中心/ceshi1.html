@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+<title></title>
+<meta name="keywords" content="" >
+<meta name="description" content="" >
+
+</head>
+<style>
+*{padding:0;margin:0;}
+
+.main{
+	width:480px;
+	margin:7% auto;
+	border: 1px solid #e1e1e1;
+	-webkit-box-shadow: 0 0 3px #eee,inset 0 0 3px #fff;
+	box-shadow: 0 0 3px #eee,inset 0 0 3px #fff;
+	background: #fbfbfb;
+	padding: 20px;
+	}
+.main .panel-header{
+	border-bottom:solid 3px #e1e1e1;
+	padding-bottom:10px;
+	position:relative;
+	}
+.main .panel-header h3{
+	line-height:40px;
+	color:#5c6371;
+
+	font-weight:500;
+	}
+.main .panel-body{
+	padding:20px 40px 0 40px;
+	border-top:1px solid #e1e1e1;
+	margin-top:5px;
+	}
+.main .panel-body .panel-content{
+	margin-top:10px;
+	}
+.main .panel-body .panel-content form{
+	margin: 0 5% !important;
+ }
+.main .panel-body .panel-content form p{
+	margin-bottom:15px;
+	}
+.main .panel-body .panel-content form p label{
+	padding: 8px 8px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1;
+	color: #555;
+	text-align: center;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width:15px;
+	height:15px;
+	border-right:none;
+	}
+.main .panel-body .panel-content form p label img{
+ vertical-align:middle;
+}
+.main .panel-body .panel-content form p input{
+	width:80%;
+	height:20px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	border-bottom-left-radius:0px;
+	border-top-left-radius:0px;
+	margin-left:-6px;
+}
+.main .panel-body .panel-content form p input.submit{
+	width:100%;
+	height:45px;
+	background-color: #5cb85c;
+	border: 1px solid #e1e1e1;
+	background-image: none;
+	text-shadow: 0 0 0 transparent;
+	-webkit-box-shadow: 0 0 0 transparent;
+	box-shadow: 0 0 0 transparent;
+	padding: 8px 25px;
+	color:#fff;
+	font-size:18px;
+	font-family:Microsoft Yahei;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.main .panel-body .panel-content form p input.submit:hover{background-color:#47a447;}
+.main .panel-body .panel-content .footlogin{
+	min-height: 40px;
+	border-top: 1px solid #e1e1e1;
+	background: #fbfbfb;
+	line-height: 54px;
+	padding:0 20px;
+}
+.pull-right{float:right;}
+.pull-right a{color:#666;cursor:pointer;}
+.pull-right a:hover{color:#d14836;text-decoration:none;}
+.alert{padding:15px; border:1px solid transparent;border-radius:3px;background-color:#f2dede;}
+.main .panel-body .panel-content form p label.error{
+	color:#A94443;
+	width:100%;border:none;
+	height:auto;
+	background-color:transparent;
+	}
+</style>
+<body>
+
+
+
+   
+	
+	<div class="main" id="loaduserpeizeinfo" style="display:block;">
+	<div class="panel-header">
+		<h3>登录</h3>
+	</div>
+	<div class="panel-body"> 
+		<div class="panel-content">
+			<form id="usersignupForm" method="get" action="">
+				<p>
+					<label for="gameid"><img src="images/user.png" /></label>
+					<input id="gameid" name="gameid" type="text"  placeholder="请输入你的游戏ID" />
+				</p>
+				
+				<p>
+					<label for="phoneid"><img src="images/pwd.png" /></label>
+					<input id="phoneid" name="phoneid" type="text"  placeholder="请输入你的手机号"  />
+				</p>
+				<p class="alert" style="display:none;">
+				</p>
+				<p>
+					<input class="submit" type="submit" value="登录"/>
+				</p>
+			</form>
+		</div>
+	</div>
+</div>
+	
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/ad.js"></script>
+	<script type="text/javascript" src="js/layer.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+
+	 <script type="text/javascript">
+	  $.validator.addMethod("gameid",function(value,element,params){  
+			 params=/^\d+$/;
+				if(params.test(value)){
+					return true;
+				}else{
+					return false;
+				}
+			},"输入的游戏ID格式错误!");
+	 $.validator.addMethod("phoneid",function(value,element,params){  
+			 params=RegExp(/^1[3|4|5|8][0-9]{9}$/);//phone
+				if(params.test(value)){
+					return true;
+				}else{
+					return false;
+				}
+			},"输入的手机号码格式错误!");
+	 
+	 $(document).ready(function(){
+	 	/*弹框*/
+	 	 $(".userprizeclick").click(function(){
+		 	layer.open({
+				type:1,
+				title:false,
+				closeBtn:true,
+				skin:'layui-layer-nobg',
+				area:['600px','440px'],
+				shadeClose:true,
+				content:$('#loaduserpeizeinfo')
+			});
+		 });
+		$("#usersignupForm").validate({
+			rules: {
+			   gameid:{required: true,gameid:["params"]},
+			   phoneid: {required: true, rangelength: [11, 11],phoneid:["params"]}
+			},
+			messages: {
+				gameid:{required:"请输入你的游戏ID"},
+			    phoneid: {
+					required: "请填写手机号码",
+                    rangelength: "请认真填写11位的手机号码"
+					}
+			},
+			errorPlacement: function (error, element) {
+			$(".alert").css("display","block");
+				error.appendTo(element.parent().parent().find(".alert"));
+            },
+			success: function(label) {
+				$(".alert").css("display","none");
+				label.html("");
+			}
+		});
+		$(".submit").click(function(){
+			if ($("#usersignupForm").valid()) {
+				//var usertel = $.trim($("#repusertelno").val());
+				alert("success");
+			}
+		});
+
+	});
+		
+		
+		
+		
+
+
+
+
+
+
+	
+	 </script>
+</body>
+</html>

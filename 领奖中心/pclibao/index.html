@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+<title></title>
+<meta name="keywords" content="" >
+<meta name="description" content="" >
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="js/skin/layer.css" rel="stylesheet" />
+</head>
+<body style="background-position: 50% 67px;">
+	<div class="header-1">
+		 <div class="navbar">
+			<ul>
+				<li style="width:80px;"><a href="/">首页</a></li>
+				<li><a href="/xinwengonggao">新闻公告</a></li>
+				<li><a href="/jiangpin">领奖中心</a></li>
+				<li style="width:250px;"><a href="/"><img src="images/logo.png"  class="logo"/></a></li>
+				<li><a href="/libao">礼包领取</a></li>
+				<li><a href="/youxigonglue">游戏攻略</a></li>
+			</ul>
+		</div> 
+	</div>
+
+	<div class="wrap">
+    	<div class="bg-header1">
+			<div class="header-2"></div>
+            <div class="header-3">
+				<div class="contenttop">
+            		<div class="leftimg" style="background:none;">
+					</div>
+                    <div class="rightdiv">
+                    	<a href="http://download.6513.com/phoneshz/SHZ_GW.apk"><p class="anzhuo"></p></a>
+						<a href="https://itunes.apple.com/cn/app/bai-yi-shui-hu-chuan-jie-ji/id993585766?mt=8" target="_blank"><p class="ios"></p></a>
+						<div class="erewimabg">
+							<img src="images/erweima.png" />				
+						</div>
+                    </div>
+            	</div>
+				<div class="header-4">
+					<div class="listdiv">
+						<div class="listcontent" id="view"></div>
+						<div class="listcontent" id="view2"></div>
+					</div>
+				</div>
+            </div>
+			<!--footer-->
+			<div class="footer">
+				<p>郑州百易科技有限公司 豫ICP备12014032号-1</p>
+				<p>客服电话：<label>40087565555</label></p>
+			</div> 
+        </div>
+    </div>
+    <!--弹出的兑换信息-->
+	<div class="main" id="loaduserpeizeinfo" style="display:none;">
+		<div class="panel-header">
+			<h3>登录</h3>
+		</div>
+		<div class="panel-body"> 
+			<div class="panel-content">
+				<form id="usersignupForm" method="get" action="">
+					<p>
+						<label for="uid"><img src="images/user.png" /></label>
+						<input id="uid" name="uid" type="text"  placeholder="请输入你的游戏ID" />
+					</p>
+					<p>
+						<label for="phoneid"><img src="images/pwd.png" /></label>
+						<input id="phoneid" name="phoneid" type="text"  placeholder="请输入你的手机号"  />
+					</p>
+					<p class="alert" style="display:none;width:80%;">
+					</p>
+					<p>
+						<input class="submit" type="button" value="登录"/>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/ad.js"></script>
+	<script type="text/javascript" src="js/layer.js"></script>
+	<script type="text/javascript" src="js/laytpl.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script id="demo" type="text/html">
+		<ul class="showlist">
+		{{# for(var i=0,len =d.list.length;i<len ; i++){}}
+			<li>
+				<div class="prizeimg"><a href="javascript:void(0);">{{checkpic(d.list[i].exchangecodetypeid)}}</a></div>
+				<div class="prizeinfo">
+					<p><label style="margin-left:5px;">{{d.list[i].name}}</label></p>
+					<p>&nbsp;金&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;币：<label>{{d.list[i].rewardname}}</label></p>
+					<p>&nbsp;剩&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;余：<label>{{d.list[i].surplus}}个</label></p>
+				</div>
+				<div class="prizeduihuan"><a href="javascript:void(0);" id={{d.list[i].id}}  typeid={{d.list[i].exchangecodetypeid}} price={{d.list[i].rewardname}} >{{checkstateimg(d.list[i].status)}}</a></div>
+			</li>
+			{{# }}}
+		</ul>
+	</script>
+	<script type="text/javascript">
+	/*图片的方法*/
+	function checkpic(imgtypeid){
+		var imgtype;
+		if(imgtypeid == 109){
+			imgtype="<img src=\'images/lb1.png\' />";
+		}else if(imgtypeid == 111){
+			imgtype="<img src=\'images/lb2.png\' />";
+		}else if(imgtypeid == 101){
+			imgtype="<img src=\'images/lb3.png\' />";
+		}else{
+			imgtype="<img src=\'images/lb1.png\' />";
+		}
+		return imgtype;
+	}	
+	function checkstateimg(statueid){
+		var statusimg;
+		if(statueid == 0){
+			statusimg="<img src=\'images/btn-djlq.png\'  class=\'userprizeclick\' />";
+		}else if(statueid == 2){
+			statusimg="<img src=\'images/btn-ysw.png\'  style=\'cursor:default;\' />";
+		}else if(statueid == 1){
+			statusimg="<img src=\'images/btn-ylq.png\'  style=\'cursor:default;\' />";
+		}
+		return statusimg;
+	}
+	
+	
+	/*验证判断*/
+	 $.validator.addMethod("uid",function(value,element,params){  
+			 params=/^\d+$/;
+				if(params.test(value)){
+					return true;
+				}else{
+					return false;
+				}
+			},"输入的游戏ID格式错误!");
+	 $.validator.addMethod("phoneid",function(value,element,params){  
+			 params=RegExp(/^1[3|4|5|8][0-9]{9}$/);//phone
+				if(params.test(value)){
+					return true;
+				}else{
+					return false;
+				}
+			},"输入的手机号码格式错误!");
+			
+	 $("#usersignupForm").validate({
+			rules: {
+			   uid:{required: true,uid:["params"]},
+			   phoneid: {required: true, rangelength: [11, 11],phoneid:["params"]}
+			},
+			messages: {
+				uid:{required:"请输入你的游戏ID"},
+			    phoneid: {
+					required: "请填写手机号码",
+                    rangelength: "请认真填写11位的手机号码"
+					}
+			},
+			errorPlacement: function (error, element) {
+			$(".alert").css("display","block");
+				error.appendTo(element.parent().parent().find(".alert"));
+            },
+			success: function(label) {
+				$(".alert").css("display","none");
+				label.html("");
+			}
+		});
+		
+		
+	function userNologinResult(){ /*获取未登录的显示结果*/
+		$("#view2").css("display","none");
+		$("#view").css("display","block");
+		$.ajax({
+			async:false,
+			url: 'http://test.huazai.com/index.php/Api/Index/getDefaultList.php',
+			type: "GET",
+			dataType: 'jsonp',
+			jsonp: 'jsoncallback',
+			data:{},
+			success: function (json) {
+				if(json.status == "success"){
+					  if (json.list != null && json.list.length > 0) {
+						var gettpl = document.getElementById('demo').innerHTML;
+						laytpl(gettpl).render(json, function(html){
+							document.getElementById('view').innerHTML = html;
+						});
+					}
+					$(".userprizeclick").unbind('click').click(function(){ /*点击领取*/
+						layer.open({
+							type:1,
+							title:false,
+							closeBtn:true,
+							skin:'layui-layer-nobg',
+							area:['550px','350px'],
+							shadeClose:true,
+							content:$('#loaduserpeizeinfo')
+						});
+					});
+					
+					$(".submit").click(function(){
+						if ($("#usersignupForm").valid()) {
+							var inputuserid=$.trim($("#uid").val());
+							var inpoutusertel=$.trim($("#phoneid").val());
+							$.ajax({
+								async:false,
+								url: 'http://test.huazai.com/index.php/Api/Index/login.php',
+								type: "GET",
+								dataType: 'jsonp',
+								jsonp: 'jsoncallback',
+								data:{'uid':inputuserid,'phoneno':inpoutusertel},
+								success: function (json) {
+									if(json.status == "success"){
+										layer.closeAll();
+										userloginResult();
+									}else if(json.status == "fail"){
+										layer.open({
+											content:json.msg,
+											btn: ['知道了']
+										});
+									}
+								}
+							});	
+						}
+					});
+				}else{
+					 layer.open({
+						type:1,
+						title:false,
+						closeBtn:false,
+						content: "<p style=\"margin:10px 25px;\">"+json.msg+"</p>",
+						btn: ['知道了！']
+					});
+				}
+			}
+		});
+	}
+	
+	function userloginResult(){ /*获取登录的显示结果*/
+		$("#view").css("display","none");
+		$("#view2").css("display","block");
+		$.ajax({
+			async:false,
+			url: 'http://test.huazai.com/index.php/Api/Index/getLoginList.php',
+			type: "GET",
+			dataType: 'jsonp',
+			jsonp: 'jsoncallback',
+			data:{},
+			success: function (json) {
+				if(json.status == "success"){
+					  if (json.list != null && json.list.length > 0) {
+					var gettpl = document.getElementById('demo').innerHTML;
+					laytpl(gettpl).render(json, function(html){
+						document.getElementById('view2').innerHTML = html;
+					});
+					}
+					$(".userprizeclick").unbind('click').click(function(){ /*点击领取*/
+						var userclicktypeid=$(this).parent().attr("typeid");
+						var userhasprice=$(this).parent().attr("price");
+						var userhasid=$(this).parent().attr("id");
+						alert(userclicktypeid);
+							$.ajax({
+								async:false,
+								url: 'http://test.huazai.com/index.php/Api/Index/getReward.php',
+								type: "GET",
+								dataType: 'jsonp',
+								jsonp: 'jsoncallback',
+								data:{'id':userhasid},
+								success: function (json) {
+									if(json.status == "success"){
+										layer.open({
+											content:"恭喜你领取"+userhasprice+"成功！",
+											btn: ['知道了']
+										});
+										 userloginResult();
+									}else if(json.status == "fail"){
+										 layer.open({
+											type:1,
+											title:false,
+											closeBtn:false,
+											content: "<p style=\"margin:10px 25px;\">"+json.msg+"</p>",
+											btn: ['知道了！']
+										});
+									}
+								}
+							});
+					});
+				}else{
+					 layer.open({
+						type:1,
+						title:false,
+						closeBtn:false,
+						content: "<p style=\"margin:10px 25px;\">"+json.msg+"</p>",
+						btn: ['知道了！']
+					});
+				}
+			}
+		});
+	}
+	function  userlogined(){ /*保存用户登陆*/
+		$.ajax({
+			async:false,
+			url: 'http://test.huazai.com/index.php/Api/Index/checkIsLogin.php',
+			type: "GET",
+			dataType: 'jsonp',
+			jsonp: 'jsoncallback',
+			data:{},
+			success: function (json) {
+				if(json.status == "success"){
+					userloginResult();
+				}else{
+					userNologinResult();
+				}
+			}
+		});	 
+	}
+		
+		$(document).ready(function(){
+			userlogined();
+			userNologinResult();
+		});
+			
+	</script>
+</body>
+</html>

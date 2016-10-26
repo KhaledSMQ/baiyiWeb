@@ -1,0 +1,72 @@
+
+/* CSS Document */
+*{padding:0;margin:0;}
+body{min-width:1038px;background-color:#f5f5f5; font-family:Microsoft YaHei;}
+ul,li{list-style: none;}
+img{border:none;}
+a{text-decoration:none;color:#000;}
+/*首页*/
+.wrap,.bg-header1,.bg-header2{min-width:1038px;width:100%;margin:0 auto;_margin-top:-20px;}
+.header-2, .header-3  {width: 1038px;margin: 0 auto;}
+.bg-header1{background:url(../images/bg.jpg) no-repeat 50% 0;}
+.header-1{background: url(../images/biaotilan.png) no-repeat center;width:100%;height:65px;}
+.navbar{width:1038px;margin:0px auto;}
+.navbar ul li{float:left;display:inline;cursor:pointer;width:auto;text-align:center;font-size:25px;font-family:'楷体';font-size:23px;margin-left:20px;height:65px;line-height:65px;vertical-align: middle;}
+.navbar ul li a{color:#561010;}	
+.navbar ul li a img{vertical-align:middle;margin-top:20px;_margin-top:40px;}
+.navbar .logo{padding-top:0px;vertical-align:middle;margin-top:0px;}
+.header-2{background: url(../images/bg_02.jpg) no-repeat 0;height: 408px;}
+.header-3{background: url(../images/bg_04.jpg) no-repeat 0;height: 785px;}
+
+.contents{width:996px;margin:0px auto;padding-top:60px;}
+/*登陆*/
+.contents .userlogin{width:316px;height:160px;_height:152px;border:1px solid #d0b6a7;float:left;display:inline;background-color:#fdf8f4;padding-top:12px;}
+.wf100{width:100%;float:left;}
+#userinput{width:100%;float:left;margin-bottom:10px;font-size:16px;color:#6b3a00;}
+#userinput span{font-size:18px;color:#561010;margin-left:20px;}
+#userinput input[type="text"]{line-height: 30px;width:200px;text-indent: 10px;font-size:14px;border-radius:5px;border:1px solid #ccc;}
+.error{color:red;font-size:16px;float:left;text-align:center;width:100%;margin-bottom:8px;height:21px;}
+.userclick{margin-left:105px;border:none;border-radius: none;width:112px;height:34px;background:url(../images/btn-dl.png) no-repeat;cursor:pointer;}
+.peizelingqu{margin-top:15px;width:316px;}
+
+.peizelingqu .shuominginfo{width:316px;height:140px;_height:145px;border:1px solid #d0b6a7;float:left;display:inline;background-color:#fdf8f4;}
+.peizelingqu .shuominginfo p{font-size:16px;color:#6b3a00;line-height:25px;margin-left:10px;margin-top:10px;}
+
+/*用户登陆过*/
+.userlogin p{text-align:Center;color:#6b3a00;font-size:16px;}
+.infologined{margin-top:25px;color:#6b3a00;font-size:16px;}
+.infologined p{height:30px;text-align:left;width:300px;padding-left:15px;}
+.infologined p label{color:red;}
+/*显示信息*/
+.prizeinfo{width:662px;height:378px;background:url(../images/prizeinfobg.png) no-repeat;float:left;display:inline;margin-left:15px;}
+.prizeinfo ul{width:100%;margin-top:10px;float:left;margin-top:47px;height:280px;}
+.prizeinfo ul li{line-height:53px;vertical-align:middle;width:100%;float:left;}
+.prizeinfo ul li span{float:left;display:inline;margin-left:18px;}
+.prizeinfo ul li span.w1{width:160px;}
+.prizeinfo ul li span.w2{width:180px;text-align:center;}
+.prizeinfo ul li span.w3{width:115px;}
+.prizeinfo ul li span.w4{width:112px;}
+.prizeinfo ul li span.w4 img{vertical-align:middle;margin-top:10px;cursor:pointer;}
+
+.lastinfo{margin-top:20px;}
+.showalllibao{width:994px;height:200px;border:1px solid #d0b6a7; background-color:#e7dbc7;margin-top:10px;}
+.showalllibao ul {padding:20px 0px 10px 0px;}
+.showalllibao ul li{width:20%;_width:19.8%;float:left;display:inline;text-align:center;}
+.showalllibao ul li .bgimg{width:128px;height:128px;background-color:#fff;border:1px solid #d0b6a7;margin:0px auto;}
+.showalllibao ul li  p{width:100%;margin-top:10px;float:left;font-size:16px;color:#6b3a00;}
+
+/*弹出层*/
+.userwriteinfo{width:550px;height:290px;margin:0px auto;background-color:#fff;border:1px solid #d0b6a7;padding:15px 25px;font-size:18px;color:#561010;}
+.userwriteinfo p{line-height:30px;color:#561010;}
+.userwriteinfo p label{margin-left:20px;}
+#userinputaddr{width:100%;float:left;margin-top:10px;}
+#userinputaddr input[type="text"]{line-height: 30px;width:400px;text-indent: 10px;font-size:18px;border-radius:5px;border:1px solid #ccc;font-size:16px;}
+.error1{float:left;text-align:center;width:75%;color:red;font-size:16px;margin:10px 0px;height:21px;}
+.userinfocli{margin-left:120px;border:none;border-radius: none;width:112px;height:34px;background:url(../images/btn-qd.png) no-repeat;cursor:pointer;}
+/*footer*/
+.footer{width:100%;float:left;text-align:center;padding-top:15px;background-color:#f5f5f5;height:80px;position:relative;color:#541011;}
+.footer p{color:#561010;}
+.footer a{color:#561010;}
+
+
+

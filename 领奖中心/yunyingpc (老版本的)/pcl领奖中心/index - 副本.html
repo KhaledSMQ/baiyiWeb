@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+<title></title>
+<meta name="keywords" content="" >
+<meta name="description" content="" >
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="js/skin/layer.css" rel="stylesheet" />
+</head>
+<body style="background-position: 50% 67px;">
+	<div class="header-1">
+		 <div class="navbar">
+			<ul>
+				<li style="width:80px;"><a href="/">首页</a></li>
+				<li><a href="/xinwengonggao">新闻公告</a></li>
+				<li><a href="">领奖中心</a></li>
+				<li style="width:250px;"><a href="/"><img src="images/logo.png"  class="logo"/></a></li>
+				<li><a href="">礼包领取</a></li>
+				<li><a href="/youxigonglue">游戏攻略</a></li>
+			</ul>
+		</div> 
+	</div>
+
+	<div class="wrap">
+    	<div class="bg-header1">
+			<div class="header-2"></div>
+            <div class="header-3">
+				<div class="contenttop">
+            		<div class="leftimg" style="background:none;">
+					</div>
+                    <div class="rightdiv">
+                    	<a href="http://download.6513.com/phoneshz/SHZ_GW.apk"><p class="anzhuo"></p></a>
+						<a href="https://itunes.apple.com/cn/app/bai-yi-shui-hu-chuan-jie-ji/id993585766?mt=8" target="_blank"><p class="ios"></p></a>
+						<div class="erewimabg">
+							<img src="images/erweima.png" />				
+						</div>
+                    </div>
+            	</div>
+				<div class="header-4">
+					<div class="listdiv">
+						<div class="listcontent">
+							<ul class="showlist">
+								<li>
+									<div class="prizeimg">
+										<a><img src="images/lb1.png" /></a>
+									</div>
+									<div class="prizeinfo">
+										<p>活动名称：<label>幸礼包运</label></p>
+										<p>时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：<label>2015-6-30</label></p>
+										<p>所获礼包：<label>显示礼包内容</label></p>
+									</div>
+									<div class="prizeduihuan">
+										<a><img src="images/btn-ylq.png" /></a>
+									</div>
+								</li>
+								<li>
+									<div class="prizeimg">
+										<a><img src="images/lb2.png" /></a>
+									</div>
+									<div class="prizeinfo">
+										<p>活动名称：<label>幸礼包运</label></p>
+										<p>时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：<label>2015-6-30</label></p>
+										<p>所获礼包：<label>显示礼包内容</label></p>
+									</div>
+									<div class="prizeduihuan">
+										<a><img src="images/btn-wdc.png" /></a>
+									</div>
+								</li>
+								<li>
+									<div class="prizeimg">
+										<a><img src="images/lb3.png" /></a>
+									</div>
+									<div class="prizeinfo">
+										<p>活动名称：<label>幸礼包运</label></p>
+										<p>时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：<label>2015-6-30</label></p>
+										<p>所获礼包：<label>显示礼包内容</label></p>
+									</div>
+									<div class="prizeduihuan">
+										<a><img src="images/btn-djlq.png" class="userprizeclick" /></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+            </div>
+			<!--footer-->
+			<div class="footer">
+				<p>郑州百易科技有限公司 豫ICP备12014032号-1</p>
+				<p><a>站长统计</a> 客服电话：<label>40087565555</label></p>
+			</div> 
+        </div>
+    </div>
+    <!--弹出的兑换信息-->
+    <div class="loaduserpeizeinfo" id="loaduserpeizeinfo" style="display:none;">
+		<div class="topsection">
+			<div class="leftimg"><img src="images/tslb.png" /></div>
+			<div class="rightinfo">
+				<p>恭喜您！获得金币<label>8000</label>两！</p>
+			</div>
+		</div>
+		<img src="images/tiao.png" style="width:96%;padding:0% 2%;margin:0px auto;"/>
+		<div class="sectiontwo wf100">
+			<div class="twosectionleft wf100">
+				<div class="userinputinfos">
+					<p>输入水浒传游戏ID及手机号领取您的奖励哦</p>
+					<div class="wf100" id="userinput">
+						<span>游戏ID:</span>
+						<input type='text' name='gameid' id='gameid' placeholder="请输入你的游戏ID" />
+						<label class="error errorgameid"></label>
+					</div>
+					<div class="wf100" id="userinput">
+						<span>手机号:</span>
+						<input type='text' name='phoneid' id='phoneid' placeholder="请输入你的手机号" />
+						<label class="error errorphoneid"> </label>
+					</div>
+					<div class="wf100" id="userinput">
+						<input type="submit" name="userclick" class="userclick" value="" />
+					</div>
+				</div>
+			</div>
+			
+		</div>
+    </div>
+
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/ad.js"></script>
+	<script type="text/javascript" src="js/layer.js"></script>
+
+	 <script type="text/javascript">
+	 var input_success_1=false;
+	 var input_success_2=false;
+
+	 $(document).ready(function(){
+	 	/*弹框*/
+	 	 $(".userprizeclick").click(function(){
+		 	layer.open({
+				type:1,
+				title:false,
+				closeBtn:true,
+				skin:'layui-layer-nobg',
+				area:['690px','440px'],
+				shadeClose:true,
+				content:$('#loaduserpeizeinfo')
+			});
+		 });
+	 	/*验证*/
+	 	$("#gameid").bind("blur",function(){
+			var usergameid=$.trim($(this).val());
+			var reg= /^\d+$/;
+			if(reg.test(usergameid)){
+				/*$.ajax({
+					async:false,
+						url: '',
+						type: "GET",
+						cache:false,
+						dataType: 'jsonp',
+						jsonp: 'jsoncallback',
+						data:{'':usergameid},
+						success: function (json) {
+							var final_data=eval("("+json+")");
+							var code=final_data.code;
+							if(code!=0){
+								var showmsg=final_data.result.msg;
+								$(".input_1").html(showmsg);
+							}else{
+								$(".input_1").html("");
+								input_success_1=true;	
+							
+						}
+				});*/
+			}else{
+				$(".errorgameid").html("*请输入您的游戏ID!");
+			}
+		});
+	    /*验证电话*/
+		$("#phoneid").bind("blur",function(){
+			var userinputphoneno=$.trim($(this).val());
+		    var params=RegExp(/^1[3|4|5|8][0-9]{9}$/);
+		    if(!params.test(userinputphoneno)){
+		    		$(".errorphoneid").html("*请输入您的手机号码!");
+			}else{
+				input_success_2=true;	
+			}
+		});
+
+      /*点击提交信息*/
+		$(".userclick").click(function(){
+			if(input_success_1==true && input_success_2==true){
+				alert("success");
+			}
+		});
+
+	});
+
+
+
+	
+	 </script>
+</body>
+</html>
