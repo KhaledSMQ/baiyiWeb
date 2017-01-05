@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+</head>
+<body>
+    <div class="timeValue">
+    第1个：
+        <div class="showInfoMsg">
+            <div class="daojishi" id="1483580415">
+                <label class='timem'></label>
+                <label class='times'></label>
+                <label class='timen'></label>
+            </div>
+        </div>
+    </div><br/>
+    <div class="timeValue">
+    第2个：
+        <div class="showInfoMsg">
+            <div class="daojishi" id="1483580535">
+                <label class='timem'></label>
+                <label class='times'></label>
+                <label class='timen'></label>
+            </div>
+        </div>
+    </div><br/>
+
+    <div class="timeValue">
+    第3个：
+        <div class="showInfoMsg">
+            <div class="daojishi" id="1483580535">
+                <label class='timem'></label>
+                <label class='times'></label>
+                <label class='timen'></label>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript">
+    function add0(m){return m<10?'0'+m:m }
+    function format(shijianchuo)
+    {
+        var time = new Date(shijianchuo);
+        var y = time.getFullYear();
+        var m = time.getMonth()+1;
+        var d = time.getDate();
+        var h = time.getHours();
+        var mm = time.getMinutes();
+        var s = time.getSeconds();
+        return  add0(m)+'/'+add0(d)+'/'+y+ ' '+add0(h)+':'+add0(mm)+':'+add0(s);
+    }
+	var checkIsEnd=function(endtime){
+        var nowtime = new Date().getTime();
+        if(endtime <= nowtime){
+            return true;
+        }else{
+            return false;
+        }
+	};
+
+ /*   var checkIsEnd=function(){
+		console.log("checkIsEnd");
+        var endtime = new Date($(".daojishi").attr("id")).getTime();
+        var nowtime = new Date().getTime();
+        if(endtime <= nowtime){
+            return true;
+        }else{
+            return false;
+        }
+    };
+    var doEnded=function(){
+		console.log("doEnded");
+        $(".daijishi").css("dispaly","none");
+        $(".showInfoMsg").html("计算中...");
+        return;
+    }
+    var doInterval=function(item){
+		console.log("doInterval");
+        if(checkIsEnd()){
+            $(".daijishi").css("dispaly","none");
+            $(".lastTime").html("计算中...");
+            return;
+        }
+        $(".daojishi").each(function(){
+            var endtime = new Date($(this).attr("id")).getTime();
+            var nowtime = new Date().getTime();
+            var youtime = endtime-nowtime;
+            var seconds = youtime/1000;
+            var minutes = Math.floor(seconds/60);
+            var hours = Math.floor(minutes/60);
+            var days = Math.floor(hours/24);
+            var CDay= days ;
+            var CHour= hours % 24;
+            var CMinute= minutes % 60;
+            var CSecond= Math.floor(seconds%60);
+            var c=new Date();
+            var millseconds=c.getMilliseconds();
+            var Cmillseconds=Math.floor(millseconds %100);
+            if(CSecond<10){
+                CSecond="0"+CSecond;
+            }
+            if(CMinute<10){
+                CMinute="0"+CMinute;
+            }
+            if(CHour<10){
+                CHour="0"+CHour;
+            }
+            if(Cmillseconds<10) {
+                Cmillseconds="0"+Cmillseconds;
+            }
+			
+			
+            $(this).html("<label class='timem'>"+CMinute+"</label>:<label class='times'>"+CSecond+"</label>:<label class='timen'>"+Cmillseconds+"</label>");
+			console.log($(this).html());
+        });
+    }
+
+    function setOutTimeval(timevalue){
+        var getTimeValue=timevalue.find(".daojishi").attr("id");
+		console.log(getTimeValue);
+        if(getTimeValue == "0"){
+			window.location.reload();
+            return ;
+        }else if(getTimeValue > 0){
+            var timeValue=parseInt(timevalue.find(".daojishi").attr("id")+"000");
+            timevalue.find(".daojishi").attr("id",format(timeValue));
+            console.log($(".daojishi").attr("id"));
+			console.log("checkIsEnd:"+checkIsEnd())
+            if(checkIsEnd()){
+                doEnded();
+            }else{
+                setInterval(doInterval,60);
+				setInterval(function(){
+					
+				},60);
+            }
+        }
+    }
+                   
+	$(function () {
+		$(".timeValue").each(function(){
+			setOutTimeval($(this));
+		});
+	});
+*/
+
+		var doInterval = function(){
+			$(".timeValue").each(function(){
+				var getTimeValue = $(this).find(".daojishi").attr("id");
+				//console.log(getTimeValue);
+				if(getTimeValue == "0")
+				{
+					//window.location.reload();
+					return;
+				}else if(getTimeValue > 0)
+				{
+					console.log(getTimeValue);
+					var timeValue = parseInt($(this).find(".daojishi").attr("id")+"000");
+					var endtime = new Date(format(timeValue)).getTime();
+					//$(this).find(".daojishi").attr("id",format(timeValue));
+					if(checkIsEnd(endtime))
+					{
+						$(this).find(".daijishi").css("dispaly","none");
+						$(this).find(".showInfoMsg").html("计算中...");
+						console.log("end");
+					}
+					else
+					{
+						//var endtime = new Date($(this).find(".daojishi").attr("id")).getTime();
+						var nowtime = new Date().getTime();
+						var youtime = endtime-nowtime;
+						var seconds = youtime/1000;
+						var minutes = Math.floor(seconds/60);
+						var hours = Math.floor(minutes/60);
+						var days = Math.floor(hours/24);
+						var CDay= days ;
+						var CHour= hours % 24;
+						var CMinute= minutes % 60;
+						var CSecond= Math.floor(seconds%60);
+						var c=new Date();
+						var millseconds=c.getMilliseconds();
+						var Cmillseconds=Math.floor(millseconds %100);
+						if(CSecond<10){
+							CSecond="0"+CSecond;
+						}
+						if(CMinute<10){
+							CMinute="0"+CMinute;
+						}
+						if(CHour<10){
+							CHour="0"+CHour;
+						}
+						if(Cmillseconds<10) {
+							Cmillseconds="0"+Cmillseconds;
+						}
+						var html = "<label class='timem'>"+CMinute+"</label>:<label class='times'>"+CSecond+"</label>:<label class='timen'>"+Cmillseconds+"</label>";
+						$(this).find(".daojishi").html(html);
+						console.log(html);
+					}
+				}
+			});
+		};
+		setInterval(doInterval,59);
+	$(function(){
+	});
+</script>
+</body>
+</html>
